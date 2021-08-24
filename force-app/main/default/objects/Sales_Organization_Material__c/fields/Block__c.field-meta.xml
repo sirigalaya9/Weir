@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR( 
+ ISPICKVAL(DChain__c, &quot;03&quot;), 
+ ISPICKVAL(DChain__c, &quot;14&quot;), 
+ ISPICKVAL(DChain__c, &quot;25&quot;),
+ ISPICKVAL(DChain__c, &quot;27&quot;), 
+ ISPICKVAL(DChain__c, &quot;99&quot;), 
+ ISPICKVAL(DChain__c, &quot;G2&quot;), 
+ ISPICKVAL(DChain__c, &quot;G3&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Block</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

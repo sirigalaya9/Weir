@@ -1,0 +1,73 @@
+<template>
+    <li>
+        <div class="slds-timeline__item_expandable slds-is-open"> 
+            <div class="slds-media">
+                <div class="slds-media__figure">
+                    <button class="slds-button slds-button_icon" onclick={toggleActivity} aria-controls="task-item-base">
+                        <lightning-icon icon-name="utility:switch" size="x-small" class="slds-button__icon slds-timeline__details-action-icon"></lightning-icon>
+                    </button>
+                    
+                    <div class="slds-icon_container" title="status">
+                        <lightning-icon icon-name="standard:proposition" size="small"></lightning-icon>
+                    </div>
+                </div>
+                
+                <div class="slds-media__body">
+                    <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                        <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                            <h3 class="slds-truncate">
+                                <strong>
+                                    <lightning-formatted-date-time value={item.atpDate} year="numeric" day="2-digit" month="long"></lightning-formatted-date-time>
+                                </strong>
+                            </h3>
+                        </div>
+                        <div class="slds-timeline__actions slds-timeline__actions_inline">
+                            <p class="slds-timeline__date">{item.atpDateDisplay}</p>                                
+                        </div>                                
+                    </div>                          
+                    
+                    <!-- expandable section start-->
+                    <article class="slds-box slds-timeline__item_details slds-theme_shade slds-m-top_x-small slds-m-horizontal_xx-small">
+                        <lightning-layout>
+                            <lightning-layout-item size="6">
+                                <span class="slds-text-title slds-p-bottom_x-small">Product</span>  
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" class="slds-p-left_small">
+                                <span class="slds-text-title slds-p-bottom_x-small">Quantity</span>  
+                            </lightning-layout-item>
+                        </lightning-layout>                                                      
+                        <template for:each={item.products} for:item="product">      
+                            <lightning-layout key={product.Id}>
+                                <lightning-layout-item size="6">
+                                    <span class="slds-text-body_medium" title={product.Product2.Name}><a onclick={navigateToRecordPage} data-id={product.Id}>{product.Product2.Name}</a></span>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="6" class="slds-p-left_small">
+                                    <span class="slds-text-body_medium" title={product.Quantity}>{product.Quantity}</span>
+                                </lightning-layout-item>
+                            </lightning-layout>                     
+                        </template>
+                        <lightning-layout class="slds-m-top_medium">
+                            <lightning-layout-item size="6">
+                                <span class="slds-text-title slds-p-bottom_x-small">Material Number</span>  
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6" class="slds-p-left_small">
+                                <span class="slds-text-title slds-p-bottom_x-small">Material Description</span>  
+                            </lightning-layout-item>
+                        </lightning-layout>   
+                        <template for:each={item.products} for:item="product">      
+                            <lightning-layout key={product.Id}>
+                                <lightning-layout-item size="6">
+                                    <span class="slds-text-body_medium" title={product.Material_Number__r.Name}><a onclick={navigateToRecordPage} data-id={product.Material_Number__c}>{product.Material_Number__r.Name}</a></span>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="6" class="slds-p-left_small">
+                                    <span class="slds-text-body_medium" title={product.Material_Number__r.Material_Description__c}>{product.Material_Number__r.Material_Description__c}</span>
+                                </lightning-layout-item>
+                            </lightning-layout>                       
+                        </template>                                                  
+                    </article>
+                
+                </div>
+            </div>
+        </div>
+    </li>    
+</template>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Internal Sales and Product Management - Dewatering</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Internal Sales and Product Management - Dewatering</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Director_Dewatering_APAC</parentRole>
+</Role>

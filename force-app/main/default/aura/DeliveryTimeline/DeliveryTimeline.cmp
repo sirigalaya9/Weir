@@ -1,0 +1,207 @@
+<aura:component>    
+    
+    <aura:attribute name="delivery" type="object" description="to store single activity (task/event) record data"/> 
+    <aura:attribute name="deliveryItem" type="object"/>
+    <aura:attribute name="objType" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <li>
+        <div class="isExpendable slds-timeline__item_expandable slds-timeline__item_order slds-is-open" aura:id="expId"> 
+            <div class="slds-media">
+                <div class="slds-media__figure">
+                    <button class="slds-button slds-button_icon"
+                            onclick="{!c.toggleAcitivity}"
+                            title=""
+                            aria-controls="task-item-base">
+                        <lightning:icon iconName="utility:switch" 
+                                        size="x-small"
+                                        class="slds-button__icon slds-timeline__details-action-icon"/>
+                    </button>
+                    
+                    <div class="slds-icon_container" title="icon">
+                        <lightning:icon iconName="custom:custom98" size="small"/>
+                    </div>
+                </div>
+                
+                <div class="slds-media__body">
+                    <div class="slds-grid slds-wrap slds-grid_align-spread slds-timeline__trigger">
+                        <div class="slds-grid slds-wrap slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                            <h3 class="slds-truncate" title="Delivery Order">
+                                 <a onclick="{!c.linkToRecord}" target="_blank">{!v.delivery.SAP_Delivery_Order_No__c} </a>
+                            </h3>
+                            <h3 class="slds-truncate" title="Planned Good Issue Date">
+                                &nbsp;-&nbsp;<lightning:formattedDateTime value="{!v.delivery.Planned_Good_Issue_Date__c}"/>
+                            </h3>
+                        </div>
+                        <dl class="slds-list_inline">
+                            <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Delivery Status">{!v.delivery.Status__c} :</dt>
+                            <dd class="slds-item_detail slds-truncate" title="Delivery Status Detail">
+                                <aura:if isTrue="{!v.delivery.Status_Detail__c == 'A'}">
+                                    <div class="slds-truncate slds-text-color_error" style="">Not yet processed</div>
+                                </aura:if>
+                                <aura:if isTrue="{!v.delivery.Status_Detail__c == 'B'}">
+                                    <div class="slds-truncate" style="color:#bdb30e;">Partially processed</div>
+                                </aura:if>
+                                <aura:if isTrue="{!v.delivery.Status_Detail__c == 'C'}">
+                                    <div class="slds-truncate slds-text-color_success" style="">Completely processed</div>
+                                </aura:if>
+                                <aura:if isTrue="{!v.delivery.Status_Detail__c == null}">
+                                    <div class="slds-truncate slds-text-color_success" style="">-</div>
+                                </aura:if>
+                            </dd>
+                        </dl>
+                        
+                    </div>
+                    <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                        <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                            <div class="slds-truncate" title="Carrier Name">
+                                <div class="slds-item_label slds-text-color_weak slds-truncate" title="Carrier Name"><span style="font-weight: bold;">Carrier Name :&nbsp;&nbsp;</span></div>
+                            </div>
+                            <aura:if isTrue="{!v.delivery.Carrier_Name__c != null}"> 
+                                <div class="slds-item_label slds-text-color_weak slds-truncate" title="Carrier Name"><span style="font-weight: bold;"></span>{!v.delivery.Carrier_Name__c}</div>
+                                <aura:set attribute="else">
+                                    <div>-</div>
+                                </aura:set>
+                            </aura:if>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-grid_align-spread slds-timeline__trigger">
+                        <div class="slds-grid slds-grid_vertical-align-center slds-truncate_container_75 slds-no-space">
+                            <div class="slds-truncate" title="Tracking Number">
+                                <div class="slds-item_label slds-text-color_weak slds-truncate" title="Tracking Number"><span style="font-weight: bold;">Tracking Number :&nbsp;&nbsp;</span></div>
+                            </div>
+                            <aura:if isTrue="{!v.delivery.Tracking_No__c != null}"> 
+                                <div class="slds-item_label slds-text-color_weak slds-truncate" title="Tracking Number"><span style="font-weight: bold;"></span>{!v.delivery.Tracking_No__c}</div>
+                                <aura:set attribute="else">
+                                    <div>-</div>
+                                </aura:set>
+                            </aura:if>
+                        </div>
+                    </div>
+    
+                    
+                    <!-- expandable section start-->
+                    <article class="slds-card slds-box slds-timeline__item_details slds-m-horizontal_xx-small"
+                             id="order-item-base"
+                             aria-hidden="true">
+                        
+                        <div aura:id="orderProductsForm">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th class="" scope="col" style="width: 10%;">
+                                            <div class="slds-truncate" title="Delivery Item">Delivery Item</div>
+                                        </th>
+                                        <aura:if isTrue="{!v.objType == 'Order'}"> 
+                                            <th class="" scope="col" style="width: 15%;">
+                                                <div class="slds-truncate" title="Material Number">Material Number</div>
+                                            </th>
+                                            <th class="" scope="col" style="width: 15%;">
+                                                <div class="slds-truncate" title="Material Number">Material Description</div>
+                                            </th>
+                                            <th class="" scope="col" style="width: 15%;">
+                                                <div class="slds-truncate slds-cell-wrap" title="Planned Leaving Shipping Point Date">Planned Leaving Shipping Point Date</div>
+                                            </th>
+                                            <th class="" scope="col" style="width: 15%;">
+                                                <div class="slds-truncate slds-cell-wrap" title="Actual Leaving Shipping Point Date">Actual Leaving Shipping Point Date</div>
+                                            </th>
+                                            <th class="" scope="col" style="width: 8%;">
+                                                <div class="slds-truncate slds-cell-wrap" title="Quantity to Deliver">Quantity to Deliver</div>
+                                            </th>
+                                            <th class="" scope="col" style="width: 8%;">
+                                                <div class="slds-truncate slds-cell-wrap" title="Actual Quantity">Order Quantity</div>
+                                            </th>
+                                        </aura:if>
+                                        	
+                                        <aura:if isTrue="{!v.objType == 'OrderItem'}">
+                                            <th class="" scope="col" style="width: 8%;">
+                                                <div class="slds-truncate slds-cell-wrap" title="Quantity to Deliver">Quantity to Deliver</div>
+                                            </th>
+                                            <th class="" scope="col" style="width: 15%;">
+                                                <div class="slds-truncate slds-cell-wrap" title="Planned Leaving Shipping Point Date">Planned Leaving Shipping Point Date</div>
+                                            </th>
+                                            <th class="" scope="col" style="width: 15%;">
+                                                <div class="slds-truncate slds-cell-wrap" title="Actual Leaving Shipping Point Date">Actual Leaving Shipping Point Date</div>
+                                            </th>
+                                            <th class="" scope="col" style="width: 10%;">
+                                                <div class="slds-truncate slds-cell-wrap" title="Item Status Detail">Item Status Detail</div>
+                                            </th>
+                                            <th class="" scope="col" style="width: 10%;">
+                                                <div class="slds-truncate slds-cell-wrap" title="Gross Weight">Gross Weight</div>
+                                            </th>
+                                        </aura:if>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                    <aura:iteration items="{!v.delivery.Delivery_Orders__r}" var="item" indexVar="index">
+                                        <tr>
+                                            <td data-label="Delivery Product">
+                                                <a onclick="{!c.linkToDeliveryItem}" data-index="{!index}" target="_blank">{!item.Name}</a>
+                                            </td>
+                                            <aura:if isTrue="{!v.objType == 'Order'}"> 
+                                                <td data-label="Material">
+                                                    <div class="slds-truncate slds-cell-wrap" title="{!v.item.Product_ID__c}">{!item.Product_ID__c}</div>               
+                                                </td>
+                                                <td data-label="Material Description">
+                                                    <div class="slds-truncate slds-cell-wrap" title="{!v.item.Order_Product__r.Material_Description__c}">{!item.Order_Product__r.Material_Description__c}</div>               
+                                                </td>
+                                                <td data-label="Planed Goods issue Date">
+                                                    <div class="slds-truncate" title="{!item.Planned_Goods_Issue_Date__c}">         
+                                                        <lightning:formattedDateTime value="{!item.Planned_Goods_Issue_Date__c}"  timeZone="UTC"/>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Actual Goods issue Date">
+                                                    <div class="slds-truncate" title="{!item.Actual_Goods_Issue_Date__c}">         
+                                                        <lightning:formattedDateTime value="{!item.Actual_Goods_Issue_Date__c}"  timeZone="UTC"/>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Delivery Quantity">
+                                                    <div class="slds-truncate" title="{!item.Delivery_Qty__c}">{!item.Delivery_Qty__c}</div>               
+                                                </td>
+                                                <td data-label="Actual Quantity">
+                                                    <div class="slds-truncate" title="{!item.Order_Product__r.Quantity}">{!item.Order_Product__r.Quantity}</div>               
+                                                </td>
+                                            </aura:if>
+                                            
+                                            <aura:if isTrue="{!v.objType == 'OrderItem'}"> 
+                                                <td data-label="Delivery Quantity">
+                                                    <div class="slds-truncate" title="{!item.Delivery_Qty__c}">{!item.Delivery_Qty__c}</div>               
+                                                </td>
+                                                <td data-label="Planed Goods issue Date">
+                                                    <div class="slds-truncate" title="{!item.Planned_Goods_Issue_Date__c}">         
+                                                        <lightning:formattedDateTime value="{!item.Planned_Goods_Issue_Date__c}"  timeZone="UTC"/>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Actual Goods issue Date">
+                                                    <div class="slds-truncate" title="{!item.Actual_Goods_Issue_Date__c}">         
+                                                        <lightning:formattedDateTime value="{!item.Actual_Goods_Issue_Date__c}"  timeZone="UTC"/>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Status Detail">
+                                                    <aura:if isTrue="{!item.Item_Status_Detail__c == 'A'}">
+                                                        <div class="slds-truncate" >Not yet processed</div>
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!item.Item_Status_Detail__c == 'B'}">
+                                                        <div class="slds-truncate" >Partially processed</div>
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!item.Item_Status_Detail__c == 'C'}">
+                                                        <div class="slds-truncate" >Completely processed</div>
+                                                    </aura:if>
+                                                </td>
+                                                <td data-label="Gross Weight">
+                                                    <lightning:formattedNumber value="{!item.Gross_Weight__c}"/>
+                                                </td>
+                                            </aura:if>
+                                        </tr>
+                                    </aura:iteration>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </div>
+    </li>
+</aura:component>

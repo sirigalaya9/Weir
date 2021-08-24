@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_In_Process__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND( TEXT( Item_Status__c ) &lt;&gt; &quot;Delivery Created&quot; ,  TEXT(Item_Status__c) &lt;&gt; &quot;Billing&quot; )</formula>
+    <label>Delivery In Process</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

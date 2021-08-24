@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Account Manager Western Canada</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Account Manager Western Canada</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Area_Manager_Hard_Rock_Mining_Canada</parentRole>
+</Role>

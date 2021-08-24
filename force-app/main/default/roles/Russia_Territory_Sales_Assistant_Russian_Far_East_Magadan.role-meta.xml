@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Russia Territory Sales Assistant - Russian Far East, Magadan</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Russia Territory Sales Assistant - Russian Far East, Magadan</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Russia_Sales_Manager_North_East</parentRole>
+</Role>

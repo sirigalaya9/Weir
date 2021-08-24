@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>ENDURON Regional Manager Australia</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>ENDURON Regional Manager Australia</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>ENDURON_Comminution_Solutions_Manager</parentRole>
+</Role>

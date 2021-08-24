@@ -1,0 +1,141 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader,lightning:actionOverride" access="global" >  
+    
+    <aura:attribute name="orderItem" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+    <aura:attribute name="Lead_Time_Balance" type="Integer"/>
+    <aura:attribute name="Estimated_Shipping_Time" type="Integer"/>
+    <aura:attribute name="Days_to_Delivery" type="Integer"/>
+    <aura:attribute name="isActual" type="Boolean" default="false"/>
+    <aura:attribute name="Delivery_Date_Calculated" type="Date"/>
+    
+    
+    <force:recordData aura:id="recordEdit"
+                      fields="Id, Order_Received_Date__c, SAP_Order_Created_Date__c, Material_Available_Date__c, Good_Issue_Date__c,
+                              Delivery_Date__c, Original_Promised_Date__c, Actual_Goods_Issue_Date__c, X1st_Planned_Goods_Issue_Date__c,
+                              Estimated_Shipping_Time__c, Delivery_Date_Calculated__c, Days_to_Delivery__c, Estimated_Delivery_Date__c"      
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetFields ="{!v.orderItem}"
+                      recordUpdated="{!c.recordUpdated}"
+                      mode="VIEW" />
+    
+    
+    <article class="slds-card">
+        <div class="slds-card__body slds-card__body_inner">
+            <div style="width: 100%; overflow-x: auto; overflow-y: hidden; white-space: nowrap"> 
+                <table border="0">
+                    <tr>
+                        <td colspan="4" style="font-weight: bold;text-align: center; height: 25px; border-bottom-style: solid;border-bottom-color: #016DCB; border-bottom-width:5px">Order Reception / Entry / Acknowledgement</td>
+                        <td></td>
+                        <td colspan="3" style="font-weight: bold;text-align: center; height: 25px; border-bottom-style: solid;border-bottom-color: #ff9a3c;border-bottom-width:5px">Delivery Process</td>
+                        <td></td>
+                        <td colspan="2" style="font-weight: bold;text-align: center; height: 25px; border-bottom-style: solid;border-bottom-color: #016DCB;border-bottom-width:5px">Delivery Balance</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="slds-col" style="margin-top: 10px; height: 60px; background-color: #F3F2F2; margin-right: 10px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <span>Order Received</span><br/>
+                                    <lightning:formattedDateTime value="{!v.orderItem.Order_Received_Date__c}"  timeZone="UTC" style="font-weight:bold"/>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-col" style="margin-top: 10px; height: 60px; background-color: #F3F2F2; margin-right: 10px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <span>Order Created in SAP</span><br/>
+                                    <lightning:formattedDateTime value="{!v.orderItem.SAP_Order_Created_Date__c}"  timeZone="UTC" style="font-weight:bold"/>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-col" style="margin-top: 10px; height: 60px; background-color: #F3F2F2; margin-right: 10px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <span>Planned Leaving Shipping Point</span><br/>
+                                    <aura:if isTrue="{!v.orderItem.X1st_Planned_Goods_Issue_Date__c != null}">
+                                        <lightning:formattedDateTime value="{!v.orderItem.X1st_Planned_Goods_Issue_Date__c}"  timeZone="UTC" style="font-weight:bold"/>
+                                        <aura:set attribute="else">
+                                            <lightning:formattedDateTime value="{!v.orderItem.Good_Issue_Date__c}"  timeZone="UTC" style="font-weight:bold"/>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="slds-col" style="margin-top: 10px; height: 60px; background-color: #F3F2F2; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <span>Planned Delivery Date</span><br/>
+                                    <lightning:formattedDateTime value="{!v.orderItem.Original_Promised_Date__c}"  timeZone="UTC" style="font-weight:bold"/>
+                                </div>
+                            </div>
+                        </td>
+                        
+                        <td>&nbsp;&nbsp;</td>
+                        
+                        
+                        <td>
+                            <div class="slds-col" style="margin-top: 10px; height: 60px; background-color: #F3F2F2; margin-right: 10px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <aura:if isTrue="{!v.orderItem.Actual_Goods_Issue_Date__c == null}">
+                                        <span>Est. Leaving Shipping Point</span><br/>
+                                        <lightning:formattedDateTime value="{!v.orderItem.Good_Issue_Date__c}" TimeZone="UTC" style="font-weight:bold" />
+                                        <aura:set attribute="else">
+                                            
+                                            <span>Actual Leaving Shipping Point</span><br/>
+                                            <lightning:formattedDateTime value="{!v.orderItem.Actual_Goods_Issue_Date__c}"  timeZone="UTC" style="font-weight:bold" />
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                        </td>
+                        
+                        
+                        <td>
+                            <div class="slds-col" style="margin-top: 10px; height: 60px; background-color: #F3F2F2; margin-right: 10px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <span>Est. Shipping Time</span><br/>
+                                  <div style="font-weight:bold">
+                                    {!v.orderItem.Estimated_Shipping_Time__c} days
+                                  </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="slds-col" style="margin-top: 10px; height: 60px; background-color: #F3F2F2; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <span>Est. Delivery Date</span><br/>
+                                    <lightning:formattedDateTime value="{!v.orderItem.Estimated_Delivery_Date__c}"  timeZone="UTC" style="font-weight:bold"/>
+                                </div>
+                            </div>
+                        </td>
+                        <td>&nbsp;&nbsp;</td>
+                        <td>
+                            <div class="slds-col" style="margin-top: 10px; height: 60px; background-color: #F3F2F2; display: flex; align-items: center; justify-content: center;">
+                                <div aura:id="changeColor">
+                                    <span>Leaving Shipping Point Difference</span><br/>
+                                    <aura:if isTrue="{!v.orderItem.X1st_Planned_Goods_Issue_Date__c != null || !v.orderItem.Good_Issue_Date__c != null}">
+                                        <div style="font-weight:bold">
+                                            {!v.Lead_Time_Balance} days 
+                                        </div>
+                                    </aura:if>
+                                </div>
+                            </div>
+                        </td>
+                       <!-- <td>
+                            <div class="slds-col" style="margin-top: 10px; height: 60px; background-color: #F3F2F2; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <span>Days To Complete Delivery</span><br/>
+                                    <lightning:formattedDateTime value="{!v.orderItem.Delivery_Date_Calculated__c }"  timeZone="UTC"/>
+                                    {!v.orderItem.Days_to_Delivery__c} days
+                                </div>
+                            </div>
+                        </td>-->
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </article>
+    
+</aura:component>

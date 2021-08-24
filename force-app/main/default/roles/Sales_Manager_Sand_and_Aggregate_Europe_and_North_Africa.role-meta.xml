@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Sales Manager Sand and Aggregate Europe and North Africa</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Sales Manager Sand and Aggregate Europe and North Africa</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>General_Manager_Comminution_Business_ENAR</parentRole>
+</Role>

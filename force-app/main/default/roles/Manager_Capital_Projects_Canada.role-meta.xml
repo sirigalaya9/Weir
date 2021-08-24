@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Manager - Capital Projects Canada</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Manager - Capital Projects Canada</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>General_Manager_Oil_Sands_Canada</parentRole>
+</Role>

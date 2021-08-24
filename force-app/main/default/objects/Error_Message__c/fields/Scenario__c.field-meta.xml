@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scenario__c</fullName>
+    <externalId>false</externalId>
+    <label>Scenario</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Input Validation</fullName>
+                <default>false</default>
+                <label>Input Validation</label>
+            </value>
+            <value>
+                <fullName>Inquiry Creation</fullName>
+                <default>false</default>
+                <label>Inquiry Creation</label>
+            </value>
+            <value>
+                <fullName>Indirect Quotation</fullName>
+                <default>false</default>
+                <label>Indirect Quotation</label>
+            </value>
+            <value>
+                <fullName>Direct Quotation</fullName>
+                <default>false</default>
+                <label>Direct Quotation</label>
+            </value>
+            <value>
+                <fullName>Delta Quotation</fullName>
+                <default>false</default>
+                <label>Delta Quotation</label>
+            </value>
+            <value>
+                <fullName>Indirect Sales Order</fullName>
+                <default>false</default>
+                <label>Indirect Sales Order</label>
+            </value>
+            <value>
+                <fullName>Direct Sales Order</fullName>
+                <default>false</default>
+                <label>Direct Sales Order</label>
+            </value>
+            <value>
+                <fullName>Delta Sales Order</fullName>
+                <default>false</default>
+                <label>Delta Sales Order</label>
+            </value>
+            <value>
+                <fullName>Validation</fullName>
+                <default>false</default>
+                <label>Validation</label>
+            </value>
+            <value>
+                <fullName>Account Creation</fullName>
+                <default>false</default>
+                <label>Account Creation</label>
+            </value>
+            <value>
+                <fullName>Material Creation</fullName>
+                <default>false</default>
+                <label>Material Creation</label>
+            </value>
+            <value>
+                <fullName>Delivery Order Creation</fullName>
+                <default>false</default>
+                <label>Delivery Order Creation</label>
+            </value>
+            <value>
+                <fullName>Delivery Order Delta</fullName>
+                <default>false</default>
+                <label>Delivery Order Delta</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

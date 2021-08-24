@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Account Engineering House</fullName>
+        <default>false</default>
+        <label>Account Engineering House</label>
+    </customValue>
+    <customValue>
+        <fullName>Account Mine Site</fullName>
+        <default>false</default>
+        <label>Account Mine Site</label>
+    </customValue>
+    <customValue>
+        <fullName>Account Minesite Co-Owner</fullName>
+        <default>false</default>
+        <label>Account Minesite Co-Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>Account Minesite Owner</fullName>
+        <default>false</default>
+        <label>Account Minesite Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </customValue>
+    <customValue>
+        <fullName>End User</fullName>
+        <default>false</default>
+        <label>End User</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Involved</fullName>
+        <default>false</default>
+        <label>Project Involved</label>
+    </customValue>
+    <customValue>
+        <fullName>Seller</fullName>
+        <default>false</default>
+        <label>Seller</label>
+    </customValue>
+    <masterLabel>Project Account Roles</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

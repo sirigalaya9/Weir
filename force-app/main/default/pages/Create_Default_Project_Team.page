@@ -1,0 +1,86 @@
+<apex:page standardController="Default_Project_Team__c" recordSetVar="records" extensions="CreateDefaultProjectTeamController">
+    <head>
+        <apex:includeLightning />
+        <style>
+        #body 
+        {
+            display: none;
+        }
+        .sectionHeader
+        {
+            margin-top: 10px;
+        }
+        .pageTitle
+        {
+            font-size: 10px;  
+        }
+        .pageSubTitle
+        {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        </style>
+    </head>
+    
+    <body>
+	<div id="body">
+
+        <div class="sectionHeader">
+            <h1 class="pageTitle">{!user.Name}</h1>
+            <br/>
+            <h2 class="pageSubTitle">Add Members</h2>        
+        </div>
+     
+        <p>
+        Your default project team should include the users that normally work with you.
+        </p>
+     	<apex:form >        	
+            <apex:inputCheckbox value="{!enableDefaultProjectTeam}" id="enableDefaultProjectTeam"/>
+            <apex:outputLabel value="Automatically add my default project team to projects that I create or that are transferred to me" for="enableDefaultProjectTeam"/>
+            <br/>
+            <apex:inputCheckbox value="{!updateProjectTeam}" id="updateProjectTeam"/>
+            <apex:outputLabel value="Update project teams with these members" for="updateProjectTeam"/>            
+        	<br/><br/>
+        
+            <apex:pageBlock title="">
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton action="{!save}" value="Save"/>
+                    <apex:commandButton action="{!saveAndMore}" value="Save & More"/>
+                    <apex:commandButton action="{!cancel}" value="Cancel"/>
+                </apex:pageBlockButtons>
+                <apex:dataTable value="{!defaultProjectTeams}" var="item" cellspacing="5">             
+                    <apex:column >
+                        <apex:facet name="header">User</apex:facet>                        
+                        <apex:inputField value="{!item.Team_Member__c}"/>
+                    </apex:column>  
+                    <apex:column >
+                        <apex:facet name="header">Project Access</apex:facet>                        
+                        <apex:inputField value="{!item.Project_Access__c}" required="{!IF(!ISBLANK(item.Team_Member__c),'true','false')}"/>
+                    </apex:column>      
+                    <apex:column >
+                        <apex:facet name="header">Team Role</apex:facet>                        
+                        <apex:inputField value="{!item.Team_Role__c}" required="{!IF(!ISBLANK(item.Team_Member__c),'true','false')}"/>
+                    </apex:column>                          
+                </apex:dataTable>
+            </apex:pageBlock>
+        </apex:form>
+            
+    </div>    
+    </body>
+    
+    <script>
+    var userContext = "{!$User.UITheme}";
+    console.log(userContext);
+    if (userContext == 'Theme4t')
+    {
+        console.log('VF in S1');
+        sforce.one.createRecord("Default_Project_Team__c");
+    }
+    else
+    {
+        console.log('VF in LEX or Classic'); 
+        document.getElementById("body").style.display = "block";
+    }        
+    </script>   
+    
+</apex:page>

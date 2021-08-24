@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Progress_Update__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field should be used to provide a quick progress update and will be displayed in Project reports.  After saving the content will be added to the &quot;Progress Update&quot; (related list). Limited to 140 characters.</inlineHelpText>
+    <label>Progress Update</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

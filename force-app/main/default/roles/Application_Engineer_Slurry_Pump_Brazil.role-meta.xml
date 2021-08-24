@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Application Engineer Slurry Pump Brazil</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Application Engineer Slurry Pump Brazil</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Application_Supervisor_Slurry_Pumps_Brazil</parentRole>
+</Role>

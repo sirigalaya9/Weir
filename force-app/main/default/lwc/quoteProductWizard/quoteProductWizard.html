@@ -1,0 +1,203 @@
+<template>
+
+    <template if:false={showForm}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open" aria-labelledby="modal-heading-01"
+            aria-modal="true" aria-describedby="modal-content-id-1">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning-button-icon variant="bare-inverse" icon-name="utility:close" onclick={closeForm}
+                        alternative-text="Close" class="slds-modal__close" size="large"></lightning-button-icon>
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Form</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium step1" id="modal-content-id-1">
+                    <div style="margin-top: 40px;">
+                        <lightning-record-edit-form object-api-name="QuoteLineItem">
+                            <lightning-input-field variant="label-inline" field-name="Scope_of_Supply__c"
+                                data-input="Scope_of_Supply__c">
+                            </lightning-input-field>
+                            <lightning-input-field variant="label-inline" field-name="Product_Type__c"
+                                data-input="Product_Type__c">
+                            </lightning-input-field>
+                        </lightning-record-edit-form>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={closeForm}>Cancel</button>
+                    <button class="slds-button slds-button_brand" onclick={nextStep}>Next</button>
+                </footer>
+            </div>
+
+            <template if:true={showSpinner}>
+                <lightning-spinner variant="brand" size="large">
+                </lightning-spinner>
+            </template>
+
+        </section>
+    </template>
+
+    <template if:true={showForm}>
+
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large"
+            aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-2">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning-button-icon variant="bare-inverse" icon-name="utility:close" onclick={closeForm}
+                        alternative-text="Close" class="slds-modal__close" size="large"></lightning-button-icon>
+                    <h2 id="modal-heading-02" class="slds-modal__title slds-hyphenate">Form</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium step2" id="modal-content-id-2">
+                    <div class="slds-card">
+                        <div class="slds-p-horizontal_small slds-m-top_small">
+                            <lightning-record-edit-form object-api-name={objectApiName} record-type-id={recordTypeId}>
+                                <div class="slds-form" role="list">
+                                    <div class="slds-form__row">
+                                        <div class="slds-form__item" role="listitem">
+                                            <lightning-combobox name="RecordTypeId" data-rt-field="RecordTypeId"
+                                                label="Type" value={recordTypeId} placeholder="Select Type"
+                                                options={recordTypeOptions} onchange={handleRecordTypeChange}
+                                                variant="label-inline"></lightning-combobox>
+                                        </div>
+                                        <div class="slds-form__item" role="listitem">
+                                            <lightning-input type="text" label="BOM Code" value={bomCode}
+                                                variant="label-inline" read-only="true"></lightning-input>
+                                        </div>
+                                        <div class="slds-form__item" role="listitem">
+                                        </div>
+                                    </div>
+                                    <div class="slds-form__row">
+                                        <div class="slds-form__item" role="listitem">
+                                            <lightning-input-field variant="label-inline" field-name="AH_Pump_Size__c"
+                                                data-field="AH_Pump_Size__c" onchange={handleChange}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-form__item" role="listitem">
+                                            <lightning-input-field variant="label-inline" field-name="BOM_Unique__c"
+                                                read-only="true" data-field="BOM_Unique__c" onchange={handleChange}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-form__item" role="listitem">
+                                        </div>
+                                    </div>
+                                    <div class="slds-form__row">
+                                        <div class="slds-form__item" role="listitem">
+                                            <lightning-input-field variant="label-inline" field-name="AH_Bearing__c"
+                                                data-field="AH_Bearing__c" onchange={handleChange}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-form__item" role="listitem">
+                                            <lightning-input type="text" label="BOM Lookup" value={bomLookup}
+                                                variant="label-inline" read-only="true"></lightning-input>
+                                        </div>
+                                        <div class="slds-form__item" role="listitem">
+                                        </div>
+                                    </div>
+                                    <div class="slds-form__row">
+                                        <div class="slds-form__item" role="listitem">
+                                            <lightning-input-field variant="label-inline" field-name="AH_Build_Code__c"
+                                                data-field="AH_Build_Code__c" onchange={handleChange}>
+                                            </lightning-input-field>
+                                        </div>
+                                        <div class="slds-form__item" role="listitem">
+                                        </div>
+                                        <div class="slds-form__item" role="listitem">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <lightning-tabset active-tab-value={activeTab}>
+                                        <template if:true={layout}>
+                                            <template for:each={layout.sections} for:item="section">
+                                                <lightning-tab label={section.heading} key={section.id} value={section.id} onactive={handleActive}>
+                                                    <div class="slds-section slds-is-open" data-section={section.id}
+                                                        key={section.id}>
+                                                        <div aria-hidden="false" class="slds-section__content">
+                                                            <template for:each={section.layoutRows} for:item="row">
+                                                                <lightning-layout key={row}>
+                                                                    <template for:each={row.layoutItems}
+                                                                        for:item="layoutItem">
+                                                                        <lightning-layout-item key={layoutItem}
+                                                                            size="6">
+                                                                            <template
+                                                                                for:each={layoutItem.layoutComponents}
+                                                                                for:item="item">
+                                                                                <div class="slds-form__row"
+                                                                                    key={item.apiName}>
+                                                                                    <div class="slds-form__item"
+                                                                                        role="listitem">
+                                                                                        <lightning-input-field
+                                                                                            variant="label-inline"
+                                                                                            field-name={item.apiName}
+                                                                                            data-field={item.apiName}
+                                                                                            value={item.value}
+                                                                                            onchange={handleChange}
+                                                                                            disabled={item.disabled}>
+                                                                                        </lightning-input-field>
+                                                                                    </div>
+                                                                                    <div class="slds-form__item"
+                                                                                        role="listitem">
+                                                                                        <template if:true={item.isDefault}>
+                                                                                            <div data-default={item.apiName}>
+                                                                                                <lightning-icon
+                                                                                                    icon-name="action:approval"
+                                                                                                    alternative-text="Default"
+                                                                                                    title="Default"
+                                                                                                    size="x-small">
+                                                                                                </lightning-icon>
+                                                                                            </div>
+                                                                                        </template>
+                                                                                        <template if:true={item.isChanged}>
+                                                                                            <div data-changed={item.apiName}>
+                                                                                                <lightning-icon
+                                                                                                    icon-name="action:close"
+                                                                                                    alternative-text="Changed"
+                                                                                                    title="Changed"
+                                                                                                    size="x-small">
+                                                                                                </lightning-icon>
+                                                                                            </div>
+                                                                                        </template>
+                                                                                        <div
+                                                                                            style="margin-left: 10px;width: 150px;">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </template>
+                                                                        </lightning-layout-item>
+                                                                    </template>
+                                                                </lightning-layout>
+                                                            </template>
+                                                        </div>
+                                                    </div>
+                                                </lightning-tab>
+                                            </template>
+                                        </template>
+                                    </lightning-tabset>
+                                </div>
+                            </lightning-record-edit-form>
+                        </div>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning-button variant="neutral" label="Cancel" onclick={closeForm}>
+                    </lightning-button>
+                    &nbsp;
+                    <lightning-button variant="neutral" label="Save & Close" onclick={saveAndCloseForm}>
+                    </lightning-button>
+                    &nbsp;
+                    <lightning-button variant="brand" label="Save" onclick={saveForm}>
+                    </lightning-button>
+                </footer>
+            </div>
+
+            <template if:true={showSpinner}>
+                <lightning-spinner variant="brand" size="large">
+                </lightning-spinner>
+            </template>
+
+        </section>
+
+
+    </template>
+
+    <div class="slds-backdrop slds-backdrop_open"></div>
+
+</template>

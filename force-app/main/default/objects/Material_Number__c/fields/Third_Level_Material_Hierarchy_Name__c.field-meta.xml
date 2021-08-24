@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Third_Level_Material_Hierarchy_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Hierarchy Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Z0002</fullName>
+                <default>false</default>
+                <label>(AM) AFTERMARKET</label>
+            </value>
+            <value>
+                <fullName>Z0001S0013</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) OEM / SPECIALTY PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0003</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0003S0012</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) OTHER / COMPOSITE CERAMICS</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) OTHER / ELASTOMER PRODUCTS AND OTHER LININGS</label>
+            </value>
+            <value>
+                <fullName>Z0003S0008</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) OTHER / ENGINEERED SOLUTIONS</label>
+            </value>
+            <value>
+                <fullName>Z0003HO001</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) OTHER / HOSES</label>
+            </value>
+            <value>
+                <fullName>Z0003M0001</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) OTHER / MILL LINERS</label>
+            </value>
+            <value>
+                <fullName>Z0003S0003</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) OTHER / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0003SP001</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) OTHER / SPOOL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0010</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) SPARES / MECHANICAL SEALS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0013</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A.) SPARES / SPECIALTY PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0010</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(N.A) OEM / MECHANICAL SEALS</label>
+            </value>
+            <value>
+                <fullName>Z0001</fullName>
+                <default>false</default>
+                <label>(OE) OEM</label>
+            </value>
+            <value>
+                <fullName>Z0002S0018</fullName>
+                <default>false</default>
+                <label>AM / AIR CLASSIFIERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0018AC000001</fullName>
+                <default>false</default>
+                <label>AM / AIR CLASSIFIERS (3RD LVL)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0011</fullName>
+                <default>false</default>
+                <label>AM / CENTRIFUGES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0011CE000002</fullName>
+                <default>false</default>
+                <label>AM / CENTRIFUGES / OTHER (IE. DECANTER)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0011CE000001</fullName>
+                <default>false</default>
+                <label>AM / CENTRIFUGES / STANDARD</label>
+            </value>
+            <value>
+                <fullName>Z0002S0017</fullName>
+                <default>false</default>
+                <label>AM / CONVEYERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0017CO000003</fullName>
+                <default>false</default>
+                <label>AM / CONVEYERS (3RD LVL)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014</fullName>
+                <default>false</default>
+                <label>AM / CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000002</fullName>
+                <default>false</default>
+                <label>AM / CRUSHERS / ANCILLIARY</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000001</fullName>
+                <default>false</default>
+                <label>AM / CRUSHERS / CONE CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000007</fullName>
+                <default>false</default>
+                <label>AM / CRUSHERS / ESCO SOURCED LINERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000006</fullName>
+                <default>false</default>
+                <label>AM / CRUSHERS / GYRATORY CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000004</fullName>
+                <default>false</default>
+                <label>AM / CRUSHERS / HORIZONTAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000003</fullName>
+                <default>false</default>
+                <label>AM / CRUSHERS / JAW CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000005</fullName>
+                <default>false</default>
+                <label>AM / CRUSHERS / VERTICAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0004</fullName>
+                <default>false</default>
+                <label>AM / CYCLONES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0004CY000001</fullName>
+                <default>false</default>
+                <label>AM / CYCLONES (3RD LVL)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000007</fullName>
+                <default>false</default>
+                <label>AM / ENG.SOLN.COMMIN / AGGREG PLANT RENTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000006</fullName>
+                <default>false</default>
+                <label>AM / ENG.SOLN.COMMIN / ENG SAND PLANT RENTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000008</fullName>
+                <default>false</default>
+                <label>AM / ENG.SOLN.COMMIN / MINING PLANT RENTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000004</fullName>
+                <default>false</default>
+                <label>AM / ENG.SOLN.COMMIN / MOBILE PLANT RENTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000005</fullName>
+                <default>false</default>
+                <label>AM / ENG.SOLN.COMMIN / STD SAND PLANT RENTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026</fullName>
+                <default>false</default>
+                <label>AM / ENG.SOLN.COMMINUTION PLANT RENTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0027ES000025</fullName>
+                <default>false</default>
+                <label>AM / ENG.SOLN.OTH / HYDROHOIST PlANT RENTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0027ES000020</fullName>
+                <default>false</default>
+                <label>AM / ENG.SOLN.OTH / TERRAFLOW PLANT RENTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0027</fullName>
+                <default>false</default>
+                <label>AM / ENG.SOLN. OTHER PLANT RENTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005EP000006</fullName>
+                <default>false</default>
+                <label>AM / EQUIP RENTED WITH INTEGRAL LINING</label>
+            </value>
+            <value>
+                <fullName>Z0002S0019</fullName>
+                <default>false</default>
+                <label>AM / FILTERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0019FI000001</fullName>
+                <default>false</default>
+                <label>AM / FILTERS / PRESS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0019FI000003</fullName>
+                <default>false</default>
+                <label>AM / FILTERS / PRESSURE</label>
+            </value>
+            <value>
+                <fullName>Z0002S0019FI000002</fullName>
+                <default>false</default>
+                <label>AM / FILTERS / VACCUM</label>
+            </value>
+            <value>
+                <fullName>Z0002S0023HO000003</fullName>
+                <default>false</default>
+                <label>AM / HOSES (3RD LVL)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0009</fullName>
+                <default>false</default>
+                <label>AM / HPGR</label>
+            </value>
+            <value>
+                <fullName>Z0002S0009HP000002</fullName>
+                <default>false</default>
+                <label>AM / HPGR / ANCILLIARY</label>
+            </value>
+            <value>
+                <fullName>Z0002S0009HP000001</fullName>
+                <default>false</default>
+                <label>AM / HPGR / MACHINES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0016</fullName>
+                <default>false</default>
+                <label>AM / MAGNETS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0016MA000001</fullName>
+                <default>false</default>
+                <label>AM / MAGNETS / ELECTRO MAGNETIC</label>
+            </value>
+            <value>
+                <fullName>Z0002S0016MA000002</fullName>
+                <default>false</default>
+                <label>AM / MAGNETS / PERMANENT</label>
+            </value>
+            <value>
+                <fullName>Z0002S0024ML000002</fullName>
+                <default>false</default>
+                <label>AM / MILL LINERS / COMPOSITE</label>
+            </value>
+            <value>
+                <fullName>Z0002S0024ML000003</fullName>
+                <default>false</default>
+                <label>AM / MILL LINERS / METAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0024ML000001</fullName>
+                <default>false</default>
+                <label>AM / MILL LINERS / RUBBER</label>
+            </value>
+            <value>
+                <fullName>Z0002S0024</fullName>
+                <default>false</default>
+                <label>AM / MILL LINING</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003</fullName>
+                <default>false</default>
+                <label>AM / OTHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000010</fullName>
+                <default>false</default>
+                <label>AM / OTHERS / ENGINEERING SERVICES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000007</fullName>
+                <default>false</default>
+                <label>AM / OTHERS / LUBRICATION SYSTEM</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000006</fullName>
+                <default>false</default>
+                <label>AM / OTHERS / MECHANICAL SEALS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000008</fullName>
+                <default>false</default>
+                <label>AM / OTHERS / OTHER ESCO PROD</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000009</fullName>
+                <default>false</default>
+                <label>AM / OTHERS / OTHER PRODUCTS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000005</fullName>
+                <default>false</default>
+                <label>AM / OTHERS / SOLD LABOUR (IE SITE CONTRACT)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005</fullName>
+                <default>false</default>
+                <label>AM / OTH RUBBER&amp;LINING</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005EP000002</fullName>
+                <default>false</default>
+                <label>AM / OTH RUBBER&amp;LINING / HANDLAY RUBBER</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005EP000004</fullName>
+                <default>false</default>
+                <label>AM / OTH RUBBER&amp;LINING / OTHER LINERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005EP000010</fullName>
+                <default>false</default>
+                <label>AM / OTH RUBBER&amp;LINING / OTH MLD&amp;ELAST</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000010</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / CENT / AXIAL FLOW</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000011</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / CENT / CERAMIC PARTS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000002</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / CENT / HORIZONTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000007</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / CENT / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000009</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / CENT / SPECIALTY / HORIZONTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000008</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / CENT / SPECIALTY / VERTICAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000004</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / CENT / VERTICAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / CENTRIFUGAL (DEWATERING)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / CENTRIFUGAL (NOT DEWATERING)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000009</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / DW / ETO DW SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000002</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / DW / HORIZONTAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000007</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / DW / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000011</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / DW / SELF-PRIME</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000010</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / DW / SUBMERSIBLE</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000012</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / DW / VERTICAL</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021PD000003</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / PD / PERISTALTIC</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021PD000002</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / PD / PISTON</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021PD000001</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / PD / PISTON DIAPHRAGM</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021PD000004</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / PD / SCREW</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021</fullName>
+                <default>false</default>
+                <label>AM / PUMPS / POSITIVE DISPLACEMENT (PD)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0025</fullName>
+                <default>false</default>
+                <label>AM / RUBBERCOMPOUND&amp;SHEET</label>
+            </value>
+            <value>
+                <fullName>Z0002S0025EP000001</fullName>
+                <default>false</default>
+                <label>AM / RUBBERCOMPOUND&amp;SHEET / DRY RUB COMP</label>
+            </value>
+            <value>
+                <fullName>Z0002S0025EP000003</fullName>
+                <default>false</default>
+                <label>AM / RUBBERCOMPOUND&amp;SHEET / RUBBER SHEET</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007</fullName>
+                <default>false</default>
+                <label>AM / SCREENS&amp;FEEDERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007SC000003</fullName>
+                <default>false</default>
+                <label>AM / SCREENS&amp;FEEDERS / FEEDERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007SC000001</fullName>
+                <default>false</default>
+                <label>AM / SCREENS&amp;FEEDERS / SCREEN MACHINES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007SC000002</fullName>
+                <default>false</default>
+                <label>AM / SCREENS&amp;FEEDERS / SCREEN MEDIA</label>
+            </value>
+            <value>
+                <fullName>Z0002S0022SP000001</fullName>
+                <default>false</default>
+                <label>AM / SPOOLS (3RD LVL)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0020</fullName>
+                <default>false</default>
+                <label>AM / THICKENERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0020TH000001</fullName>
+                <default>false</default>
+                <label>AM / THICKENERS / CLARIFIER</label>
+            </value>
+            <value>
+                <fullName>Z0002S0020TH000002</fullName>
+                <default>false</default>
+                <label>AM / THICKENERS / HI DENSITY</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002</fullName>
+                <default>false</default>
+                <label>AM / VALVES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000005</fullName>
+                <default>false</default>
+                <label>AM / VALVES / HYDRAU-FLO FUEL VALVE SYSTEM</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000006</fullName>
+                <default>false</default>
+                <label>AM / VALVES / KNIFEGATE (PUSH TYPE)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000007</fullName>
+                <default>false</default>
+                <label>AM / VALVES / KNIFEGATE (SHEAR TYPE-DELTA)</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000004</fullName>
+                <default>false</default>
+                <label>AM / VALVES / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000001</fullName>
+                <default>false</default>
+                <label>AM / VALVES / PINCH</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015</fullName>
+                <default>false</default>
+                <label>AM / WASHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015WA000002</fullName>
+                <default>false</default>
+                <label>AM / WASHERS / COARSE</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015WA000001</fullName>
+                <default>false</default>
+                <label>AM / WASHERS / FINE</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015WA000003</fullName>
+                <default>false</default>
+                <label>AM / WASHERS / LOG</label>
+            </value>
+            <value>
+                <fullName>Z0001S0018</fullName>
+                <default>false</default>
+                <label>OE / AIR CLASSIFIERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0018AC000001</fullName>
+                <default>false</default>
+                <label>OE / AIR CLASSIFIERS (3RD LVL)</label>
+            </value>
+            <value>
+                <fullName>Z0001S0011</fullName>
+                <default>false</default>
+                <label>OE / CENTRIFUGES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0011CE000002</fullName>
+                <default>false</default>
+                <label>OE / CENTRIFUGES / OTHER (IE. DECANTER)</label>
+            </value>
+            <value>
+                <fullName>Z0001S0011CE000001</fullName>
+                <default>false</default>
+                <label>OE / CENTRIFUGES / STANDARD</label>
+            </value>
+            <value>
+                <fullName>Z0001S0017</fullName>
+                <default>false</default>
+                <label>OE / CONVEYERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0017CO000003</fullName>
+                <default>false</default>
+                <label>OE / CONVEYERS (3RD LVL)</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014</fullName>
+                <default>false</default>
+                <label>OE / CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000002</fullName>
+                <default>false</default>
+                <label>OE / CRUSHERS / ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000001</fullName>
+                <default>false</default>
+                <label>OE / CRUSHERS / CONE CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000006</fullName>
+                <default>false</default>
+                <label>OE / CRUSHERS / GYRATORY CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000004</fullName>
+                <default>false</default>
+                <label>OE / CRUSHERS / HORIZONTAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000003</fullName>
+                <default>false</default>
+                <label>OE / CRUSHERS / JAW CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000005</fullName>
+                <default>false</default>
+                <label>OE / CRUSHERS / VERTICAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0004</fullName>
+                <default>false</default>
+                <label>OE / CYCLONES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0004CY000002</fullName>
+                <default>false</default>
+                <label>OE / CYCLONES / ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0004CY000001</fullName>
+                <default>false</default>
+                <label>OE / CYCLONES (3RD LVL)</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000007</fullName>
+                <default>false</default>
+                <label>OE / ENG.SOLN.COMMIN / AGGREGATE PLANT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000006</fullName>
+                <default>false</default>
+                <label>OE / ENG.SOLN.COMMIN / ENG. SAND PLANT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000008</fullName>
+                <default>false</default>
+                <label>OE / ENG.SOLN.COMMIN / MINING PLANT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000004</fullName>
+                <default>false</default>
+                <label>OE / ENG.SOLN.COMMIN / MOBILE PLANT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000005</fullName>
+                <default>false</default>
+                <label>OE / ENG.SOLN.COMMIN / STD SAND PLANT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026</fullName>
+                <default>false</default>
+                <label>OE / ENG.SOLN.COMMINUTION PLANT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0027ES000025</fullName>
+                <default>false</default>
+                <label>OE / ENG.SOLN.OTH / HYDROHOIST PlANT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0027ES000020</fullName>
+                <default>false</default>
+                <label>OE / ENG.SOLN.OTH / TERRAFLOW PLANT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0027</fullName>
+                <default>false</default>
+                <label>OE / ENG.SOLN. OTHER PLANT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0005EP000006</fullName>
+                <default>false</default>
+                <label>OE / EQUIP SOLD WITH INTEGRAL LINING</label>
+            </value>
+            <value>
+                <fullName>Z0001S0019</fullName>
+                <default>false</default>
+                <label>OE / FILTERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0019FI000001</fullName>
+                <default>false</default>
+                <label>OE / FILTERS / PRESS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0019FI000003</fullName>
+                <default>false</default>
+                <label>OE / FILTERS / PRESSURE</label>
+            </value>
+            <value>
+                <fullName>Z0001S0019FI000002</fullName>
+                <default>false</default>
+                <label>OE / FILTERS / VACCUM</label>
+            </value>
+            <value>
+                <fullName>Z0001S0009</fullName>
+                <default>false</default>
+                <label>OE / HPGR</label>
+            </value>
+            <value>
+                <fullName>Z0001S0009HP000002</fullName>
+                <default>false</default>
+                <label>OE / HPGR / ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0009HP000001</fullName>
+                <default>false</default>
+                <label>OE / HPGR / MACHINES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0016</fullName>
+                <default>false</default>
+                <label>OE / MAGNETS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0016MA000001</fullName>
+                <default>false</default>
+                <label>OE / MAGNETS / ELECTRO MAGNETIC</label>
+            </value>
+            <value>
+                <fullName>Z0001S0016MA000002</fullName>
+                <default>false</default>
+                <label>OE / MAGNETS / PERMANENT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0005</fullName>
+                <default>false</default>
+                <label>OE / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0001S0003</fullName>
+                <default>false</default>
+                <label>OE / OTHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0003OT000008</fullName>
+                <default>false</default>
+                <label>OE / OTHERS / OTHER ESCO PROD</label>
+            </value>
+            <value>
+                <fullName>Z0001S0003OT000009</fullName>
+                <default>false</default>
+                <label>OE / OTHERS / OTHER PRODUCTS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000006</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / CENT / ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000010</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / CENT / AXIAL FLOW</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000002</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / CENT / HORIZONTAL</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000007</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / CENT / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000009</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / CENT / SPECIALTY / HORIZONTAL</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000008</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / CENT / SPECIALTY / VERTICAL</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000004</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / CENT / VERTICAL</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / CENTRIFUGAL (DEWATERING)</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / CENTRIFUGAL (NOT DEWATERING)</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000006</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / DW / ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000009</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / DW / ETO DW SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000002</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / DW / HORIZONTAL</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000007</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / DW / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000011</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / DW / SELF-PRIME</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000010</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / DW / SUBMERSIBLE</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000012</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / DW / VERTICAL</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021PD000003</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / PD / PERISTALTIC</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021PD000002</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / PD / PISTON</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021PD000001</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / PD / PISTON DIAPHRAGM</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021PD000004</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / PD / SCREW</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021</fullName>
+                <default>false</default>
+                <label>OE / PUMPS / POSITIVE DISPLACEMENT (PD)</label>
+            </value>
+            <value>
+                <fullName>Z0001S0007</fullName>
+                <default>false</default>
+                <label>OE / SCREENS&amp;FEEDERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0007SC000003</fullName>
+                <default>false</default>
+                <label>OE / SCREENS&amp;FEEDERS / FEEDERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0007SC000001</fullName>
+                <default>false</default>
+                <label>OE / SCREENS&amp;FEEDERS / SCREEN MACHINES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0020</fullName>
+                <default>false</default>
+                <label>OE / THICKENERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0020TH000001</fullName>
+                <default>false</default>
+                <label>OE / THICKENERS / CLARIFIER</label>
+            </value>
+            <value>
+                <fullName>Z0001S0020TH000002</fullName>
+                <default>false</default>
+                <label>OE / THICKENERS / HI DENSITY</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002</fullName>
+                <default>false</default>
+                <label>OE / VALVES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000003</fullName>
+                <default>false</default>
+                <label>OE / VALVES / ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000005</fullName>
+                <default>false</default>
+                <label>OE / VALVES / HYDRAU-FLO FUEL VALVE SYSTEM</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000006</fullName>
+                <default>false</default>
+                <label>OE / VALVES / KNIFEGATE (PUSH TYPE)</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000007</fullName>
+                <default>false</default>
+                <label>OE / VALVES / KNIFEGATE (SHEAR TYPE-DELTA)</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000004</fullName>
+                <default>false</default>
+                <label>OE / VALVES / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000001</fullName>
+                <default>false</default>
+                <label>OE / VALVES / PINCH</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015</fullName>
+                <default>false</default>
+                <label>OE / WASHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015WA000002</fullName>
+                <default>false</default>
+                <label>OE / WASHERS / COARSE</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015WA000001</fullName>
+                <default>false</default>
+                <label>OE / WASHERS / FINE</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015WA000003</fullName>
+                <default>false</default>
+                <label>OE / WASHERS / LOG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

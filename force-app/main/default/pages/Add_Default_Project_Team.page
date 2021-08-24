@@ -1,0 +1,71 @@
+<apex:page standardController="Project_Team__c" recordSetVar="records">
+    <head>
+        <apex:includeLightning />
+        <apex:slds />
+    </head>    
+    
+    <div class="slds-scope">
+    <div class="demo-only" style="height:6rem">
+        <div class="slds-spinner_container">
+            <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div id="flowContainer" />
+
+    <script>
+    function showToast(type, title, message) 
+    {
+        sforce.one.showToast({         
+            "message": message,
+            "type": type
+        });
+    }
+    
+    var statusChange = function (event) 
+    {
+        if(event.getParam("status") === "FINISHED_SCREEN")
+        {                  
+            var outputVariables = event.getParam("outputVariables");
+            var key;
+            var isSuccess;
+            var result;
+            for(key in outputVariables) 
+            {
+                if(outputVariables[key].name === "Is_Success")
+                {
+                    isSuccess = outputVariables[key].value;
+                }
+                if(outputVariables[key].name === "Result")
+                {
+                    result = outputVariables[key].value;
+                }                
+            }
+            if (isSuccess)
+            {
+                showToast("success","Success!", result);
+            }
+            else
+            {
+                showToast("error","Error!", result);
+            }
+            sforce.one.navigateToSObject("{!$CurrentPage.parameters.id}", "related");
+        }
+    };
+    
+    $Lightning.use("c:LightningOutApp", function()
+    {
+        $Lightning.createComponent("lightning:flow", {"onstatuschange":statusChange}, "flowContainer", function (component)
+            {
+                var inputVariables = [{name : 'Project_Id', type : 'String',value : '{!$CurrentPage.parameters.id}'}];                                       
+                component.startFlow("Project_Add_Default_Team", inputVariables);
+            }
+        );
+    });
+    </script>
+</apex:page>

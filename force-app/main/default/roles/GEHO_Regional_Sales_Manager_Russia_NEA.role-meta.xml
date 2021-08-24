@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>GEHO Regional Sales Manager Russia/NEA</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>GEHO Regional Sales Manager Russia/NEA</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>GEHO_Slurry_Solutions_Manager</parentRole>
+</Role>

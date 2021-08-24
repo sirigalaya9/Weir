@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Case - NPS</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Approver needs to approve or reject the record once it is submitted for approval.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If rejected, the status goes back to In Process for actioning by Case Owner.&lt;/p&gt;&lt;p&gt;If approved, the case is automatically closed.&lt;/p&gt;</info>
+        <picklistValueName>Awaiting Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Case is escalated when the Case Owner does not action on a low NPS Score case (&amp;lt;=6) in the last &lt;span style=&quot;font-size: 13px;&quot;&gt;48 hours&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please setup a meeting from the feed tab and change the status to Meeting Arranged.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;If the meeting is not required please change the status to Closed.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Case owner processes the case and needs to close the case once it is completed.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If the NPS score is low (&amp;lt;=6) please Submit for Approval.&lt;/p&gt;</info>
+        <picklistValueName>In Process</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Case Owner sets up a meeting with the customer and needs to change the status to In Process once the meeting has been completed or change the status to Closed if the meeting is not required.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Meeting Arranged</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Case Owner has 48 hours to action on low NPS score (&amp;lt;=6) cases.&lt;/p&gt;&lt;p&gt;After &lt;span style=&quot;font-size: 13px;&quot;&gt;48 hours&lt;/span&gt; of inactivity the case will be escalated to 1st Escalation Primary and CC recipients defined in the NPS Case Escalation Hierarchy for the Case Owner (Area Manager).&lt;/p&gt;&lt;p&gt;After 7 days of inactivity the case will be escalated &lt;span style=&quot;font-size: 13px;&quot;&gt; to 2nd Escalation Primary and CC recipients defined in the NPS Case Escalation Hierarchy for the Case Owner (Area Manager).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please setup a meeting from the feed tab and change the status to Meeting Arranged.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;If the meeting is not required please change the status to Closed.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>NPS</recordTypeName>
+</PathAssistant>

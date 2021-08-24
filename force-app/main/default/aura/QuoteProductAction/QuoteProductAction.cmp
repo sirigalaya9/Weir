@@ -1,0 +1,13 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,lightning:actionOverride">
+    <!--<aura:handler name="init" value="{! this }" action="{! c.init }"/>-->
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="quoteRecord" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+    
+    <force:recordData aura:id="recordLoader"
+                      fields="OpportunityId, CurrencyIsoCode, AccountId"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetFields="{!v.quoteRecord}"
+                      recordUpdated="{! c.init}"/>
+</aura:component>

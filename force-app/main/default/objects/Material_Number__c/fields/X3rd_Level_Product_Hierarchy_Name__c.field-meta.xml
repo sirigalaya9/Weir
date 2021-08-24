@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3rd_Level_Product_Hierarchy_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Hierarchy Name (OBSOLETE)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COMPOSITE CERAMIC MATERIAL</fullName>
+                <default>false</default>
+                <label>COMPOSITE CERAMIC MATERIAL</label>
+            </value>
+            <value>
+                <fullName>COMPOSITE CERAMIC OTHER COMPONENTS</fullName>
+                <default>false</default>
+                <label>COMPOSITE CERAMIC OTHER COMPONENTS</label>
+            </value>
+            <value>
+                <fullName>COMPOSITE CERAMIC PUMP PARTS</fullName>
+                <default>false</default>
+                <label>COMPOSITE CERAMIC PUMP PARTS</label>
+            </value>
+            <value>
+                <fullName>ELASTOMER&amp;OTHER LINING/OTHER ELASTOMER</fullName>
+                <default>false</default>
+                <label>ELASTOMER&amp;OTHER LINING/OTHER ELASTOMER</label>
+            </value>
+            <value>
+                <fullName>ELASTOMER&amp;OTHER LININGS / HANDLAY RUBBER</fullName>
+                <default>false</default>
+                <label>ELASTOMER&amp;OTHER LININGS / HANDLAY RUBBER</label>
+            </value>
+            <value>
+                <fullName>ELASTOMER&amp;OTHER LININGS / OTHER LINERS</fullName>
+                <default>false</default>
+                <label>ELASTOMER&amp;OTHER LININGS / OTHER LINERS</label>
+            </value>
+            <value>
+                <fullName>ELASTOMER&amp;OTHER LININGS / SHEET RUBBER</fullName>
+                <default>false</default>
+                <label>ELASTOMER&amp;OTHER LININGS / SHEET RUBBER</label>
+            </value>
+            <value>
+                <fullName>ELASTOMER&amp;OTHER LININGS/DRY RUB COMPOUND</fullName>
+                <default>false</default>
+                <label>ELASTOMER&amp;OTHER LININGS/DRY RUB COMPOUND</label>
+            </value>
+            <value>
+                <fullName>ELASTOMER&amp;OTHER LININGS/MOULDED PRODUCTS</fullName>
+                <default>false</default>
+                <label>ELASTOMER&amp;OTHER LININGS/MOULDED PRODUCTS</label>
+            </value>
+            <value>
+                <fullName>ELASTOMER&amp;OTHER LININGS/SWELLABLE PACKER</fullName>
+                <default>false</default>
+                <label>ELASTOMER&amp;OTHER LININGS/SWELLABLE PACKER</label>
+            </value>
+            <value>
+                <fullName>ELASTOMER&amp;OTHER/O&amp;G OTHER ELASTOMER</fullName>
+                <default>false</default>
+                <label>ELASTOMER&amp;OTHER/O&amp;G OTHER ELASTOMER</label>
+            </value>
+            <value>
+                <fullName>ELASTOMER&amp;OTHER/TANK&amp;EQP.INT.LINING</fullName>
+                <default>false</default>
+                <label>ELASTOMER&amp;OTHER/TANK&amp;EQP.INT.LINING</label>
+            </value>
+            <value>
+                <fullName>ENGINEERING SERVICES</fullName>
+                <default>false</default>
+                <label>ENGINEERING SERVICES</label>
+            </value>
+            <value>
+                <fullName>GENERAL ENGINEERING</fullName>
+                <default>false</default>
+                <label>GENERAL ENGINEERING</label>
+            </value>
+            <value>
+                <fullName>HOSES</fullName>
+                <default>false</default>
+                <label>HOSES</label>
+            </value>
+            <value>
+                <fullName>HOSES O&amp;G</fullName>
+                <default>false</default>
+                <label>HOSES O&amp;G</label>
+            </value>
+            <value>
+                <fullName>HYDRAU-FLO FUEL VALVE SYSTEM</fullName>
+                <default>false</default>
+                <label>HYDRAU-FLO FUEL VALVE SYSTEM</label>
+            </value>
+            <value>
+                <fullName>JOBBING</fullName>
+                <default>false</default>
+                <label>JOBBING</label>
+            </value>
+            <value>
+                <fullName>MILL LINERS / COMPOSITE</fullName>
+                <default>false</default>
+                <label>MILL LINERS / COMPOSITE</label>
+            </value>
+            <value>
+                <fullName>MILL LINERS / METAL</fullName>
+                <default>false</default>
+                <label>MILL LINERS / METAL</label>
+            </value>
+            <value>
+                <fullName>MILL LINERS / RUBBER</fullName>
+                <default>false</default>
+                <label>MILL LINERS / RUBBER</label>
+            </value>
+            <value>
+                <fullName>OEM / AIR CLASIFIERS / AIR CLASSIFIER</fullName>
+                <default>false</default>
+                <label>OEM / AIR CLASIFIERS / AIR CLASSIFIER</label>
+            </value>
+            <value>
+                <fullName>OEM / CENTRIFUGES / CENTRIFUGE</fullName>
+                <default>false</default>
+                <label>OEM / CENTRIFUGES / CENTRIFUGE</label>
+            </value>
+            <value>
+                <fullName>OEM / CENTRIFUGES / OTHER CENTRIFUGE</fullName>
+                <default>false</default>
+                <label>OEM / CENTRIFUGES / OTHER CENTRIFUGE</label>
+            </value>
+            <value>
+                <fullName>OEM / CONVEYERS / CONVEYER ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>OEM / CONVEYERS / CONVEYER ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>OEM / CONVEYERS / CONVEYERS</fullName>
+                <default>false</default>
+                <label>OEM / CONVEYERS / CONVEYERS</label>
+            </value>
+            <value>
+                <fullName>OEM / CRUSHERS / CONE CRUSHERS</fullName>
+                <default>false</default>
+                <label>OEM / CRUSHERS / CONE CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>OEM / CRUSHERS / CRUSHER ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>OEM / CRUSHERS / CRUSHER ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>OEM / CRUSHERS / GYRATORY CRUSHERS</fullName>
+                <default>false</default>
+                <label>OEM / CRUSHERS / GYRATORY CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>OEM / CRUSHERS / HORIZONTAL CRUSHERS</fullName>
+                <default>false</default>
+                <label>OEM / CRUSHERS / HORIZONTAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>OEM / CRUSHERS / JAW CRUSHERS</fullName>
+                <default>false</default>
+                <label>OEM / CRUSHERS / JAW CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>OEM / CRUSHERS / VERTICAL CRUSHERS</fullName>
+                <default>false</default>
+                <label>OEM / CRUSHERS / VERTICAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>OEM / CYCLONES / CYCLONE</fullName>
+                <default>false</default>
+                <label>OEM / CYCLONES / CYCLONE</label>
+            </value>
+            <value>
+                <fullName>OEM / CYCLONES / CYCLONE ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>OEM / CYCLONES / CYCLONE ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>OEM / HPGR / HPGR ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>OEM / HPGR / HPGR ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>OEM / HPGR / HPGR MACHINES</fullName>
+                <default>false</default>
+                <label>OEM / HPGR / HPGR MACHINES</label>
+            </value>
+            <value>
+                <fullName>OEM / MAGNETS / ELECTRO MAGNETIC</fullName>
+                <default>false</default>
+                <label>OEM / MAGNETS / ELECTRO MAGNETIC</label>
+            </value>
+            <value>
+                <fullName>OEM / MAGNETS / PERMANENT</fullName>
+                <default>false</default>
+                <label>OEM / MAGNETS / PERMANENT</label>
+            </value>
+            <value>
+                <fullName>OEM / MECHANICAL SEALS / OTHER</fullName>
+                <default>false</default>
+                <label>OEM / MECHANICAL SEALS / OTHER</label>
+            </value>
+            <value>
+                <fullName>OEM / MECHANICAL SEALS / WEIR</fullName>
+                <default>false</default>
+                <label>OEM / MECHANICAL SEALS / WEIR</label>
+            </value>
+            <value>
+                <fullName>OEM / MINE WATER / BARGE SYSTEMS</fullName>
+                <default>false</default>
+                <label>OEM / MINE WATER / BARGE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>OEM / MINE WATER / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / MINE WATER / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / MINE WATER / OTHER PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / MINE WATER / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / MINE WATER / PD PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / MINE WATER / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / MINE WATER / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>OEM / MINE WATER / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>OEM / MINE WATER / SELF PRIME</fullName>
+                <default>false</default>
+                <label>OEM / MINE WATER / SELF PRIME</label>
+            </value>
+            <value>
+                <fullName>OEM / MINE WATER / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / MINE WATER / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / MINE WATER / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / MINE WATER / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / MINE WATER / VERTICLE TURBINE PMP</fullName>
+                <default>false</default>
+                <label>OEM / MINE WATER / VERTICLE TURBINE PMP</label>
+            </value>
+            <value>
+                <fullName>OEM / SCREENS FEEDERS / FEEDERS</fullName>
+                <default>false</default>
+                <label>OEM / SCREENS FEEDERS / FEEDERS</label>
+            </value>
+            <value>
+                <fullName>OEM / SCREENS FEEDERS / SCREEN MACHINES</fullName>
+                <default>false</default>
+                <label>OEM / SCREENS FEEDERS / SCREEN MACHINES</label>
+            </value>
+            <value>
+                <fullName>OEM / SLURRY / VERTICLE TURBINE PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SLURRY / VERTICLE TURBINE PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SLURRY PUMPS / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SLURRY PUMPS / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SLURRY PUMPS / OTHER PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SLURRY PUMPS / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SLURRY PUMPS / PD PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SLURRY PUMPS / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SLURRY PUMPS / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>OEM / SLURRY PUMPS / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>OEM / SLURRY PUMPS / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SLURRY PUMPS / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SLURRY PUMPS / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SLURRY PUMPS / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SPECIALTY / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SPECIALTY / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SPECIALTY / VERTICLE TURBINE PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SPECIALTY / VERTICLE TURBINE PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SPECIALTY PUMP / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>OEM / SPECIALTY PUMP / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>OEM / SPECIALTY PUMPS / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SPECIALTY PUMPS / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SPECIALTY PUMPS / OTHER PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SPECIALTY PUMPS / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SPECIALTY PUMPS / PD PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SPECIALTY PUMPS / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / SPECIALTY PUMPS / SELF PRIME</fullName>
+                <default>false</default>
+                <label>OEM / SPECIALTY PUMPS / SELF PRIME</label>
+            </value>
+            <value>
+                <fullName>OEM / SPECIALTY PUMPS / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <label>OEM / SPECIALTY PUMPS / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>OEM / VALVES / KNIFEGATE VALVES</fullName>
+                <default>false</default>
+                <label>OEM / VALVES / KNIFEGATE VALVES</label>
+            </value>
+            <value>
+                <fullName>OEM / VALVES / OTHER VALVES</fullName>
+                <default>false</default>
+                <label>OEM / VALVES / OTHER VALVES</label>
+            </value>
+            <value>
+                <fullName>OEM / VALVES / PINCH VALVES</fullName>
+                <default>false</default>
+                <label>OEM / VALVES / PINCH VALVES</label>
+            </value>
+            <value>
+                <fullName>OEM / VALVES / VALVE ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>OEM / VALVES / VALVE ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>OEM / WASHERS / COARSE WASHERS</fullName>
+                <default>false</default>
+                <label>OEM / WASHERS / COARSE WASHERS</label>
+            </value>
+            <value>
+                <fullName>OEM / WASHERS / FINE WASHERS</fullName>
+                <default>false</default>
+                <label>OEM / WASHERS / FINE WASHERS</label>
+            </value>
+            <value>
+                <fullName>OEM / WASHERS / LOG WASHERS</fullName>
+                <default>false</default>
+                <label>OEM / WASHERS / LOG WASHERS</label>
+            </value>
+            <value>
+                <fullName>OTHER PRODUCTS EQUIPMENT</fullName>
+                <default>false</default>
+                <label>OTHER PRODUCTS EQUIPMENT</label>
+            </value>
+            <value>
+                <fullName>OTHER/ ENG. SOL/ MINING PLANT SOL</fullName>
+                <default>false</default>
+                <label>OTHER/ ENG. SOL/ MINING PLANT SOL</label>
+            </value>
+            <value>
+                <fullName>OTHER/ ENG. SOL/ MOBILE COMMUNITION SOL</fullName>
+                <default>false</default>
+                <label>OTHER/ ENG. SOL/ MOBILE COMMUNITION SOL</label>
+            </value>
+            <value>
+                <fullName>OTHER/ ENG. SOL/ SAND AND AGGREGATE PLAN</fullName>
+                <default>false</default>
+                <label>OTHER/ ENG. SOL/ SAND AND AGGREGATE PLAN</label>
+            </value>
+            <value>
+                <fullName>OTHER/ ENG. SOL/TAILINGS AND PIPELINE SO</fullName>
+                <default>false</default>
+                <label>OTHER/ ENG. SOL/TAILINGS AND PIPELINE SO</label>
+            </value>
+            <value>
+                <fullName>OTHER/ SPOOL/ SPOOL</fullName>
+                <default>false</default>
+                <label>OTHER/ SPOOL/ SPOOL</label>
+            </value>
+            <value>
+                <fullName>SOLD LABOUR (SITE CONTRACT,ETC)</fullName>
+                <default>false</default>
+                <label>SOLD LABOUR (SITE CONTRACT,ETC)</label>
+            </value>
+            <value>
+                <fullName>SPARES / AIR CLASIFIERS / AIR CLASSIFIER</fullName>
+                <default>false</default>
+                <label>SPARES / AIR CLASIFIERS / AIR CLASSIFIER</label>
+            </value>
+            <value>
+                <fullName>SPARES / CENTRIFUGES / CENTRIFUGE</fullName>
+                <default>false</default>
+                <label>SPARES / CENTRIFUGES / CENTRIFUGE</label>
+            </value>
+            <value>
+                <fullName>SPARES / CENTRIFUGES / OTHER CENTRIFUGE</fullName>
+                <default>false</default>
+                <label>SPARES / CENTRIFUGES / OTHER CENTRIFUGE</label>
+            </value>
+            <value>
+                <fullName>SPARES / CONVEYERS / CONVEYERS</fullName>
+                <default>false</default>
+                <label>SPARES / CONVEYERS / CONVEYERS</label>
+            </value>
+            <value>
+                <fullName>SPARES / CRUSHERS / CONE CRUSHERS</fullName>
+                <default>false</default>
+                <label>SPARES / CRUSHERS / CONE CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>SPARES / CRUSHERS / CRUSHER ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>SPARES / CRUSHERS / CRUSHER ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>SPARES / CRUSHERS / GYRATORY CRUSHERS</fullName>
+                <default>false</default>
+                <label>SPARES / CRUSHERS / GYRATORY CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>SPARES / CRUSHERS / HORIZONTAL CRUSHERS</fullName>
+                <default>false</default>
+                <label>SPARES / CRUSHERS / HORIZONTAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>SPARES / CRUSHERS / JAW CRUSHERS</fullName>
+                <default>false</default>
+                <label>SPARES / CRUSHERS / JAW CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>SPARES / CRUSHERS / VERTICAL CRUSHERS</fullName>
+                <default>false</default>
+                <label>SPARES / CRUSHERS / VERTICAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>SPARES / CYCLONES / CYCLONE</fullName>
+                <default>false</default>
+                <label>SPARES / CYCLONES / CYCLONE</label>
+            </value>
+            <value>
+                <fullName>SPARES / CYCLONES / CYCLONE ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>SPARES / CYCLONES / CYCLONE ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>SPARES / HPGR / HPGR ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>SPARES / HPGR / HPGR ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>SPARES / HPGR / HPGR MACHINES</fullName>
+                <default>false</default>
+                <label>SPARES / HPGR / HPGR MACHINES</label>
+            </value>
+            <value>
+                <fullName>SPARES / MAGNETS / ELECTRO MAGNETIC</fullName>
+                <default>false</default>
+                <label>SPARES / MAGNETS / ELECTRO MAGNETIC</label>
+            </value>
+            <value>
+                <fullName>SPARES / MAGNETS / PERMANENT</fullName>
+                <default>false</default>
+                <label>SPARES / MAGNETS / PERMANENT</label>
+            </value>
+            <value>
+                <fullName>SPARES / MECHANICAL SEALS / OTHER</fullName>
+                <default>false</default>
+                <label>SPARES / MECHANICAL SEALS / OTHER</label>
+            </value>
+            <value>
+                <fullName>SPARES / MECHANICAL SEALS / WEIR</fullName>
+                <default>false</default>
+                <label>SPARES / MECHANICAL SEALS / WEIR</label>
+            </value>
+            <value>
+                <fullName>SPARES / MINE WATER / BARGE SYSTEMS</fullName>
+                <default>false</default>
+                <label>SPARES / MINE WATER / BARGE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>SPARES / MINE WATER / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / MINE WATER / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / MINE WATER / OTHER PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / MINE WATER / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / MINE WATER / PD PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / MINE WATER / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / MINE WATER / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>SPARES / MINE WATER / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>SPARES / MINE WATER / SELF PRIME</fullName>
+                <default>false</default>
+                <label>SPARES / MINE WATER / SELF PRIME</label>
+            </value>
+            <value>
+                <fullName>SPARES / MINE WATER / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / MINE WATER / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / MINE WATER / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / MINE WATER / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SCREENS FEEDERS / FEEDERS</fullName>
+                <default>false</default>
+                <label>SPARES / SCREENS FEEDERS / FEEDERS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SCREENS FEEDERS / SCREEN MACHIN</fullName>
+                <default>false</default>
+                <label>SPARES / SCREENS FEEDERS / SCREEN MACHIN</label>
+            </value>
+            <value>
+                <fullName>SPARES / SCREENS FEEDERS / SCREEN MEDIA</fullName>
+                <default>false</default>
+                <label>SPARES / SCREENS FEEDERS / SCREEN MEDIA</label>
+            </value>
+            <value>
+                <fullName>SPARES / SLURRY / VERTICLE TURBINE PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SLURRY / VERTICLE TURBINE PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SLURRY PUMP / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>SPARES / SLURRY PUMP / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>SPARES / SLURRY PUMP / SUBMERSIBLE PUMP</fullName>
+                <default>false</default>
+                <label>SPARES / SLURRY PUMP / SUBMERSIBLE PUMP</label>
+            </value>
+            <value>
+                <fullName>SPARES / SLURRY PUMPS / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SLURRY PUMPS / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SLURRY PUMPS / OTHER PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SLURRY PUMPS / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SLURRY PUMPS / PD PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SLURRY PUMPS / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SLURRY PUMPS / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SLURRY PUMPS / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SPECIALTY / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SPECIALTY / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SPECIALTY / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SPECIALTY / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SPECIALTY PUMP / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SPECIALTY PUMP / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SPECIALTY PUMPS / OTHER PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SPECIALTY PUMPS / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SPECIALTY PUMPS / PD PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES / SPECIALTY PUMPS / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>SPARES / SPECIALTY PUMPS / SELF PRIME</fullName>
+                <default>false</default>
+                <label>SPARES / SPECIALTY PUMPS / SELF PRIME</label>
+            </value>
+            <value>
+                <fullName>SPARES / VALVES / KNIFEGATE VALVES</fullName>
+                <default>false</default>
+                <label>SPARES / VALVES / KNIFEGATE VALVES</label>
+            </value>
+            <value>
+                <fullName>SPARES / VALVES / OTHER VALVES</fullName>
+                <default>false</default>
+                <label>SPARES / VALVES / OTHER VALVES</label>
+            </value>
+            <value>
+                <fullName>SPARES / VALVES / PINCH VALVES</fullName>
+                <default>false</default>
+                <label>SPARES / VALVES / PINCH VALVES</label>
+            </value>
+            <value>
+                <fullName>SPARES / VALVES / VALVE ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>SPARES / VALVES / VALVE ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>SPARES / WASHERS / COARSE WASHERS</fullName>
+                <default>false</default>
+                <label>SPARES / WASHERS / COARSE WASHERS</label>
+            </value>
+            <value>
+                <fullName>SPARES / WASHERS / FINE WASHERS</fullName>
+                <default>false</default>
+                <label>SPARES / WASHERS / FINE WASHERS</label>
+            </value>
+            <value>
+                <fullName>SPARES / WASHERS / LOG WASHERS</fullName>
+                <default>false</default>
+                <label>SPARES / WASHERS / LOG WASHERS</label>
+            </value>
+            <value>
+                <fullName>SPARES/MINE WATER/VERTICLE TURBINE PUMP</fullName>
+                <default>false</default>
+                <label>SPARES/MINE WATER/VERTICLE TURBINE PUMP</label>
+            </value>
+            <value>
+                <fullName>SPARES/SPECIALTY PUMP/PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <label>SPARES/SPECIALTY PUMP/PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>SPARES/SPECIALTY/VERTICLE TURBINE PUMPS</fullName>
+                <default>false</default>
+                <label>SPARES/SPECIALTY/VERTICLE TURBINE PUMPS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

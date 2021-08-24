@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Head of Planning and Inventory Department</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Head of Planning and Inventory Department</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Operations_Director</parentRole>
+</Role>

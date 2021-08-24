@@ -1,0 +1,41 @@
+<aura:component controller="RussiaApprovalController" implements="force:appHostable,force:hasRecordId,force:lightningQuickActionWithoutHeader,lightning:actionOverride" access="global" >
+    <aura:attribute name="comments" type="String" default="" />
+    <aura:attribute name="opportunity" type="Object"/>
+    <aura:attribute name="spinner" type="Boolean" default="false"/>
+    <force:recordData aura:id="record"
+                      recordId="{!v.recordId}"                   
+                      targetError="{!v.recordError}"
+                      targetFields="{!v.opportunity}"
+                      fields="Attachment_Attached__c, Approval_Status__c, Approver_1__c, Approver_2__c, Approver_3__c, Approver_4__c, Approver_5__c, 
+                              Approver_6__c, Approver_7__c, Approver_8__c, Approver_9__c, Approver_10__c, Sales_Organization_User_Code__c,
+                              Approval_1_Approved__c, Approval_2_Approved__c, Approval_3_Approved__c, Approval_4_Approved__c, Approval_5_Approved__c,
+                              Approval_6_Approved__c, Approval_7_Approved__c, Approval_8_Approved__c, Approval_9_Approved__c, Approval_10_Approved__c"
+                      mode="EDIT"/>  
+    
+    <header class="slds-modal__header">
+        <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Submit for Approval</h2>
+    </header>
+    <div class="slds-modal__content">
+        <label class="uiLabel-top form-element__label uiLabel" style="padding:5px;padding-top:10px;">Comment</label>
+        <ui:inputTextArea class="inputTextArea cuf-messageTextArea textarea" 
+                          aura:id="comments"
+                          value="{!v.comments}"
+                          placeholder="Type here.."
+                          cols="10" rows="10">
+        </ui:inputTextArea>
+    </div>
+    <aura:if isTrue="{!v.spinner}">
+        <div class="demo-only">
+            <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    <footer class="slds-modal__footer">
+        <button class="slds-button slds-button_neutral" onclick="{!c.Cancel}">Cancel</button>
+        <button class="slds-button slds-button_neutral" onclick="{!c.Clear}">Clear</button>
+        <button class="slds-button slds-button_brand" onclick="{!c.Submit}">Submit</button>
+    </footer>
+</aura:component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Release_Field</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK( Target_Release__c ),
+OR(
+    ISPICKVAL( Stage__c , &quot;Building&quot;),
+    ISPICKVAL( Stage__c , &quot;Testing&quot;),
+    ISPICKVAL( Stage__c , &quot;Approved&quot;),
+    ISPICKVAL( Stage__c , &quot;Deployed&quot;)))</errorConditionFormula>
+    <errorDisplayField>Target_Release__c</errorDisplayField>
+    <errorMessage>Target Release field must be populated.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Customer Support Officer - Asia</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Customer Support Officer - Asia</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Spares_Manager_Asia</parentRole>
+</Role>

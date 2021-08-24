@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Product Manager, Dewatering - Engineered to Order Solutions</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Product Manager, Dewatering - Engineered to Order Solutions</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Global_Product_Manager_Business_Development</parentRole>
+</Role>

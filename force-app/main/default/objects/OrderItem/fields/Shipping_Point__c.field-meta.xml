@@ -1,0 +1,1842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Point__c</fullName>
+    <externalId>false</externalId>
+    <label>Shipping Point</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AM01</fullName>
+                <default>false</default>
+                <label>WM ARMENIA</label>
+            </value>
+            <value>
+                <fullName>AU01</fullName>
+                <default>false</default>
+                <label>Artarmon-Production SDC</label>
+            </value>
+            <value>
+                <fullName>AU02</fullName>
+                <default>false</default>
+                <label>SDC - Branch Distribution</label>
+            </value>
+            <value>
+                <fullName>AU03</fullName>
+                <default>false</default>
+                <label>Sydney Distribution Center</label>
+            </value>
+            <value>
+                <fullName>AU04</fullName>
+                <default>false</default>
+                <label>SDC - INTC  Distribution</label>
+            </value>
+            <value>
+                <fullName>AU10</fullName>
+                <default>false</default>
+                <label>Somersby - Field Services</label>
+            </value>
+            <value>
+                <fullName>AU11</fullName>
+                <default>false</default>
+                <label>Somersby - White Metal Service</label>
+            </value>
+            <value>
+                <fullName>AU12</fullName>
+                <default>false</default>
+                <label>Beresfield - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU13</fullName>
+                <default>false</default>
+                <label>Parkes - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU14</fullName>
+                <default>false</default>
+                <label>Wollongong - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU1A</fullName>
+                <default>false</default>
+                <label>Artarmon-Assembly Area</label>
+            </value>
+            <value>
+                <fullName>AU1E</fullName>
+                <default>false</default>
+                <label>Artarmon-Elastomer shop</label>
+            </value>
+            <value>
+                <fullName>AU1F</fullName>
+                <default>false</default>
+                <label>Artarmon-Foundry Area</label>
+            </value>
+            <value>
+                <fullName>AU1M</fullName>
+                <default>false</default>
+                <label>Artarmon-Machine shop</label>
+            </value>
+            <value>
+                <fullName>AU1P</fullName>
+                <default>false</default>
+                <label>Artarmon-Pattern Area</label>
+            </value>
+            <value>
+                <fullName>AU1T</fullName>
+                <default>false</default>
+                <label>Artarmon-Paint Shop</label>
+            </value>
+            <value>
+                <fullName>AU1W</fullName>
+                <default>false</default>
+                <label>Artarmon-Warehouse</label>
+            </value>
+            <value>
+                <fullName>AU20</fullName>
+                <default>false</default>
+                <label>Multiflo Coolum Beach</label>
+            </value>
+            <value>
+                <fullName>AU21</fullName>
+                <default>false</default>
+                <label>Rockhampton - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU22</fullName>
+                <default>false</default>
+                <label>Mackay - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU23</fullName>
+                <default>false</default>
+                <label>Townsville-Hose Mfr&amp;Lining</label>
+            </value>
+            <value>
+                <fullName>AU24</fullName>
+                <default>false</default>
+                <label>Townsville-Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU25</fullName>
+                <default>false</default>
+                <label>Mt Isa - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU2A</fullName>
+                <default>false</default>
+                <label>SDC - To Artarmon</label>
+            </value>
+            <value>
+                <fullName>AU30</fullName>
+                <default>false</default>
+                <label>Clayton Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU40</fullName>
+                <default>false</default>
+                <label>Adelaide Store</label>
+            </value>
+            <value>
+                <fullName>AU50</fullName>
+                <default>false</default>
+                <label>Perth Airport Warehouse</label>
+            </value>
+            <value>
+                <fullName>AU51</fullName>
+                <default>false</default>
+                <label>Perth Airport Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU52</fullName>
+                <default>false</default>
+                <label>Bunbury - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU53</fullName>
+                <default>false</default>
+                <label>Kalgoorlie Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU60</fullName>
+                <default>false</default>
+                <label>Darwin Service Centre</label>
+            </value>
+            <value>
+                <fullName>BE01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS BENELUX BELGIUM</label>
+            </value>
+            <value>
+                <fullName>BR01</fullName>
+                <default>false</default>
+                <label>JUNDIAÍ</label>
+            </value>
+            <value>
+                <fullName>BR02</fullName>
+                <default>false</default>
+                <label>ESPÍRITO SANTO</label>
+            </value>
+            <value>
+                <fullName>BR03</fullName>
+                <default>false</default>
+                <label>PARAUAPEBAS</label>
+            </value>
+            <value>
+                <fullName>BR04</fullName>
+                <default>false</default>
+                <label>CONTAGEM</label>
+            </value>
+            <value>
+                <fullName>BR05</fullName>
+                <default>false</default>
+                <label>JUNDIAÍ GALPÃO</label>
+            </value>
+            <value>
+                <fullName>BR06</fullName>
+                <default>false</default>
+                <label>LOJA VITÓRIA</label>
+            </value>
+            <value>
+                <fullName>BR07</fullName>
+                <default>false</default>
+                <label>LOJA BRUCUTÚ</label>
+            </value>
+            <value>
+                <fullName>BR08</fullName>
+                <default>false</default>
+                <label>COCAIS</label>
+            </value>
+            <value>
+                <fullName>BR09</fullName>
+                <default>false</default>
+                <label>Loja Catalão</label>
+            </value>
+            <value>
+                <fullName>BR10</fullName>
+                <default>false</default>
+                <label>WM Belém</label>
+            </value>
+            <value>
+                <fullName>BRA8</fullName>
+                <default>false</default>
+                <label>COCAIS Vale  Consignment</label>
+            </value>
+            <value>
+                <fullName>CA01</fullName>
+                <default>false</default>
+                <label>WM CA Admin</label>
+            </value>
+            <value>
+                <fullName>CA02</fullName>
+                <default>false</default>
+                <label>WM CA Surrey</label>
+            </value>
+            <value>
+                <fullName>CA03</fullName>
+                <default>false</default>
+                <label>WM CA Richmond</label>
+            </value>
+            <value>
+                <fullName>CA04</fullName>
+                <default>false</default>
+                <label>WM CA Kamloops</label>
+            </value>
+            <value>
+                <fullName>CA05</fullName>
+                <default>false</default>
+                <label>WM CA Edmonton</label>
+            </value>
+            <value>
+                <fullName>CA06</fullName>
+                <default>false</default>
+                <label>WM CA Calgary</label>
+            </value>
+            <value>
+                <fullName>CA07</fullName>
+                <default>false</default>
+                <label>WM CA Fort McMurray</label>
+            </value>
+            <value>
+                <fullName>CA10</fullName>
+                <default>false</default>
+                <label>WM CA Saskatoon</label>
+            </value>
+            <value>
+                <fullName>CA15</fullName>
+                <default>false</default>
+                <label>WM CA Elliot Lake</label>
+            </value>
+            <value>
+                <fullName>CA16</fullName>
+                <default>false</default>
+                <label>WM CA Sudbury</label>
+            </value>
+            <value>
+                <fullName>CA18</fullName>
+                <default>false</default>
+                <label>WM CA OTTAWA</label>
+            </value>
+            <value>
+                <fullName>CA20</fullName>
+                <default>false</default>
+                <label>WM CA Malartic</label>
+            </value>
+            <value>
+                <fullName>CA25</fullName>
+                <default>false</default>
+                <label>WM CA Wabush</label>
+            </value>
+            <value>
+                <fullName>CL01</fullName>
+                <default>false</default>
+                <label>WM VULCO</label>
+            </value>
+            <value>
+                <fullName>CL02</fullName>
+                <default>false</default>
+                <label>WM STA CATALINA</label>
+            </value>
+            <value>
+                <fullName>CL03</fullName>
+                <default>false</default>
+                <label>WM IQUIQUE</label>
+            </value>
+            <value>
+                <fullName>CL04</fullName>
+                <default>false</default>
+                <label>WM ANTOFAGASTA</label>
+            </value>
+            <value>
+                <fullName>CL05</fullName>
+                <default>false</default>
+                <label>WM COPIAPO</label>
+            </value>
+            <value>
+                <fullName>CL06</fullName>
+                <default>false</default>
+                <label>WM CALAMA</label>
+            </value>
+            <value>
+                <fullName>CL07</fullName>
+                <default>false</default>
+                <label>WM FASIS</label>
+            </value>
+            <value>
+                <fullName>CL08</fullName>
+                <default>false</default>
+                <label>WM LINATEX</label>
+            </value>
+            <value>
+                <fullName>CL09</fullName>
+                <default>false</default>
+                <label>WM TRIO</label>
+            </value>
+            <value>
+                <fullName>CL10</fullName>
+                <default>false</default>
+                <label>WM FUNDICION</label>
+            </value>
+            <value>
+                <fullName>CL11</fullName>
+                <default>false</default>
+                <label>WM METALURGICA</label>
+            </value>
+            <value>
+                <fullName>CN01</fullName>
+                <default>false</default>
+                <label>WM Wuxi</label>
+            </value>
+            <value>
+                <fullName>CN02</fullName>
+                <default>false</default>
+                <label>WM Trio China</label>
+            </value>
+            <value>
+                <fullName>CN04</fullName>
+                <default>false</default>
+                <label>WM Trio Jiangsu</label>
+            </value>
+            <value>
+                <fullName>CN09</fullName>
+                <default>false</default>
+                <label>WEPS</label>
+            </value>
+            <value>
+                <fullName>CZ01</fullName>
+                <default>false</default>
+                <label>WM CZECH</label>
+            </value>
+            <value>
+                <fullName>DE01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS GERMANY</label>
+            </value>
+            <value>
+                <fullName>ES01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS SPAIN</label>
+            </value>
+            <value>
+                <fullName>FI01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS FINLAND</label>
+            </value>
+            <value>
+                <fullName>FR01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS FRANCE</label>
+            </value>
+            <value>
+                <fullName>GB01</fullName>
+                <default>false</default>
+                <label>WME TODMORDEN</label>
+            </value>
+            <value>
+                <fullName>GB02</fullName>
+                <default>false</default>
+                <label>WME YATELEY</label>
+            </value>
+            <value>
+                <fullName>GB03</fullName>
+                <default>false</default>
+                <label>WME DERBY</label>
+            </value>
+            <value>
+                <fullName>GB04</fullName>
+                <default>false</default>
+                <label>WME SEREANT</label>
+            </value>
+            <value>
+                <fullName>GB05</fullName>
+                <default>false</default>
+                <label>WME ESSEN</label>
+            </value>
+            <value>
+                <fullName>GB06</fullName>
+                <default>false</default>
+                <label>WME LUXEMBOURG</label>
+            </value>
+            <value>
+                <fullName>GB07</fullName>
+                <default>false</default>
+                <label>WME CZECH REPUBLIC</label>
+            </value>
+            <value>
+                <fullName>GB08</fullName>
+                <default>false</default>
+                <label>WME Milnrow</label>
+            </value>
+            <value>
+                <fullName>HU01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS HUNGARY</label>
+            </value>
+            <value>
+                <fullName>ID01</fullName>
+                <default>false</default>
+                <label>Balikpapan Indonesia</label>
+            </value>
+            <value>
+                <fullName>ID02</fullName>
+                <default>false</default>
+                <label>Sangatta Indonesia</label>
+            </value>
+            <value>
+                <fullName>ID03</fullName>
+                <default>false</default>
+                <label>Tanjung Indonesia</label>
+            </value>
+            <value>
+                <fullName>ID04</fullName>
+                <default>false</default>
+                <label>Balikpapan Indonesia Rental</label>
+            </value>
+            <value>
+                <fullName>ID10</fullName>
+                <default>false</default>
+                <label>Jakarta Indonesia</label>
+            </value>
+            <value>
+                <fullName>IN01</fullName>
+                <default>false</default>
+                <label>WMI - PEENYA UNIT 2</label>
+            </value>
+            <value>
+                <fullName>IN02</fullName>
+                <default>false</default>
+                <label>WMI - DASANAPURA  3A</label>
+            </value>
+            <value>
+                <fullName>IN03</fullName>
+                <default>false</default>
+                <label>WMI - DASANAPURA  3B</label>
+            </value>
+            <value>
+                <fullName>IN04</fullName>
+                <default>false</default>
+                <label>WMI - Not valid</label>
+            </value>
+            <value>
+                <fullName>IN05</fullName>
+                <default>false</default>
+                <label>WMI - MAHARASTRA</label>
+            </value>
+            <value>
+                <fullName>IN06</fullName>
+                <default>false</default>
+                <label>WMI - RAJASTAN</label>
+            </value>
+            <value>
+                <fullName>IN07</fullName>
+                <default>false</default>
+                <label>WMI - ENSCI</label>
+            </value>
+            <value>
+                <fullName>ING3</fullName>
+                <default>false</default>
+                <label>WMI - GATE 3</label>
+            </value>
+            <value>
+                <fullName>ING4</fullName>
+                <default>false</default>
+                <label>WMI - GATE 4</label>
+            </value>
+            <value>
+                <fullName>IT01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS ITALY</label>
+            </value>
+            <value>
+                <fullName>KZ01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS KAZAKHSTAN</label>
+            </value>
+            <value>
+                <fullName>MA01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS MOROCCO</label>
+            </value>
+            <value>
+                <fullName>MN01</fullName>
+                <default>false</default>
+                <label>Ulaanbaatar Mongolia</label>
+            </value>
+            <value>
+                <fullName>MX01</fullName>
+                <default>false</default>
+                <label>MONTERREY 1</label>
+            </value>
+            <value>
+                <fullName>MX02</fullName>
+                <default>false</default>
+                <label>CHIHUAHUA</label>
+            </value>
+            <value>
+                <fullName>MX03</fullName>
+                <default>false</default>
+                <label>CANANEA</label>
+            </value>
+            <value>
+                <fullName>MX04</fullName>
+                <default>false</default>
+                <label>QUERETARO</label>
+            </value>
+            <value>
+                <fullName>MX05</fullName>
+                <default>false</default>
+                <label>WMMS</label>
+            </value>
+            <value>
+                <fullName>MX06</fullName>
+                <default>false</default>
+                <label>WTGM</label>
+            </value>
+            <value>
+                <fullName>MY01</fullName>
+                <default>false</default>
+                <label>Linatex Rubber Product</label>
+            </value>
+            <value>
+                <fullName>MY02</fullName>
+                <default>false</default>
+                <label>Weir Foundry Malaysia</label>
+            </value>
+            <value>
+                <fullName>NL01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS BENELUX HOLLAND</label>
+            </value>
+            <value>
+                <fullName>NL02</fullName>
+                <default>false</default>
+                <label>Weir Minerals Netherlands</label>
+            </value>
+            <value>
+                <fullName>PE01</fullName>
+                <default>false</default>
+                <label>WM LAMAR</label>
+            </value>
+            <value>
+                <fullName>PE02</fullName>
+                <default>false</default>
+                <label>WM MACONDO</label>
+            </value>
+            <value>
+                <fullName>PE03</fullName>
+                <default>false</default>
+                <label>WM AREQUIPA</label>
+            </value>
+            <value>
+                <fullName>PE04</fullName>
+                <default>false</default>
+                <label>WM SEPARADORA</label>
+            </value>
+            <value>
+                <fullName>PE05</fullName>
+                <default>false</default>
+                <label>WM CAJAMARCA</label>
+            </value>
+            <value>
+                <fullName>PE06</fullName>
+                <default>false</default>
+                <label>WM SMI</label>
+            </value>
+            <value>
+                <fullName>PE07</fullName>
+                <default>false</default>
+                <label>ESPINAR</label>
+            </value>
+            <value>
+                <fullName>PE08</fullName>
+                <default>false</default>
+                <label>WM Lomas</label>
+            </value>
+            <value>
+                <fullName>PE09</fullName>
+                <default>false</default>
+                <label>CS ILO</label>
+            </value>
+            <value>
+                <fullName>PH01</fullName>
+                <default>false</default>
+                <label>Philippines -Service</label>
+            </value>
+            <value>
+                <fullName>PL01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS POLAND</label>
+            </value>
+            <value>
+                <fullName>RS01</fullName>
+                <default>false</default>
+                <label>Balkan</label>
+            </value>
+            <value>
+                <fullName>RU01</fullName>
+                <default>false</default>
+                <label>Moscow</label>
+            </value>
+            <value>
+                <fullName>RU02</fullName>
+                <default>false</default>
+                <label>Khabarovsk</label>
+            </value>
+            <value>
+                <fullName>RU03</fullName>
+                <default>false</default>
+                <label>Magadan</label>
+            </value>
+            <value>
+                <fullName>RU04</fullName>
+                <default>false</default>
+                <label>Novokuznetsk</label>
+            </value>
+            <value>
+                <fullName>RU05</fullName>
+                <default>false</default>
+                <label>Chelyabinsk</label>
+            </value>
+            <value>
+                <fullName>RU06</fullName>
+                <default>false</default>
+                <label>Stary Oskol</label>
+            </value>
+            <value>
+                <fullName>RU08</fullName>
+                <default>false</default>
+                <label>Energomotor (RU08)</label>
+            </value>
+            <value>
+                <fullName>RU10</fullName>
+                <default>false</default>
+                <label>Moscow Iksha.</label>
+            </value>
+            <value>
+                <fullName>RU20</fullName>
+                <default>false</default>
+                <label>Vladivostok</label>
+            </value>
+            <value>
+                <fullName>RUS1</fullName>
+                <default>false</default>
+                <label>Mayskoe</label>
+            </value>
+            <value>
+                <fullName>RUS2</fullName>
+                <default>false</default>
+                <label>Omsukchan</label>
+            </value>
+            <value>
+                <fullName>RUS3</fullName>
+                <default>false</default>
+                <label>Omolon</label>
+            </value>
+            <value>
+                <fullName>RUS4</fullName>
+                <default>false</default>
+                <label>Lunnoe</label>
+            </value>
+            <value>
+                <fullName>RUS5</fullName>
+                <default>false</default>
+                <label>Albazino</label>
+            </value>
+            <value>
+                <fullName>RUS6</fullName>
+                <default>false</default>
+                <label>AGMK</label>
+            </value>
+            <value>
+                <fullName>RUS7</fullName>
+                <default>false</default>
+                <label>Belaya Gora</label>
+            </value>
+            <value>
+                <fullName>RUS8</fullName>
+                <default>false</default>
+                <label>Uchalinsky GOK</label>
+            </value>
+            <value>
+                <fullName>RUS9</fullName>
+                <default>false</default>
+                <label>Ryabinovoe</label>
+            </value>
+            <value>
+                <fullName>RUSA</fullName>
+                <default>false</default>
+                <label>Kovdor</label>
+            </value>
+            <value>
+                <fullName>RUSB</fullName>
+                <default>false</default>
+                <label>Anzherskaya</label>
+            </value>
+            <value>
+                <fullName>RUSC</fullName>
+                <default>false</default>
+                <label>Olkon</label>
+            </value>
+            <value>
+                <fullName>RUSD</fullName>
+                <default>false</default>
+                <label>Pokrovka</label>
+            </value>
+            <value>
+                <fullName>RUSE</fullName>
+                <default>false</default>
+                <label>Apatit</label>
+            </value>
+            <value>
+                <fullName>RUSF</fullName>
+                <default>false</default>
+                <label>Novokuznetsk serv</label>
+            </value>
+            <value>
+                <fullName>RUSG</fullName>
+                <default>false</default>
+                <label>Energomotor (RUSG)</label>
+            </value>
+            <value>
+                <fullName>RUSH</fullName>
+                <default>false</default>
+                <label>Eurochem</label>
+            </value>
+            <value>
+                <fullName>RUSI</fullName>
+                <default>false</default>
+                <label>URGAL SC</label>
+            </value>
+            <value>
+                <fullName>SE01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS SWEDEN</label>
+            </value>
+            <value>
+                <fullName>TR01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS TURKEY (TR01)</label>
+            </value>
+            <value>
+                <fullName>TR02</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS TURKEY (TR02)</label>
+            </value>
+            <value>
+                <fullName>UA01</fullName>
+                <default>false</default>
+                <label>WEIR MINERALS UKRAINE</label>
+            </value>
+            <value>
+                <fullName>US06</fullName>
+                <default>false</default>
+                <label>WEIR PUMP &amp; VALVE SOLUTIONS</label>
+            </value>
+            <value>
+                <fullName>US07</fullName>
+                <default>false</default>
+                <label>WM TRIO IRWINDALE</label>
+            </value>
+            <value>
+                <fullName>US11</fullName>
+                <default>false</default>
+                <label>WM US MADISON</label>
+            </value>
+            <value>
+                <fullName>US12</fullName>
+                <default>false</default>
+                <label>WM US SALT LAKE CITY</label>
+            </value>
+            <value>
+                <fullName>US14</fullName>
+                <default>false</default>
+                <label>WM US TUCSON</label>
+            </value>
+            <value>
+                <fullName>US15</fullName>
+                <default>false</default>
+                <label>WM US RW TUCSON</label>
+            </value>
+            <value>
+                <fullName>US16</fullName>
+                <default>false</default>
+                <label>WM US GEORGIA S.C.</label>
+            </value>
+            <value>
+                <fullName>US18</fullName>
+                <default>false</default>
+                <label>WM US ALASKA S.C.</label>
+            </value>
+            <value>
+                <fullName>US19</fullName>
+                <default>false</default>
+                <label>WM US HAZLETON S.C.</label>
+            </value>
+            <value>
+                <fullName>ZA01</fullName>
+                <default>false</default>
+                <label>WM South Africa</label>
+            </value>
+            <value>
+                <fullName>AM01-WM ARMENIA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AM01-WM ARMENIA</label>
+            </value>
+            <value>
+                <fullName>AU01-Artarmon-Production SDC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU01-Artarmon-Production SDC</label>
+            </value>
+            <value>
+                <fullName>AU02-SDC - Branch Distribution</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU02-SDC - Branch Distribution</label>
+            </value>
+            <value>
+                <fullName>AU03-Sydney Distribution Center</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU03-Sydney Distribution Center</label>
+            </value>
+            <value>
+                <fullName>AU04-SDC - INTC  Distribution</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU04-SDC - INTC  Distribution</label>
+            </value>
+            <value>
+                <fullName>AU10-Somersby - Field Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU10-Somersby - Field Services</label>
+            </value>
+            <value>
+                <fullName>AU11-Somersby - White Metal Service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU11-Somersby - White Metal Service</label>
+            </value>
+            <value>
+                <fullName>AU12-Beresfield - Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU12-Beresfield - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU13-Parkes - Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU13-Parkes - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU14-Wollongong - Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU14-Wollongong - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU1A-Artarmon-Assembly Area</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU1A-Artarmon-Assembly Area</label>
+            </value>
+            <value>
+                <fullName>AU1E-Artarmon-Elastomer shop</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU1E-Artarmon-Elastomer shop</label>
+            </value>
+            <value>
+                <fullName>AU1F-Artarmon-Foundry Area</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU1F-Artarmon-Foundry Area</label>
+            </value>
+            <value>
+                <fullName>AU1M-Artarmon-Machine shop</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU1M-Artarmon-Machine shop</label>
+            </value>
+            <value>
+                <fullName>AU1P-Artarmon-Pattern Area</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU1P-Artarmon-Pattern Area</label>
+            </value>
+            <value>
+                <fullName>AU1T-Artarmon-Paint Shop</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU1T-Artarmon-Paint Shop</label>
+            </value>
+            <value>
+                <fullName>AU1W-Artarmon-Warehouse</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU1W-Artarmon-Warehouse</label>
+            </value>
+            <value>
+                <fullName>AU20-Multiflo Coolum Beach</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU20-Multiflo Coolum Beach</label>
+            </value>
+            <value>
+                <fullName>AU21-Rockhampton - Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU21-Rockhampton - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU22-Mackay - Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU22-Mackay - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU23-Townsville-Hose Mfr&amp;Lining</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU23-Townsville-Hose Mfr&amp;Lining</label>
+            </value>
+            <value>
+                <fullName>AU24-Townsville-Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU24-Townsville-Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU25-Mt Isa - Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU25-Mt Isa - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU2A-SDC - To Artarmon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU2A-SDC - To Artarmon</label>
+            </value>
+            <value>
+                <fullName>AU30-Clayton Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU30-Clayton Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU40-Adelaide Store</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU40-Adelaide Store</label>
+            </value>
+            <value>
+                <fullName>AU50-Perth Airport Warehouse</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU50-Perth Airport Warehouse</label>
+            </value>
+            <value>
+                <fullName>AU51-Perth Airport Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU51-Perth Airport Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU52-Bunbury - Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU52-Bunbury - Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU53-Kalgoorlie Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU53-Kalgoorlie Service Centre</label>
+            </value>
+            <value>
+                <fullName>AU60-Darwin Service Centre</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AU60-Darwin Service Centre</label>
+            </value>
+            <value>
+                <fullName>BE01-WEIR MINERALS BENELUX BELGIUM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BE01-WEIR MINERALS BENELUX BELGIUM</label>
+            </value>
+            <value>
+                <fullName>BR01-JUNDIAÍ</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR01-JUNDIAÍ</label>
+            </value>
+            <value>
+                <fullName>BR02-ESPÍRITO SANTO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR02-ESPÍRITO SANTO</label>
+            </value>
+            <value>
+                <fullName>BR03-PARAUAPEBAS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR03-PARAUAPEBAS</label>
+            </value>
+            <value>
+                <fullName>BR04-CONTAGEM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR04-CONTAGEM</label>
+            </value>
+            <value>
+                <fullName>BR05-JUNDIAÍ GALPÃO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR05-JUNDIAÍ GALPÃO</label>
+            </value>
+            <value>
+                <fullName>BR06-LOJA VITÓRIA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR06-LOJA VITÓRIA</label>
+            </value>
+            <value>
+                <fullName>BR07-LOJA BRUCUTÚ</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR07-LOJA BRUCUTÚ</label>
+            </value>
+            <value>
+                <fullName>BR08-COCAIS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR08-COCAIS</label>
+            </value>
+            <value>
+                <fullName>BR09-Loja Catalão</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR09-Loja Catalão</label>
+            </value>
+            <value>
+                <fullName>BR10-WM Belém</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BR10-WM Belém</label>
+            </value>
+            <value>
+                <fullName>BRA8-COCAIS Vale  Consignment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BRA8-COCAIS Vale  Consignment</label>
+            </value>
+            <value>
+                <fullName>CA01-WM CA Admin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA01-WM CA Admin</label>
+            </value>
+            <value>
+                <fullName>CA02-WM CA Surrey</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA02-WM CA Surrey</label>
+            </value>
+            <value>
+                <fullName>CA03-WM CA Richmond</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA03-WM CA Richmond</label>
+            </value>
+            <value>
+                <fullName>CA04-WM CA Kamloops</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA04-WM CA Kamloops</label>
+            </value>
+            <value>
+                <fullName>CA05-WM CA Edmonton</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA05-WM CA Edmonton</label>
+            </value>
+            <value>
+                <fullName>CA06-WM CA Calgary</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA06-WM CA Calgary</label>
+            </value>
+            <value>
+                <fullName>CA07-WM CA Fort McMurray</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA07-WM CA Fort McMurray</label>
+            </value>
+            <value>
+                <fullName>CA10-WM CA Saskatoon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA10-WM CA Saskatoon</label>
+            </value>
+            <value>
+                <fullName>CA15-WM CA Elliot Lake</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA15-WM CA Elliot Lake</label>
+            </value>
+            <value>
+                <fullName>CA16-WM CA Sudbury</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA16-WM CA Sudbury</label>
+            </value>
+            <value>
+                <fullName>CA18-WM CA OTTAWA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA18-WM CA OTTAWA</label>
+            </value>
+            <value>
+                <fullName>CA20-WM CA Malartic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA20-WM CA Malartic</label>
+            </value>
+            <value>
+                <fullName>CA25-WM CA Wabush</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA25-WM CA Wabush</label>
+            </value>
+            <value>
+                <fullName>CL01-WM VULCO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL01-WM VULCO</label>
+            </value>
+            <value>
+                <fullName>CL02-WM STA CATALINA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL02-WM STA CATALINA</label>
+            </value>
+            <value>
+                <fullName>CL03-WM IQUIQUE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL03-WM IQUIQUE</label>
+            </value>
+            <value>
+                <fullName>CL04-WM ANTOFAGASTA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL04-WM ANTOFAGASTA</label>
+            </value>
+            <value>
+                <fullName>CL05-WM COPIAPO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL05-WM COPIAPO</label>
+            </value>
+            <value>
+                <fullName>CL06-WM CALAMA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL06-WM CALAMA</label>
+            </value>
+            <value>
+                <fullName>CL07-WM FASIS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL07-WM FASIS</label>
+            </value>
+            <value>
+                <fullName>CL08-WM LINATEX</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL08-WM LINATEX</label>
+            </value>
+            <value>
+                <fullName>CL09-WM TRIO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL09-WM TRIO</label>
+            </value>
+            <value>
+                <fullName>CL10-WM FUNDICION</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL10-WM FUNDICION</label>
+            </value>
+            <value>
+                <fullName>CL11-WM METALURGICA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CL11-WM METALURGICA</label>
+            </value>
+            <value>
+                <fullName>CN01-WM Wuxi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CN01-WM Wuxi</label>
+            </value>
+            <value>
+                <fullName>CN02-WM Trio China</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CN02-WM Trio China</label>
+            </value>
+            <value>
+                <fullName>CN04-WM Trio Jiangsu</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CN04-WM Trio Jiangsu</label>
+            </value>
+            <value>
+                <fullName>CN09-WEPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CN09-WEPS</label>
+            </value>
+            <value>
+                <fullName>CZ01-WM CZECH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CZ01-WM CZECH</label>
+            </value>
+            <value>
+                <fullName>DE01-WEIR MINERALS GERMANY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DE01-WEIR MINERALS GERMANY</label>
+            </value>
+            <value>
+                <fullName>ES01-WEIR MINERALS SPAIN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ES01-WEIR MINERALS SPAIN</label>
+            </value>
+            <value>
+                <fullName>FI01-WEIR MINERALS FINLAND</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FI01-WEIR MINERALS FINLAND</label>
+            </value>
+            <value>
+                <fullName>FR01-WEIR MINERALS FRANCE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FR01-WEIR MINERALS FRANCE</label>
+            </value>
+            <value>
+                <fullName>GB01-WME TODMORDEN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GB01-WME TODMORDEN</label>
+            </value>
+            <value>
+                <fullName>GB02-WME YATELEY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GB02-WME YATELEY</label>
+            </value>
+            <value>
+                <fullName>GB03-WME DERBY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GB03-WME DERBY</label>
+            </value>
+            <value>
+                <fullName>GB04-WME SEREANT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GB04-WME SEREANT</label>
+            </value>
+            <value>
+                <fullName>GB05-WME ESSEN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GB05-WME ESSEN</label>
+            </value>
+            <value>
+                <fullName>GB06-WME LUXEMBOURG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GB06-WME LUXEMBOURG</label>
+            </value>
+            <value>
+                <fullName>GB07-WME CZECH REPUBLIC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GB07-WME CZECH REPUBLIC</label>
+            </value>
+            <value>
+                <fullName>GB08-WME Milnrow</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GB08-WME Milnrow</label>
+            </value>
+            <value>
+                <fullName>HU01-WEIR MINERALS HUNGARY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HU01-WEIR MINERALS HUNGARY</label>
+            </value>
+            <value>
+                <fullName>ID01-Balikpapan Indonesia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ID01-Balikpapan Indonesia</label>
+            </value>
+            <value>
+                <fullName>ID02-Sangatta Indonesia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ID02-Sangatta Indonesia</label>
+            </value>
+            <value>
+                <fullName>ID03-Tanjung Indonesia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ID03-Tanjung Indonesia</label>
+            </value>
+            <value>
+                <fullName>ID04-Balikpapan Indonesia Rental</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ID04-Balikpapan Indonesia Rental</label>
+            </value>
+            <value>
+                <fullName>ID10-Jakarta Indonesia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ID10-Jakarta Indonesia</label>
+            </value>
+            <value>
+                <fullName>IN01-WMI - PEENYA UNIT 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IN01-WMI - PEENYA UNIT 2</label>
+            </value>
+            <value>
+                <fullName>IN02-WMI - DASANAPURA  3A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IN02-WMI - DASANAPURA  3A</label>
+            </value>
+            <value>
+                <fullName>IN03-WMI - DASANAPURA  3B</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IN03-WMI - DASANAPURA  3B</label>
+            </value>
+            <value>
+                <fullName>IN04-WMI - Not valid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IN04-WMI - Not valid</label>
+            </value>
+            <value>
+                <fullName>IN05-WMI - MAHARASTRA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IN05-WMI - MAHARASTRA</label>
+            </value>
+            <value>
+                <fullName>IN06-WMI - RAJASTAN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IN06-WMI - RAJASTAN</label>
+            </value>
+            <value>
+                <fullName>IN07-WMI - ENSCI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IN07-WMI - ENSCI</label>
+            </value>
+            <value>
+                <fullName>ING3-WMI - GATE 3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ING3-WMI - GATE 3</label>
+            </value>
+            <value>
+                <fullName>ING4-WMI - GATE 4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ING4-WMI - GATE 4</label>
+            </value>
+            <value>
+                <fullName>IT01-WEIR MINERALS ITALY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IT01-WEIR MINERALS ITALY</label>
+            </value>
+            <value>
+                <fullName>KZ01-WEIR MINERALS KAZAKHSTAN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KZ01-WEIR MINERALS KAZAKHSTAN</label>
+            </value>
+            <value>
+                <fullName>MA01-WEIR MINERALS MOROCCO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MA01-WEIR MINERALS MOROCCO</label>
+            </value>
+            <value>
+                <fullName>MN01-Ulaanbaatar Mongolia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MN01-Ulaanbaatar Mongolia</label>
+            </value>
+            <value>
+                <fullName>MX01-MONTERREY 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MX01-MONTERREY 1</label>
+            </value>
+            <value>
+                <fullName>MX02-CHIHUAHUA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MX02-CHIHUAHUA</label>
+            </value>
+            <value>
+                <fullName>MX03-CANANEA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MX03-CANANEA</label>
+            </value>
+            <value>
+                <fullName>MX04-QUERETARO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MX04-QUERETARO</label>
+            </value>
+            <value>
+                <fullName>MX05-WMMS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MX05-WMMS</label>
+            </value>
+            <value>
+                <fullName>MX06-WTGM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MX06-WTGM</label>
+            </value>
+            <value>
+                <fullName>MY01-Linatex Rubber Product</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MY01-Linatex Rubber Product</label>
+            </value>
+            <value>
+                <fullName>MY02-Weir Foundry Malaysia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MY02-Weir Foundry Malaysia</label>
+            </value>
+            <value>
+                <fullName>NL01-WEIR MINERALS BENELUX HOLLAND</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NL01-WEIR MINERALS BENELUX HOLLAND</label>
+            </value>
+            <value>
+                <fullName>NL02-Weir Minerals Netherlands</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NL02-Weir Minerals Netherlands</label>
+            </value>
+            <value>
+                <fullName>PE01-WM LAMAR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PE01-WM LAMAR</label>
+            </value>
+            <value>
+                <fullName>PE02-WM MACONDO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PE02-WM MACONDO</label>
+            </value>
+            <value>
+                <fullName>PE03-WM AREQUIPA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PE03-WM AREQUIPA</label>
+            </value>
+            <value>
+                <fullName>PE04-WM SEPARADORA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PE04-WM SEPARADORA</label>
+            </value>
+            <value>
+                <fullName>PE05-WM CAJAMARCA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PE05-WM CAJAMARCA</label>
+            </value>
+            <value>
+                <fullName>PE06-WM SMI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PE06-WM SMI</label>
+            </value>
+            <value>
+                <fullName>PE07-ESPINAR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PE07-ESPINAR</label>
+            </value>
+            <value>
+                <fullName>PE08-WM Lomas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PE08-WM Lomas</label>
+            </value>
+            <value>
+                <fullName>PE09-CS ILO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PE09-CS ILO</label>
+            </value>
+            <value>
+                <fullName>PH01-Philippines -Service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PH01-Philippines -Service</label>
+            </value>
+            <value>
+                <fullName>PL01-WEIR MINERALS POLAND</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PL01-WEIR MINERALS POLAND</label>
+            </value>
+            <value>
+                <fullName>RS01-Balkan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RS01-Balkan</label>
+            </value>
+            <value>
+                <fullName>RU01-Moscow</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RU01-Moscow</label>
+            </value>
+            <value>
+                <fullName>RU02-Khabarovsk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RU02-Khabarovsk</label>
+            </value>
+            <value>
+                <fullName>RU03-Magadan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RU03-Magadan</label>
+            </value>
+            <value>
+                <fullName>RU04-Novokuznetsk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RU04-Novokuznetsk</label>
+            </value>
+            <value>
+                <fullName>RU05-Chelyabinsk</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RU05-Chelyabinsk</label>
+            </value>
+            <value>
+                <fullName>RU06-Stary Oskol</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RU06-Stary Oskol</label>
+            </value>
+            <value>
+                <fullName>RU08-Energomotor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RU08-Energomotor</label>
+            </value>
+            <value>
+                <fullName>RU10-Moscow Iksha.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RU10-Moscow Iksha.</label>
+            </value>
+            <value>
+                <fullName>RU20-Vladivostok</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RU20-Vladivostok</label>
+            </value>
+            <value>
+                <fullName>RUS1-Mayskoe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUS1-Mayskoe</label>
+            </value>
+            <value>
+                <fullName>RUS2-Omsukchan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUS2-Omsukchan</label>
+            </value>
+            <value>
+                <fullName>RUS3-Omolon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUS3-Omolon</label>
+            </value>
+            <value>
+                <fullName>RUS4-Lunnoe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUS4-Lunnoe</label>
+            </value>
+            <value>
+                <fullName>RUS5-Albazino</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUS5-Albazino</label>
+            </value>
+            <value>
+                <fullName>RUS6-AGMK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUS6-AGMK</label>
+            </value>
+            <value>
+                <fullName>RUS7-Belaya Gora</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUS7-Belaya Gora</label>
+            </value>
+            <value>
+                <fullName>RUS8-Uchalinsky GOK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUS8-Uchalinsky GOK</label>
+            </value>
+            <value>
+                <fullName>RUS9-Ryabinovoe</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUS9-Ryabinovoe</label>
+            </value>
+            <value>
+                <fullName>RUSA-Kovdor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUSA-Kovdor</label>
+            </value>
+            <value>
+                <fullName>RUSB-Anzherskaya</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUSB-Anzherskaya</label>
+            </value>
+            <value>
+                <fullName>RUSC-Olkon</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUSC-Olkon</label>
+            </value>
+            <value>
+                <fullName>RUSD-Pokrovka</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUSD-Pokrovka</label>
+            </value>
+            <value>
+                <fullName>RUSE-Apatit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUSE-Apatit</label>
+            </value>
+            <value>
+                <fullName>RUSF-Novokuznetsk serv</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUSF-Novokuznetsk serv</label>
+            </value>
+            <value>
+                <fullName>RUSG-Energomotor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUSG-Energomotor</label>
+            </value>
+            <value>
+                <fullName>RUSH-Eurochem</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUSH-Eurochem</label>
+            </value>
+            <value>
+                <fullName>RUSI-URGAL SC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RUSI-URGAL SC</label>
+            </value>
+            <value>
+                <fullName>SE01-WEIR MINERALS SWEDEN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SE01-WEIR MINERALS SWEDEN</label>
+            </value>
+            <value>
+                <fullName>TR01-WEIR MINERALS TURKEY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TR01-WEIR MINERALS TURKEY</label>
+            </value>
+            <value>
+                <fullName>TR02-WEIR MINERALS TURKEY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TR02-WEIR MINERALS TURKEY</label>
+            </value>
+            <value>
+                <fullName>UA01-WEIR MINERALS UKRAINE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UA01-WEIR MINERALS UKRAINE</label>
+            </value>
+            <value>
+                <fullName>US06-WEIR PUMP &amp; VALVE SOLUTIONS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>US06-WEIR PUMP &amp; VALVE SOLUTIONS</label>
+            </value>
+            <value>
+                <fullName>US07-WM TRIO IRWINDALE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>US07-WM TRIO IRWINDALE</label>
+            </value>
+            <value>
+                <fullName>US11-WM US MADISON</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>US11-WM US MADISON</label>
+            </value>
+            <value>
+                <fullName>US12-WM US SALT LAKE CITY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>US12-WM US SALT LAKE CITY</label>
+            </value>
+            <value>
+                <fullName>US14-WM US TUCSON</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>US14-WM US TUCSON</label>
+            </value>
+            <value>
+                <fullName>US15-WM US RW TUCSON</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>US15-WM US RW TUCSON</label>
+            </value>
+            <value>
+                <fullName>US16-WM US GEORGIA S.C.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>US16-WM US GEORGIA S.C.</label>
+            </value>
+            <value>
+                <fullName>US18-WM US ALASKA S.C.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>US18-WM US ALASKA S.C.</label>
+            </value>
+            <value>
+                <fullName>US19-WM US HAZLETON S.C.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>US19-WM US HAZLETON S.C.</label>
+            </value>
+            <value>
+                <fullName>ZA01-WM South Africa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ZA01-WM South Africa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

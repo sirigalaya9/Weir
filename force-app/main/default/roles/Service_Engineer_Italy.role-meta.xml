@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Service Engineer Italy</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Service Engineer Italy</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Interim_Regional_Sales_Manager_Italy_Spain_Portugal</parentRole>
+</Role>

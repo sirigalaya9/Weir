@@ -1,0 +1,105 @@
+<aura:component implements="lightning:actionOverride,force:hasRecordId,force:lightningQuickAction,forceCommunity:searchInterface" access="global" controller="ContactRolesController">
+
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="parentRecordId" type="String"/>
+
+    <aura:attribute name="columns" type="List" default="[]"/>
+    <aura:attribute name="data" type="List" default="[]"/> 
+    <aura:attribute name="dataSelected" type="List" default="[]"/>
+    <aura:attribute name="oldData" type="List" default="[]"/>
+    <aura:attribute name="keyField" type="String" default="Id"/>
+    <aura:attribute name="UserContext" type="String"/>
+    <aura:attribute name="sortedBy" type="String" />
+    <aura:attribute name="sortedDirection" type="Boolean" default="true" />
+    
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"/>      
+    <aura:attribute name="isLoading" type="Boolean" default="false"/>
+    <aura:attribute name="isFetchData" type="Boolean" default="false"/>
+    <aura:attribute name="isShowResults" type="Boolean" default="false"/>
+    <aura:attribute name="isBacktoResults" type="Boolean" default="false"/>
+    <aura:attribute name="searchKeyword" type="String" default=""/>
+    <aura:attribute name="rowsSelected" type="List" default="[]"/>
+    <aura:attribute name="selectedRows" type="List" default="[]"/>
+    <aura:attribute name="selectedRowsSelected" type="List" default="[]"/>
+    <aura:attribute name="dropdownSelectedRow" type="Set" default="[]"/>
+    <aura:attribute name="searchRecords" type="List" default="[]"/>
+    <aura:attribute name="selectRecordId" type="String"/>
+    <aura:attribute name="selectRecordName" type="String"/>
+    <aura:attribute name="iconName" type="String" default="action:new_contact"/>
+    <aura:attribute name="objectName" type="String" default="Contact"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div aura:id="editDialog" role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+ 				<lightning:buttonIcon iconName="utility:close"
+                                      onclick="{! c.cancel }"
+                                      alternativeText="Close this window"
+                                      variant="bare-inverse"
+                                      class="slds-modal__close"/> 
+                <div class="title forceMultiAddMultiEditHeader">
+                    <h2 class="slds-text-heading--medium">Add Contact Roles</h2>
+                </div>                    
+            </div>
+            
+            <div class="slds-modal__content slds-grid slds-wrap ">
+                <div class="headerRegion" style="width:100%; background-color:rgb(243, 242, 242); padding: 10px;">
+                    <lightning:recordEditForm aura:id="recordEditForm"                                              
+                                              objectApiName="Project_Contact_Role__c">
+                        <lightning:inputField fieldName="Contact__c" onchange="{!c.contactChanged}" variant="label-hidden"/>
+                    </lightning:recordEditForm>
+                    
+                    <div style="margin: 5px;">
+                        <aura:if isTrue="{!v.isShowResults == false}">
+                            <a href="" onclick="{! c.showSelectedTable }">Show Selected ({!v.selectedRowsCount})</a>
+                            <aura:set attribute="else">
+                                <a href="" onclick="{! c.showResultsTable }">Back to Results</a>
+                            </aura:set>
+                        </aura:if>
+                    </div>  
+                </div>
+                <div class="centerRegion" style="height: 500px">
+                    <aura:if isTrue="{!v.isShowResults == false}">
+                    <lightning:datatable
+                        aura:id="ContactsTable"
+                        columns="{! v.columns }"
+                        data="{! v.data }"
+                        keyField="{! v.keyField }"
+                        showRowNumberColumn="false"
+                        selectedRows="{! v.selectedRows }"
+                        onrowselection="{! c.rowSelected }"
+                        isLoading="{! v.isLoading }"
+                        enableInfiniteLoading="{! v.enableInfiniteLoading }"
+                        loadMoreOffset="{! v.loadMoreOffset }"
+                        onloadmore="{! c.loadMoreData }"
+                        onsort="{! c.updateColumnSorting }"
+                        sortedBy="{!v.sortedBy}"
+                        sortedDirection="{!v.sortedDirection}"
+                        />
+                    </aura:if>
+                    <aura:if isTrue="{!v.isShowResults == true}">
+                    <lightning:datatable
+                        aura:id="ContactsTableSelected"
+                        columns="{! v.columns }"
+                        data="{! v.dataSelected }"
+                        keyField="{! v.keyField }"
+                        showRowNumberColumn="false"
+                        selectedRows="{! v.selectedRowsSelected }"
+                        onrowselection="{! c.rowSelectedSelected }" 
+                        onsort="{! c.updateColumnSorting }"
+                        sortedBy="{!v.sortedBy}"
+                        sortedDirection="{!v.sortedDirection}"
+                        />
+                    </aura:if>                    
+                </div>
+            </div>
+            <div class="slds-modal__footer">                
+                <lightning:button variant="neutral" label="Cancel" onclick="{!c.cancel}"/>
+                <lightning:button variant="brand" label="Next" onclick="{!c.gotoPrimaryContact}" disabled="{!v.selectedRowsCount==0}" />
+            </div> 
+        </div>
+    </div>
+    
+    <div aura:id="overlay" class="slds-backdrop slds-backdrop--open"></div>
+</aura:component>

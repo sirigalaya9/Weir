@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Halted_Reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>On Hold means postpone and delay decision for now but the Project may move forward later.
+
+Stopped means a decision has been made to not go ahead with the Project for now.</inlineHelpText>
+    <label>Halted Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Competing Capital</fullName>
+                <default>false</default>
+                <label>Competing Capital</label>
+            </value>
+            <value>
+                <fullName>Delayed Government Approval</fullName>
+                <default>false</default>
+                <label>Delayed Government Approval</label>
+            </value>
+            <value>
+                <fullName>Design Review</fullName>
+                <default>false</default>
+                <label>Design Review</label>
+            </value>
+            <value>
+                <fullName>Due to ROI and MPV</fullName>
+                <default>false</default>
+                <label>Due to ROI and MPV</label>
+            </value>
+            <value>
+                <fullName>Funding</fullName>
+                <default>false</default>
+                <label>Funding</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Stopped</controllingFieldValue>
+            <valueName>Competing Capital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Stopped</controllingFieldValue>
+            <valueName>Delayed Government Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Design Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Stopped</controllingFieldValue>
+            <valueName>Due to ROI and MPV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <controllingFieldValue>Stopped</controllingFieldValue>
+            <valueName>Funding</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

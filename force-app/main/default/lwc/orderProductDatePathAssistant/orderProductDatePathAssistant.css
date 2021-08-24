@@ -1,0 +1,6 @@
+.slds-is-yellow, .slds-is-yellow:before, .slds-is-yellow:after {
+    background-color: rgb(208, 195, 55) !important;
+}
+.slds-is-yellow:hover, .slds-is-yellow:hover:before, .slds-is-yellow:hover:after {
+    background-color: rgb(142, 132, 32) !important;
+}

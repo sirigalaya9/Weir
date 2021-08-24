@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Visited__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason Visited</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Admin Query</fullName>
+                <default>false</default>
+                <label>Admin Query</label>
+            </value>
+            <value>
+                <fullName>Business Development Call</fullName>
+                <default>false</default>
+                <label>Business Development Call</label>
+            </value>
+            <value>
+                <fullName>Cold Call</fullName>
+                <default>false</default>
+                <label>Cold Call</label>
+            </value>
+            <value>
+                <fullName>Continued Negotiations</fullName>
+                <default>false</default>
+                <label>Continued Negotiations</label>
+            </value>
+            <value>
+                <fullName>Customer Cancelled</fullName>
+                <default>false</default>
+                <label>Customer Cancelled</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint</fullName>
+                <default>false</default>
+                <label>Customer Complaint</label>
+            </value>
+            <value>
+                <fullName>Future Order Potential</fullName>
+                <default>false</default>
+                <label>Future Order Potential</label>
+            </value>
+            <value>
+                <fullName>Joint Visit</fullName>
+                <default>false</default>
+                <label>Joint Visit</label>
+            </value>
+            <value>
+                <fullName>Maintaining Presence</fullName>
+                <default>false</default>
+                <label>Maintaining Presence</label>
+            </value>
+            <value>
+                <fullName>Project Update</fullName>
+                <default>false</default>
+                <label>Project Update</label>
+            </value>
+            <value>
+                <fullName>Quality Issue</fullName>
+                <default>false</default>
+                <label>Quality Issue</label>
+            </value>
+            <value>
+                <fullName>Quote Follow Up</fullName>
+                <default>false</default>
+                <label>Quote Follow Up</label>
+            </value>
+            <value>
+                <fullName>Request from Customer</fullName>
+                <default>false</default>
+                <label>Request from Customer</label>
+            </value>
+            <value>
+                <fullName>Sales Lead</fullName>
+                <default>false</default>
+                <label>Sales Lead</label>
+            </value>
+            <value>
+                <fullName>Service Visit</fullName>
+                <default>false</default>
+                <label>Service Visit</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

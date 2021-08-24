@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>List_of_Status</name>
+        <label>List of Status</label>
+        <locationX>643</locationX>
+        <locationY>454</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Clicked</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_of_Status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>List_of_Status_0</name>
+        <label>List of Status</label>
+        <locationX>736</locationX>
+        <locationY>871</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Invited</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Registered</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Declined</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Attended</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Did Not Attend</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_of_Status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>List_of_Status_0_0</name>
+        <label>List of Status</label>
+        <locationX>803</locationX>
+        <locationY>1089</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Clicked</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_of_Status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>List_of_Status_0_0_0</name>
+        <label>List of Status</label>
+        <locationX>668</locationX>
+        <locationY>659</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Clicked</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Viewed</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_of_Status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>List_of_Status_0_0_0_0</name>
+        <label>List of Status</label>
+        <locationX>873</locationX>
+        <locationY>1301</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Clicked</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_of_Status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>List_of_Status_0_0_0_0_0</name>
+        <label>List of Status</label>
+        <locationX>948</locationX>
+        <locationY>1516</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Clicked</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_of_Status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>List_of_Status_0_0_0_0_0_0</name>
+        <label>List of Status</label>
+        <locationX>1018</locationX>
+        <locationY>1734</locationY>
+        <assignmentItems>
+            <assignToReference>Status</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>Clicked</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_of_Status</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Campaign_Type</name>
+        <label>Check Campaign Type</label>
+        <locationX>450</locationX>
+        <locationY>449</locationY>
+        <defaultConnector>
+            <targetReference>Check_Campaign_Type_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Advertising</name>
+            <conditionLogic>1 OR 2 OR 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Advertising</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Advertising Google Ad</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Advertising LinkedIn</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>List_of_Status</targetReference>
+            </connector>
+            <label>Advertising</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Campaign_Type_0</name>
+        <label>Check Campaign Type</label>
+        <locationX>448</locationX>
+        <locationY>871</locationY>
+        <defaultConnector>
+            <targetReference>Check_Campaign_Type_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Email_Invitation_or_RSVP</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email RSVP</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>List_of_Status_0</targetReference>
+            </connector>
+            <label>Email RSVP</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Campaign_Type_0_0</name>
+        <label>Check Campaign Type</label>
+        <locationX>448</locationX>
+        <locationY>1090</locationY>
+        <defaultConnector>
+            <targetReference>Check_Campaign_Type_0_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Email</name>
+            <conditionLogic>1 OR 2 OR 3 OR 4 OR 5 OR 6</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email Autoresponder</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email Promotion</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email Newsletter</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email Thought Leadership</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email New Product</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Email Invitation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>List_of_Status_0_0</targetReference>
+            </connector>
+            <label>Email</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Campaign_Type_0_0_0</name>
+        <label>Check Campaign Type</label>
+        <locationX>448</locationX>
+        <locationY>664</locationY>
+        <defaultConnector>
+            <targetReference>Check_Campaign_Type_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Advertising_YouTube</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Advertising YouTube</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>List_of_Status_0_0_0</targetReference>
+            </connector>
+            <label>Advertising YouTube</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Campaign_Type_0_0_0_0</name>
+        <label>Check Campaign Type</label>
+        <locationX>450</locationX>
+        <locationY>1304</locationY>
+        <defaultConnector>
+            <targetReference>Check_Campaign_Type_0_0_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Social_Media</name>
+            <conditionLogic>1 OR 2</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Social Media Organic</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Social Media Sponsored</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>List_of_Status_0_0_0_0</targetReference>
+            </connector>
+            <label>Social Media</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Campaign_Type_0_0_0_0_0</name>
+        <label>Check Campaign Type</label>
+        <locationX>453</locationX>
+        <locationY>1519</locationY>
+        <defaultConnector>
+            <targetReference>Check_Campaign_Type_0_0_0_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Website_Survey_and_Event</name>
+            <conditionLogic>1 OR 2 OR 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Market Research</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Event</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Website</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>List_of_Status_0_0_0_0_0</targetReference>
+            </connector>
+            <label>Website, Survey, and Event</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Campaign_Type_0_0_0_0_0_0</name>
+        <label>Check Campaign Type</label>
+        <locationX>453</locationX>
+        <locationY>1739</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>NPS</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NPS</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>List_of_Status_0_0_0_0_0_0</targetReference>
+            </connector>
+            <label>NPS</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Existing</name>
+        <label>Check Existing</label>
+        <locationX>446</locationX>
+        <locationY>251</locationY>
+        <defaultConnector>
+            <targetReference>Delate_Existing_Status</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Existing Status is NOT Empty</defaultConnectorLabel>
+        <rules>
+            <name>Existing_Status_is_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>get_Existing_Member_Status</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Campaign_Type</targetReference>
+            </connector>
+            <label>Existing Status is Empty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Type_Changed</name>
+        <label>Type Changed</label>
+        <locationX>466</locationX>
+        <locationY>114</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Type_IsChanged</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>WasSet</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>get_Existing_Member_Status</targetReference>
+            </connector>
+            <label>Type IsChanged</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Create Campaign Member Status {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Campaign Member Status</label>
+    <loops>
+        <name>Loop_of_Status</name>
+        <label>Loop of Status</label>
+        <locationX>808</locationX>
+        <locationY>454</locationY>
+        <collectionReference>Status</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Create_Campaign_Member_Status</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Campaign_Member_Status</name>
+        <label>Create Campaign Member Status</label>
+        <locationX>978</locationX>
+        <locationY>454</locationY>
+        <connector>
+            <targetReference>Loop_of_Status</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CampaignId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Label</field>
+            <value>
+                <elementReference>Loop_of_Status</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CampaignMemberStatus</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordDeletes>
+        <name>Delate_Existing_Status</name>
+        <label>Delate Existing Status</label>
+        <locationX>161</locationX>
+        <locationY>344</locationY>
+        <connector>
+            <targetReference>Check_Campaign_Type</targetReference>
+        </connector>
+        <inputReference>get_Existing_Member_Status</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <name>get_Existing_Member_Status</name>
+        <label>get Existing Member Status</label>
+        <locationX>722</locationX>
+        <locationY>186</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Existing</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CampaignId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>CampaignMemberStatus</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Label</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>49</locationY>
+        <connector>
+            <targetReference>Type_Changed</targetReference>
+        </connector>
+        <object>Campaign</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>Status</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

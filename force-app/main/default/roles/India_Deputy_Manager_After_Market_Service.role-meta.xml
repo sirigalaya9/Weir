@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>India Deputy Manager After Market Service</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>India Deputy Manager After Market Service</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>India_General_Manager_After_Market_Service</parentRole>
+</Role>

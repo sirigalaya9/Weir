@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Ingeniero De Ventas Zon Sur</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Ingeniero De Ventas Zon Sur</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Jefe_de_Ventas_Zona_Sur</parentRole>
+</Role>

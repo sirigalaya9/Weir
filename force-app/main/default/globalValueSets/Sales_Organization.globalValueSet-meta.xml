@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>6101</fullName>
+        <default>false</default>
+        <label>6101 - Weir Minerals Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>6300</fullName>
+        <default>false</default>
+        <label>6300 - Phillipines</label>
+    </customValue>
+    <customValue>
+        <fullName>9760</fullName>
+        <default>false</default>
+        <label>9760 - Mongolia</label>
+    </customValue>
+    <customValue>
+        <fullName>AG01</fullName>
+        <default>false</default>
+        <label>AG01 - ARGENTINA</label>
+    </customValue>
+    <customValue>
+        <fullName>AM01</fullName>
+        <default>false</default>
+        <label>AM01 - WM ARMENIA</label>
+    </customValue>
+    <customValue>
+        <fullName>AME</fullName>
+        <default>false</default>
+        <label>AME - Africa &amp; Middle East</label>
+    </customValue>
+    <customValue>
+        <fullName>AU01</fullName>
+        <default>false</default>
+        <label>AU01 - WM AUSTRALIA</label>
+    </customValue>
+    <customValue>
+        <fullName>AU08</fullName>
+        <default>false</default>
+        <label>AU08 - Asia Commercial (AU)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR01</fullName>
+        <default>false</default>
+        <label>BR01 - WM Brasil S.A</label>
+    </customValue>
+    <customValue>
+        <fullName>CA01</fullName>
+        <default>false</default>
+        <label>CA01 - Weir Minerals Canada</label>
+    </customValue>
+    <customValue>
+        <fullName>CL01</fullName>
+        <default>false</default>
+        <label>CL01 - WM Vulco</label>
+    </customValue>
+    <customValue>
+        <fullName>CL02</fullName>
+        <default>false</default>
+        <label>CL02 - WM Linatex</label>
+    </customValue>
+    <customValue>
+        <fullName>CL03</fullName>
+        <default>false</default>
+        <label>CL03 - WM Fasis</label>
+    </customValue>
+    <customValue>
+        <fullName>CL04</fullName>
+        <default>false</default>
+        <label>CL04 - WM Metalúrgica</label>
+    </customValue>
+    <customValue>
+        <fullName>CL05</fullName>
+        <default>false</default>
+        <label>CL05 - WM Fundición</label>
+    </customValue>
+    <customValue>
+        <fullName>CL06</fullName>
+        <default>false</default>
+        <label>CL06 - WM Trío</label>
+    </customValue>
+    <customValue>
+        <fullName>CN01</fullName>
+        <default>false</default>
+        <label>CN01 - WM  WUXI</label>
+    </customValue>
+    <customValue>
+        <fullName>CN02</fullName>
+        <default>false</default>
+        <label>CN02 - WM TRIO CHINA</label>
+    </customValue>
+    <customValue>
+        <fullName>CN04</fullName>
+        <default>false</default>
+        <label>CN04 - WM TRIO JIANGSU</label>
+    </customValue>
+    <customValue>
+        <fullName>CN09</fullName>
+        <default>false</default>
+        <label>CN09 - WEPS CHINA</label>
+    </customValue>
+    <customValue>
+        <fullName>CO01</fullName>
+        <default>false</default>
+        <label>CO01 - COLUMBIA  CO01</label>
+    </customValue>
+    <customValue>
+        <fullName>CZ01</fullName>
+        <default>false</default>
+        <label>CZ01 - WM CZECH &amp; SLOVAK</label>
+    </customValue>
+    <customValue>
+        <fullName>DE01</fullName>
+        <default>false</default>
+        <label>DE01 - WM GERMANY</label>
+    </customValue>
+    <customValue>
+        <fullName>ES01</fullName>
+        <default>false</default>
+        <label>ES01 - WM SPAIN</label>
+    </customValue>
+    <customValue>
+        <fullName>FI01</fullName>
+        <default>false</default>
+        <label>FI01 - WM FINLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>FR01</fullName>
+        <default>false</default>
+        <label>FR01 - WM FRANCE</label>
+    </customValue>
+    <customValue>
+        <fullName>GB01</fullName>
+        <default>false</default>
+        <label>GB01 - WM EUROPE (GB)</label>
+    </customValue>
+    <customValue>
+        <fullName>HU01</fullName>
+        <default>false</default>
+        <label>HU01 - WM HUNGARY</label>
+    </customValue>
+    <customValue>
+        <fullName>ID01</fullName>
+        <default>false</default>
+        <label>ID01 - PT WM INDONESIA</label>
+    </customValue>
+    <customValue>
+        <fullName>ID02</fullName>
+        <default>false</default>
+        <label>ID02 - PT WM CONTRACTS ID</label>
+    </customValue>
+    <customValue>
+        <fullName>IN01</fullName>
+        <default>false</default>
+        <label>IN01 - WEIR MINERALS (INDIA) PRIVATE LIMITED</label>
+    </customValue>
+    <customValue>
+        <fullName>IT01</fullName>
+        <default>false</default>
+        <label>IT01 - WM ITALY</label>
+    </customValue>
+    <customValue>
+        <fullName>KZ01</fullName>
+        <default>false</default>
+        <label>KZ01 - WM KAZAKHSTAN</label>
+    </customValue>
+    <customValue>
+        <fullName>MA01</fullName>
+        <default>false</default>
+        <label>MA01 - WM NORTH AFRICA</label>
+    </customValue>
+    <customValue>
+        <fullName>MN01</fullName>
+        <default>false</default>
+        <label>MN01 - WM MONGOLIA</label>
+    </customValue>
+    <customValue>
+        <fullName>MX01</fullName>
+        <default>false</default>
+        <label>MX01 - WM Sales Org Mexico</label>
+    </customValue>
+    <customValue>
+        <fullName>MX02</fullName>
+        <default>false</default>
+        <label>MX02 - WM México Servicios</label>
+    </customValue>
+    <customValue>
+        <fullName>MX03</fullName>
+        <default>false</default>
+        <label>MX03 - WG Trade Mexico SOrg</label>
+    </customValue>
+    <customValue>
+        <fullName>MY01</fullName>
+        <default>false</default>
+        <label>MY01 - Linatex Rubber Produ</label>
+    </customValue>
+    <customValue>
+        <fullName>MY02</fullName>
+        <default>false</default>
+        <label>MY02 - Weir Foundry MY</label>
+    </customValue>
+    <customValue>
+        <fullName>MY03</fullName>
+        <default>false</default>
+        <label>MY03 - Asia Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>NL01</fullName>
+        <default>false</default>
+        <label>NL01 - WM BENELUX</label>
+    </customValue>
+    <customValue>
+        <fullName>NL02</fullName>
+        <default>false</default>
+        <label>NL02 - WM NETHERLANDS</label>
+    </customValue>
+    <customValue>
+        <fullName>PE01</fullName>
+        <default>false</default>
+        <label>PE01 - WM Vulco Perú</label>
+    </customValue>
+    <customValue>
+        <fullName>PE02</fullName>
+        <default>false</default>
+        <label>PE02 - AISLACION SISMICA</label>
+    </customValue>
+    <customValue>
+        <fullName>PH01</fullName>
+        <default>false</default>
+        <label>PH01 - WM PHILIPPINES</label>
+    </customValue>
+    <customValue>
+        <fullName>PL01</fullName>
+        <default>false</default>
+        <label>PL01 - WM POLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>RS01</fullName>
+        <default>false</default>
+        <label>RS01 - WM Balkan</label>
+    </customValue>
+    <customValue>
+        <fullName>RU01</fullName>
+        <default>false</default>
+        <label>RU01 - WM Russia</label>
+    </customValue>
+    <customValue>
+        <fullName>SE01</fullName>
+        <default>false</default>
+        <label>SE01 - WM SWEDEN</label>
+    </customValue>
+    <customValue>
+        <fullName>TR02</fullName>
+        <default>false</default>
+        <label>TR02 - WM TURKEY</label>
+    </customValue>
+    <customValue>
+        <fullName>UA01</fullName>
+        <default>false</default>
+        <label>UA01 - WM UKRAINE</label>
+    </customValue>
+    <customValue>
+        <fullName>US03</fullName>
+        <default>false</default>
+        <label>US03 - WEIR SLURRY GROUP</label>
+    </customValue>
+    <customValue>
+        <fullName>US06</fullName>
+        <default>false</default>
+        <label>US06 - WEIR PUMP &amp; VALVE SL</label>
+    </customValue>
+    <customValue>
+        <fullName>VL01</fullName>
+        <default>false</default>
+        <label>VL01 - WM VENLO</label>
+    </customValue>
+    <customValue>
+        <fullName>WM99</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WM99</label>
+    </customValue>
+    <customValue>
+        <fullName>WG99</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WG99</label>
+    </customValue>
+    <customValue>
+        <fullName>TR01</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TR01</label>
+    </customValue>
+    <customValue>
+        <fullName>ZA01</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ZA01</label>
+    </customValue>
+    <masterLabel>Sales Organization</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

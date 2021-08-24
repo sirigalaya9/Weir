@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Chile Product Manager Lewis and Polymer Pumps</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Chile Product Manager Lewis and Polymer Pumps</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Chile_Capital_Projects_Representations_Manager</parentRole>
+</Role>

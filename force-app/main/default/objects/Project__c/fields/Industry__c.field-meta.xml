@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The main industry linked to the project</inlineHelpText>
+    <label>Industry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1MIN</fullName>
+                <default>false</default>
+                <label>Minerals</label>
+            </value>
+            <value>
+                <fullName>2GEN</fullName>
+                <default>false</default>
+                <label>General Industrial</label>
+            </value>
+            <value>
+                <fullName>3OIL</fullName>
+                <default>false</default>
+                <label>Oil Industry</label>
+            </value>
+            <value>
+                <fullName>4NAV</fullName>
+                <default>false</default>
+                <label>Naval &amp; Marine</label>
+            </value>
+            <value>
+                <fullName>5POW</fullName>
+                <default>false</default>
+                <label>Power Generation</label>
+            </value>
+            <value>
+                <fullName>6WAT</fullName>
+                <default>false</default>
+                <label>Water &amp; Sewage</label>
+            </value>
+            <value>
+                <fullName>7INT</fullName>
+                <default>false</default>
+                <label>Intercompany (Weir)</label>
+            </value>
+            <value>
+                <fullName>8SAN</fullName>
+                <default>false</default>
+                <label>Infrastructure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

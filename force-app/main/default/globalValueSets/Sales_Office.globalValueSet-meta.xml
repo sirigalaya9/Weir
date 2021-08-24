@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>6108</fullName>
+        <default>false</default>
+        <label>6108 - Northern Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>6109</fullName>
+        <default>false</default>
+        <label>6109 - Southern Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>6111</fullName>
+        <default>false</default>
+        <label>6111 - East Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>6112</fullName>
+        <default>false</default>
+        <label>6112 - Western Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>6113</fullName>
+        <default>false</default>
+        <label>6113 - Asia Pacific</label>
+    </customValue>
+    <customValue>
+        <fullName>AA01</fullName>
+        <default>false</default>
+        <label>AA01 - Malaysia</label>
+    </customValue>
+    <customValue>
+        <fullName>AE01</fullName>
+        <default>false</default>
+        <label>AE01 - AU EAST 1</label>
+    </customValue>
+    <customValue>
+        <fullName>AE02</fullName>
+        <default>false</default>
+        <label>AE02 - AU EAST 2</label>
+    </customValue>
+    <customValue>
+        <fullName>AE03</fullName>
+        <default>false</default>
+        <label>AE03 - AU EAST 3</label>
+    </customValue>
+    <customValue>
+        <fullName>AE04</fullName>
+        <default>false</default>
+        <label>AE04 - AU EAST 4</label>
+    </customValue>
+    <customValue>
+        <fullName>AE05</fullName>
+        <default>false</default>
+        <label>AE05 - AU EAST 5</label>
+    </customValue>
+    <customValue>
+        <fullName>AE06</fullName>
+        <default>false</default>
+        <label>AE06 - AU EAST 6</label>
+    </customValue>
+    <customValue>
+        <fullName>AG01</fullName>
+        <default>false</default>
+        <label>AG01 - WM ARGENTINA</label>
+    </customValue>
+    <customValue>
+        <fullName>AIC1</fullName>
+        <default>false</default>
+        <label>AIC1 - INTERCOMPANY</label>
+    </customValue>
+    <customValue>
+        <fullName>AM01</fullName>
+        <default>false</default>
+        <label>AM01 - ARMENIA</label>
+    </customValue>
+    <customValue>
+        <fullName>AS01</fullName>
+        <default>false</default>
+        <label>AS01 - ASIA 1</label>
+    </customValue>
+    <customValue>
+        <fullName>AS02</fullName>
+        <default>false</default>
+        <label>AS02 - ASIA 2</label>
+    </customValue>
+    <customValue>
+        <fullName>AS03</fullName>
+        <default>false</default>
+        <label>AS03 - ASIA 3</label>
+    </customValue>
+    <customValue>
+        <fullName>AS04</fullName>
+        <default>false</default>
+        <label>AS04 - ASIA 4</label>
+    </customValue>
+    <customValue>
+        <fullName>AS05</fullName>
+        <default>false</default>
+        <label>AS05 - ASIA 5</label>
+    </customValue>
+    <customValue>
+        <fullName>AW01</fullName>
+        <default>false</default>
+        <label>AW01 - AU WEST 1</label>
+    </customValue>
+    <customValue>
+        <fullName>AW02</fullName>
+        <default>false</default>
+        <label>AW02 - AU WEST 2</label>
+    </customValue>
+    <customValue>
+        <fullName>AW03</fullName>
+        <default>false</default>
+        <label>AW03 - AU WEST 3</label>
+    </customValue>
+    <customValue>
+        <fullName>AW04</fullName>
+        <default>false</default>
+        <label>AW04 - AU WEST 4</label>
+    </customValue>
+    <customValue>
+        <fullName>AW05</fullName>
+        <default>false</default>
+        <label>AW05 - AU WEST 5</label>
+    </customValue>
+    <customValue>
+        <fullName>AX01</fullName>
+        <default>false</default>
+        <label>AX01 - AU GLOBAL SALES</label>
+    </customValue>
+    <customValue>
+        <fullName>BE01</fullName>
+        <default>false</default>
+        <label>BE01 - BELGIUM</label>
+    </customValue>
+    <customValue>
+        <fullName>BR01</fullName>
+        <default>false</default>
+        <label>BR01 - JUNDIAÍ MATRIZ</label>
+    </customValue>
+    <customValue>
+        <fullName>BR02</fullName>
+        <default>false</default>
+        <label>BR02 - VITÓRIA</label>
+    </customValue>
+    <customValue>
+        <fullName>BR03</fullName>
+        <default>false</default>
+        <label>BR03 - PARAUAPEBAS</label>
+    </customValue>
+    <customValue>
+        <fullName>BR04</fullName>
+        <default>false</default>
+        <label>BR04 - CONTAGEM</label>
+    </customValue>
+    <customValue>
+        <fullName>CA01</fullName>
+        <default>false</default>
+        <label>CA01 - EASTERN</label>
+    </customValue>
+    <customValue>
+        <fullName>CA02</fullName>
+        <default>false</default>
+        <label>CA02 - CENTRAL</label>
+    </customValue>
+    <customValue>
+        <fullName>CA03</fullName>
+        <default>false</default>
+        <label>CA03 - WESTERN</label>
+    </customValue>
+    <customValue>
+        <fullName>CA04</fullName>
+        <default>false</default>
+        <label>CA04 - INTERNATIONAL</label>
+    </customValue>
+    <customValue>
+        <fullName>CL01</fullName>
+        <default>false</default>
+        <label>CL01 - IQUIQUE</label>
+    </customValue>
+    <customValue>
+        <fullName>CL02</fullName>
+        <default>false</default>
+        <label>CL02 - ANTOFAGASTA 1</label>
+    </customValue>
+    <customValue>
+        <fullName>CL03</fullName>
+        <default>false</default>
+        <label>CL03 - ANTOFAGASTA 2</label>
+    </customValue>
+    <customValue>
+        <fullName>CL04</fullName>
+        <default>false</default>
+        <label>CL04 - SIERRA GORDA</label>
+    </customValue>
+    <customValue>
+        <fullName>CL05</fullName>
+        <default>false</default>
+        <label>CL05 - CALAMA 1</label>
+    </customValue>
+    <customValue>
+        <fullName>CL06</fullName>
+        <default>false</default>
+        <label>CL06 - CALAMA 2</label>
+    </customValue>
+    <customValue>
+        <fullName>CL07</fullName>
+        <default>false</default>
+        <label>CL07 - CALAMA EXPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>CL08</fullName>
+        <default>false</default>
+        <label>CL08 - ATACAMA 1</label>
+    </customValue>
+    <customValue>
+        <fullName>CL09</fullName>
+        <default>false</default>
+        <label>CL09 - ATACAMA 2</label>
+    </customValue>
+    <customValue>
+        <fullName>CL10</fullName>
+        <default>false</default>
+        <label>CL10 - ATACAMA 3</label>
+    </customValue>
+    <customValue>
+        <fullName>CL11</fullName>
+        <default>false</default>
+        <label>CL11 - LA SERENA</label>
+    </customValue>
+    <customValue>
+        <fullName>CL12</fullName>
+        <default>false</default>
+        <label>CL12 - CENTRO 15</label>
+    </customValue>
+    <customValue>
+        <fullName>CL13</fullName>
+        <default>false</default>
+        <label>CL13 - CENTRO 20</label>
+    </customValue>
+    <customValue>
+        <fullName>CL14</fullName>
+        <default>false</default>
+        <label>CL14 - CENTRO 25</label>
+    </customValue>
+    <customValue>
+        <fullName>CL15</fullName>
+        <default>false</default>
+        <label>CL15 - CENTRO 30</label>
+    </customValue>
+    <customValue>
+        <fullName>CL16</fullName>
+        <default>false</default>
+        <label>CL16 - CENTRO FABRICA</label>
+    </customValue>
+    <customValue>
+        <fullName>CL17</fullName>
+        <default>false</default>
+        <label>CL17 - CONCEPCION</label>
+    </customValue>
+    <customValue>
+        <fullName>CL18</fullName>
+        <default>false</default>
+        <label>CL18 - EXPORT ARGENTINA</label>
+    </customValue>
+    <customValue>
+        <fullName>CL19</fullName>
+        <default>false</default>
+        <label>CL19 - EXPORT COLOMBIA</label>
+    </customValue>
+    <customValue>
+        <fullName>CL20</fullName>
+        <default>false</default>
+        <label>CL20 - EXPORT INTERCOMPANY</label>
+    </customValue>
+    <customValue>
+        <fullName>CL21</fullName>
+        <default>false</default>
+        <label>CL21 - EXPORT URUGUAY</label>
+    </customValue>
+    <customValue>
+        <fullName>CL22</fullName>
+        <default>false</default>
+        <label>CL22 - EXPORT VARIOS</label>
+    </customValue>
+    <customValue>
+        <fullName>CL23</fullName>
+        <default>false</default>
+        <label>CL23 - EXPORT VENEZUELA</label>
+    </customValue>
+    <customValue>
+        <fullName>CL24</fullName>
+        <default>false</default>
+        <label>CL24 - EXPORT PANAMA</label>
+    </customValue>
+    <customValue>
+        <fullName>CL25</fullName>
+        <default>false</default>
+        <label>CL25 - EXPORT CARIBE</label>
+    </customValue>
+    <customValue>
+        <fullName>CL26</fullName>
+        <default>false</default>
+        <label>CL26 - EXPORT BOLIVIA</label>
+    </customValue>
+    <customValue>
+        <fullName>CL27</fullName>
+        <default>false</default>
+        <label>CL27 - EXPORT ECUADOR</label>
+    </customValue>
+    <customValue>
+        <fullName>CN01</fullName>
+        <default>false</default>
+        <label>CN01 - WM WUXI</label>
+    </customValue>
+    <customValue>
+        <fullName>CN02</fullName>
+        <default>false</default>
+        <label>CN02 - WM TRIO CHINA</label>
+    </customValue>
+    <customValue>
+        <fullName>CN04</fullName>
+        <default>false</default>
+        <label>CN04 - WM TRIO JIANGSU</label>
+    </customValue>
+    <customValue>
+        <fullName>CN09</fullName>
+        <default>false</default>
+        <label>CN09 - WEPS CHINA</label>
+    </customValue>
+    <customValue>
+        <fullName>CO01</fullName>
+        <default>false</default>
+        <label>CO01 - WM COLOMBIA</label>
+    </customValue>
+    <customValue>
+        <fullName>CZ01</fullName>
+        <default>false</default>
+        <label>CZ01 - CZECH REPUBLIC</label>
+    </customValue>
+    <customValue>
+        <fullName>DE01</fullName>
+        <default>false</default>
+        <label>DE01 - GERMANY</label>
+    </customValue>
+    <customValue>
+        <fullName>ES01</fullName>
+        <default>false</default>
+        <label>ES01 - SPAIN</label>
+    </customValue>
+    <customValue>
+        <fullName>FI01</fullName>
+        <default>false</default>
+        <label>FI01 - FINLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>FR01</fullName>
+        <default>false</default>
+        <label>FR01 - FRANCE</label>
+    </customValue>
+    <customValue>
+        <fullName>GB01</fullName>
+        <default>false</default>
+        <label>GB01 - UNITED KINGDOM</label>
+    </customValue>
+    <customValue>
+        <fullName>HU01</fullName>
+        <default>false</default>
+        <label>HU01 - HUNGARY</label>
+    </customValue>
+    <customValue>
+        <fullName>ID01</fullName>
+        <default>false</default>
+        <label>ID01 - INDONESIA</label>
+    </customValue>
+    <customValue>
+        <fullName>IDE1</fullName>
+        <default>false</default>
+        <label>IDE1 - INDONESIA EXPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>IN01</fullName>
+        <default>false</default>
+        <label>IN01 - EAST 1</label>
+    </customValue>
+    <customValue>
+        <fullName>IN02</fullName>
+        <default>false</default>
+        <label>IN02 - EAST 2</label>
+    </customValue>
+    <customValue>
+        <fullName>IN03</fullName>
+        <default>false</default>
+        <label>IN03 - NORTH</label>
+    </customValue>
+    <customValue>
+        <fullName>IN04</fullName>
+        <default>false</default>
+        <label>IN04 - WEST</label>
+    </customValue>
+    <customValue>
+        <fullName>IN05</fullName>
+        <default>false</default>
+        <label>IN05 - SOUTH</label>
+    </customValue>
+    <customValue>
+        <fullName>IN06</fullName>
+        <default>false</default>
+        <label>IN06 - GEHO</label>
+    </customValue>
+    <customValue>
+        <fullName>IN07</fullName>
+        <default>false</default>
+        <label>IN07 - REBUILD</label>
+    </customValue>
+    <customValue>
+        <fullName>IN08</fullName>
+        <default>false</default>
+        <label>IN08 - INTC</label>
+    </customValue>
+    <customValue>
+        <fullName>IT01</fullName>
+        <default>false</default>
+        <label>IT01 - ITALY</label>
+    </customValue>
+    <customValue>
+        <fullName>KZ01</fullName>
+        <default>false</default>
+        <label>KZ01 - KAZAKHSTAN</label>
+    </customValue>
+    <customValue>
+        <fullName>MA01</fullName>
+        <default>false</default>
+        <label>MA01 - MOROCCO</label>
+    </customValue>
+    <customValue>
+        <fullName>Middle East</fullName>
+        <default>false</default>
+        <label>Middle East</label>
+    </customValue>
+    <customValue>
+        <fullName>MN01</fullName>
+        <default>false</default>
+        <label>MN01 - MONGOLIA</label>
+    </customValue>
+    <customValue>
+        <fullName>MNE1</fullName>
+        <default>false</default>
+        <label>MNE1 - MONGOLIA EXPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>MX01</fullName>
+        <default>false</default>
+        <label>MX01 - CENTRO AMERICA</label>
+    </customValue>
+    <customValue>
+        <fullName>MX02</fullName>
+        <default>false</default>
+        <label>MX02 - MONTERREY</label>
+    </customValue>
+    <customValue>
+        <fullName>MX03</fullName>
+        <default>false</default>
+        <label>MX03 - CHIHUAHUA</label>
+    </customValue>
+    <customValue>
+        <fullName>MX04</fullName>
+        <default>false</default>
+        <label>MX04 - QUERETARO</label>
+    </customValue>
+    <customValue>
+        <fullName>MX05</fullName>
+        <default>false</default>
+        <label>MX05 - CANANEA</label>
+    </customValue>
+    <customValue>
+        <fullName>MX06</fullName>
+        <default>false</default>
+        <label>MX06 - LOS MOCHIS</label>
+    </customValue>
+    <customValue>
+        <fullName>MY01</fullName>
+        <default>false</default>
+        <label>MY01 - Linatex Rubber Prod</label>
+    </customValue>
+    <customValue>
+        <fullName>MY02</fullName>
+        <default>false</default>
+        <label>MY02 - Weir Foundry MY</label>
+    </customValue>
+    <customValue>
+        <fullName>MY03</fullName>
+        <default>false</default>
+        <label>MY03 - Asia Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>NL01</fullName>
+        <default>false</default>
+        <label>NL01 - NETHERLANDS</label>
+    </customValue>
+    <customValue>
+        <fullName>PE01</fullName>
+        <default>false</default>
+        <label>PE01 - NORTE</label>
+    </customValue>
+    <customValue>
+        <fullName>PE02</fullName>
+        <default>false</default>
+        <label>PE02 - SUR</label>
+    </customValue>
+    <customValue>
+        <fullName>PE03</fullName>
+        <default>false</default>
+        <label>PE03 - LIMA</label>
+    </customValue>
+    <customValue>
+        <fullName>PE04</fullName>
+        <default>false</default>
+        <label>PE04 - ANTAMINA</label>
+    </customValue>
+    <customValue>
+        <fullName>PE05</fullName>
+        <default>false</default>
+        <label>PE05 - CENTRO</label>
+    </customValue>
+    <customValue>
+        <fullName>PE06</fullName>
+        <default>false</default>
+        <label>PE06 - INDUSTRIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>PE08</fullName>
+        <default>false</default>
+        <label>PE08 - EXPORT ECUADOR</label>
+    </customValue>
+    <customValue>
+        <fullName>PE09</fullName>
+        <default>false</default>
+        <label>PE09 - EXPORT INTERCOMPANY</label>
+    </customValue>
+    <customValue>
+        <fullName>PH01</fullName>
+        <default>false</default>
+        <label>PH01 - PHILIPPINES</label>
+    </customValue>
+    <customValue>
+        <fullName>PHE1</fullName>
+        <default>false</default>
+        <label>PHE1 - PHILIPPINES EXPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>PL01</fullName>
+        <default>false</default>
+        <label>PL01 - POLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>Rest of Africa</fullName>
+        <default>false</default>
+        <label>Rest of Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>RO01</fullName>
+        <default>false</default>
+        <label>RO01 - ROMANIA</label>
+    </customValue>
+    <customValue>
+        <fullName>RS01</fullName>
+        <default>false</default>
+        <label>RS01 - BALKAN DOMESTIC</label>
+    </customValue>
+    <customValue>
+        <fullName>RS02</fullName>
+        <default>false</default>
+        <label>RS02 - BALKAN INTERNATIONAL</label>
+    </customValue>
+    <customValue>
+        <fullName>RS03</fullName>
+        <default>false</default>
+        <label>RS03 - BALKAN INTERCOMPANY</label>
+    </customValue>
+    <customValue>
+        <fullName>RU01</fullName>
+        <default>false</default>
+        <label>RU01 - FAR EAST</label>
+    </customValue>
+    <customValue>
+        <fullName>RU03</fullName>
+        <default>false</default>
+        <label>RU03 - SIBERIA</label>
+    </customValue>
+    <customValue>
+        <fullName>RU04</fullName>
+        <default>false</default>
+        <label>RU04 - URAL</label>
+    </customValue>
+    <customValue>
+        <fullName>RU07</fullName>
+        <default>false</default>
+        <label>RU07 - WEST</label>
+    </customValue>
+    <customValue>
+        <fullName>RU08</fullName>
+        <default>false</default>
+        <label>RU08 - EXPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>RU09</fullName>
+        <default>false</default>
+        <label>RU09 - INTERCOMPANY</label>
+    </customValue>
+    <customValue>
+        <fullName>SE01</fullName>
+        <default>false</default>
+        <label>SE01 - SWEDEN</label>
+    </customValue>
+    <customValue>
+        <fullName>South Africa</fullName>
+        <default>false</default>
+        <label>South Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>Southern Africa Development Countries</fullName>
+        <default>false</default>
+        <label>Southern Africa Development Countries</label>
+    </customValue>
+    <customValue>
+        <fullName>TR01</fullName>
+        <default>false</default>
+        <label>TR01 - TURKEY</label>
+    </customValue>
+    <customValue>
+        <fullName>UA01</fullName>
+        <default>false</default>
+        <label>UA01 - UKRAINE</label>
+    </customValue>
+    <customValue>
+        <fullName>US01</fullName>
+        <default>false</default>
+        <label>US01 - WMUS</label>
+    </customValue>
+    <customValue>
+        <fullName>US02</fullName>
+        <default>false</default>
+        <label>US02 - INTERNATIONAL</label>
+    </customValue>
+    <customValue>
+        <fullName>US03</fullName>
+        <default>false</default>
+        <label>US03 - INTERCOMPANY</label>
+    </customValue>
+    <customValue>
+        <fullName>US07</fullName>
+        <default>false</default>
+        <label>US07 - EASTERN</label>
+    </customValue>
+    <customValue>
+        <fullName>US08</fullName>
+        <default>false</default>
+        <label>US08 - WESTERN</label>
+    </customValue>
+    <customValue>
+        <fullName>US09</fullName>
+        <default>false</default>
+        <label>US09 - INTERNATIONAL</label>
+    </customValue>
+    <customValue>
+        <fullName>WM99</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WM99</label>
+    </customValue>
+    <customValue>
+        <fullName>WG99</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WG99</label>
+    </customValue>
+    <customValue>
+        <fullName>RU06</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>RU06 - NORTH WEST &amp; CENTER</label>
+    </customValue>
+    <customValue>
+        <fullName>RU05</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>RU05 - SOUTH</label>
+    </customValue>
+    <customValue>
+        <fullName>RU02</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>RU02 - YAKUTIA</label>
+    </customValue>
+    <customValue>
+        <fullName>ID01_BALI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ID01 - Balikpapan Indonesia</label>
+    </customValue>
+    <customValue>
+        <fullName>ZA01</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ZA01</label>
+    </customValue>
+    <masterLabel>Sales Office</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

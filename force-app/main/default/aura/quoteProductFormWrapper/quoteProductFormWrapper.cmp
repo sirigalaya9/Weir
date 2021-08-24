@@ -1,0 +1,50 @@
+<aura:component
+    implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride,lightning:isUrlAddressable"
+    access="global">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.doInit}" />
+
+    <aura:attribute name="id" type="String" />
+    <aura:attribute name="parentId" type="String" />
+    <aura:attribute name="scopeOfSupply" type="String" />
+
+    <div class="slds-page-header slds-page-header_record-home">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <lightning:icon iconName="standard:form" alternativeText="Event" title="Event" size="medium">
+                        </lightning:icon>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span>Product Form</span>
+                                    <span class="slds-page-header__title slds-truncate"
+                                        title="Hydroclone">{!v.scopeOfSupply}</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slds-card slds-m-top_small" >
+        <lightning:tabset selectedTabId="one">
+            <lightning:tab label="Form" id="one">
+                <c:quoteProductForm recordId="{!v.id}" parentId="{!v.parentId}" scopeOfSupply="{!v.scopeOfSupply}" aura:id="lwc">
+                </c:quoteProductForm>
+            </lightning:tab>
+            <lightning:tab label="Chatter" id="two">
+                <div>
+                    {!v.body}
+                </div>
+            </lightning:tab>
+        </lightning:tabset>
+    </div>
+
+</aura:component>

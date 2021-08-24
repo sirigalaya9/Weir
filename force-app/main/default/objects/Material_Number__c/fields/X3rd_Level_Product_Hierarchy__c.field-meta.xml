@@ -1,0 +1,1682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3rd_Level_Product_Hierarchy__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Hierarchy</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Z0001</fullName>
+                <default>false</default>
+                <label>Z0001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001</fullName>
+                <default>false</default>
+                <label>Z0001S0001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000002</fullName>
+                <default>false</default>
+                <label>Z0001S0001CP000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000004</fullName>
+                <default>false</default>
+                <label>Z0001S0001CP000004</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000006</fullName>
+                <default>false</default>
+                <label>Z0001S0001CP000006</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000007</fullName>
+                <default>false</default>
+                <label>Z0001S0001CP000007</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000008</fullName>
+                <default>false</default>
+                <label>Z0001S0001CP000008</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000009</fullName>
+                <default>false</default>
+                <label>Z0001S0001CP000009</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001CP000010</fullName>
+                <default>false</default>
+                <label>Z0001S0001CP000010</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001PU000001--OEM / SLURRY PUMPS / PD PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0001PU000001--OEM / SLURRY PUMPS / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001PU000002--OEM / SLURRY PUMPS / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0001PU000002--OEM / SLURRY PUMPS / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001PU000003--OEM / SLURRY / VERTICLE TURBINE PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0001PU000003--OEM / SLURRY / VERTICLE TURBINE PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001PU000004--OEM / SLURRY PUMPS / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0001PU000004--OEM / SLURRY PUMPS / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001PU000005--OEM / SLURRY PUMPS / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0001PU000005--OEM / SLURRY PUMPS / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001PU000006--OEM / SLURRY PUMPS / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0001PU000006--OEM / SLURRY PUMPS / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0001PU000007--OEM / SLURRY PUMPS / OTHER PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0001PU000007--OEM / SLURRY PUMPS / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002</fullName>
+                <default>false</default>
+                <label>Z0001S0002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000001</fullName>
+                <default>false</default>
+                <label>Z0001S0002VA000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000001--OEM / VALVES / PINCH VALVES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0002VA000001--OEM / VALVES / PINCH VALVES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000002--OEM / VALVES / KNIFEGATE VALVES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0002VA000002--OEM / VALVES / KNIFEGATE VALVES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000003</fullName>
+                <default>false</default>
+                <label>Z0001S0002VA000003</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000003--OEM / VALVES / VALVE ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0002VA000003--OEM / VALVES / VALVE ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000004</fullName>
+                <default>false</default>
+                <label>Z0001S0002VA000004</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000004--OEM / VALVES / OTHER VALVES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0002VA000004--OEM / VALVES / OTHER VALVES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000005</fullName>
+                <default>false</default>
+                <label>Z0001S0002VA000005</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000006</fullName>
+                <default>false</default>
+                <label>Z0001S0002VA000006</label>
+            </value>
+            <value>
+                <fullName>Z0001S0002VA000007</fullName>
+                <default>false</default>
+                <label>Z0001S0002VA000007</label>
+            </value>
+            <value>
+                <fullName>Z0001S0003</fullName>
+                <default>false</default>
+                <label>Z0001S0003</label>
+            </value>
+            <value>
+                <fullName>Z0001S0003OT000008</fullName>
+                <default>false</default>
+                <label>Z0001S0003OT000008</label>
+            </value>
+            <value>
+                <fullName>Z0001S0003OT000009</fullName>
+                <default>false</default>
+                <label>Z0001S0003OT000009</label>
+            </value>
+            <value>
+                <fullName>Z0001S0004</fullName>
+                <default>false</default>
+                <label>Z0001S0004</label>
+            </value>
+            <value>
+                <fullName>Z0001S0004CY000001</fullName>
+                <default>false</default>
+                <label>Z0001S0004CY000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0004CY000001--OEM / CYCLONES / CYCLONE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0004CY000001--OEM / CYCLONES / CYCLONE</label>
+            </value>
+            <value>
+                <fullName>Z0001S0004CY000002</fullName>
+                <default>false</default>
+                <label>Z0001S0004CY000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0004CY000002--OEM / CYCLONES / CYCLONE ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0004CY000002--OEM / CYCLONES / CYCLONE ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0005</fullName>
+                <default>false</default>
+                <label>Z0001S0005</label>
+            </value>
+            <value>
+                <fullName>Z0001S0005EP000006</fullName>
+                <default>false</default>
+                <label>Z0001S0005EP000006</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006</fullName>
+                <default>false</default>
+                <label>Z0001S0006</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000002</fullName>
+                <default>false</default>
+                <label>Z0001S0006DW000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000006</fullName>
+                <default>false</default>
+                <label>Z0001S0006DW000006</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000007</fullName>
+                <default>false</default>
+                <label>Z0001S0006DW000007</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000009</fullName>
+                <default>false</default>
+                <label>Z0001S0006DW000009</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000010</fullName>
+                <default>false</default>
+                <label>Z0001S0006DW000010</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000011</fullName>
+                <default>false</default>
+                <label>Z0001S0006DW000011</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006DW000012</fullName>
+                <default>false</default>
+                <label>Z0001S0006DW000012</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006MW000001--OEM / MINE WATER / PD PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0006MW000001--OEM / MINE WATER / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006MW000002--OEM / MINE WATER / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0006MW000002--OEM / MINE WATER / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006MW000003--OEM / MINE WATER / VERTICLE TURBINE PMP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0006MW000003--OEM / MINE WATER / VERTICLE TURBINE PMP</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006MW000004--OEM / MINE WATER / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0006MW000004--OEM / MINE WATER / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006MW000005--OEM / MINE WATER / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0006MW000005--OEM / MINE WATER / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006MW000006--OEM / MINE WATER / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0006MW000006--OEM / MINE WATER / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006MW000007--OEM / MINE WATER / OTHER PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0006MW000007--OEM / MINE WATER / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006MW000008--OEM / MINE WATER / SELF PRIME</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0006MW000008--OEM / MINE WATER / SELF PRIME</label>
+            </value>
+            <value>
+                <fullName>Z0001S0006MW000009--OEM / MINE WATER / BARGE SYSTEMS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0006MW000009--OEM / MINE WATER / BARGE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0007</fullName>
+                <default>false</default>
+                <label>Z0001S0007</label>
+            </value>
+            <value>
+                <fullName>Z0001S0007SC000001</fullName>
+                <default>false</default>
+                <label>Z0001S0007SC000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0007SC000001--OEM / SCREENS FEEDERS / SCREEN MACHINES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0007SC000001--OEM / SCREENS FEEDERS / SCREEN MACHINES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0007SC000003</fullName>
+                <default>false</default>
+                <label>Z0001S0007SC000003</label>
+            </value>
+            <value>
+                <fullName>Z0001S0007SC000003--OEM / SCREENS FEEDERS / FEEDERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0007SC000003--OEM / SCREENS FEEDERS / FEEDERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0009</fullName>
+                <default>false</default>
+                <label>Z0001S0009</label>
+            </value>
+            <value>
+                <fullName>Z0001S0009HP000001</fullName>
+                <default>false</default>
+                <label>Z0001S0009HP000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0009HP000001--OEM / HPGR / HPGR MACHINES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0009HP000001--OEM / HPGR / HPGR MACHINES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0009HP000002</fullName>
+                <default>false</default>
+                <label>Z0001S0009HP000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0009HP000002--OEM / HPGR / HPGR ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0009HP000002--OEM / HPGR / HPGR ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0010SE000001--OEM / MECHANICAL SEALS / WEIR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0010SE000001--OEM / MECHANICAL SEALS / WEIR</label>
+            </value>
+            <value>
+                <fullName>Z0001S0010SE000002--OEM / MECHANICAL SEALS / OTHER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0010SE000002--OEM / MECHANICAL SEALS / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0001S0011</fullName>
+                <default>false</default>
+                <label>Z0001S0011</label>
+            </value>
+            <value>
+                <fullName>Z0001S0011CE000001</fullName>
+                <default>false</default>
+                <label>Z0001S0011CE000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0011CE000001--OEM / CENTRIFUGES / CENTRIFUGE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0011CE000001--OEM / CENTRIFUGES / CENTRIFUGE</label>
+            </value>
+            <value>
+                <fullName>Z0001S0011CE000002</fullName>
+                <default>false</default>
+                <label>Z0001S0011CE000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0011CE000002--OEM / CENTRIFUGES / OTHER CENTRIFUGE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0011CE000002--OEM / CENTRIFUGES / OTHER CENTRIFUGE</label>
+            </value>
+            <value>
+                <fullName>Z0001S0013SP000001--OEM / SPECIALTY PUMPS / PD PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0013SP000001--OEM / SPECIALTY PUMPS / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0013SP000002--OEM / SPECIALTY PUMPS / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0013SP000002--OEM / SPECIALTY PUMPS / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0013SP000003--OEM / SPECIALTY / VERTICLE TURBINE PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0013SP000003--OEM / SPECIALTY / VERTICLE TURBINE PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0013SP000004--OEM / SPECIALTY PUMPS / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0013SP000004--OEM / SPECIALTY PUMPS / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0013SP000005--OEM / SPECIALTY / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0013SP000005--OEM / SPECIALTY / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0013SP000006--OEM / SPECIALTY PUMP / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0013SP000006--OEM / SPECIALTY PUMP / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0013SP000007--OEM / SPECIALTY PUMPS / OTHER PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0013SP000007--OEM / SPECIALTY PUMPS / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0013SP000008--OEM / SPECIALTY PUMPS / SELF PRIME</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0013SP000008--OEM / SPECIALTY PUMPS / SELF PRIME</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014</fullName>
+                <default>false</default>
+                <label>Z0001S0014</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000001</fullName>
+                <default>false</default>
+                <label>Z0001S0014CR000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000001--OEM / CRUSHERS / CONE CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0014CR000001--OEM / CRUSHERS / CONE CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000002</fullName>
+                <default>false</default>
+                <label>Z0001S0014CR000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000002--OEM / CRUSHERS / CRUSHER ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0014CR000002--OEM / CRUSHERS / CRUSHER ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000003</fullName>
+                <default>false</default>
+                <label>Z0001S0014CR000003</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000003--OEM / CRUSHERS / JAW CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0014CR000003--OEM / CRUSHERS / JAW CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000004</fullName>
+                <default>false</default>
+                <label>Z0001S0014CR000004</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000004--OEM / CRUSHERS / HORIZONTAL CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0014CR000004--OEM / CRUSHERS / HORIZONTAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000005</fullName>
+                <default>false</default>
+                <label>Z0001S0014CR000005</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000005--OEM / CRUSHERS / VERTICAL CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0014CR000005--OEM / CRUSHERS / VERTICAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000006</fullName>
+                <default>false</default>
+                <label>Z0001S0014CR000006</label>
+            </value>
+            <value>
+                <fullName>Z0001S0014CR000006--OEM / CRUSHERS / GYRATORY CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0014CR000006--OEM / CRUSHERS / GYRATORY CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015</fullName>
+                <default>false</default>
+                <label>Z0001S0015</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015WA000001</fullName>
+                <default>false</default>
+                <label>Z0001S0015WA000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015WA000001--OEM / WASHERS / FINE WASHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0015WA000001--OEM / WASHERS / FINE WASHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015WA000002</fullName>
+                <default>false</default>
+                <label>Z0001S0015WA000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015WA000002--OEM / WASHERS / COARSE WASHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0015WA000002--OEM / WASHERS / COARSE WASHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015WA000003</fullName>
+                <default>false</default>
+                <label>Z0001S0015WA000003</label>
+            </value>
+            <value>
+                <fullName>Z0001S0015WA000003--OEM / WASHERS / LOG WASHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0015WA000003--OEM / WASHERS / LOG WASHERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0016</fullName>
+                <default>false</default>
+                <label>Z0001S0016</label>
+            </value>
+            <value>
+                <fullName>Z0001S0016MA000001</fullName>
+                <default>false</default>
+                <label>Z0001S0016MA000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0016MA000001--OEM / MAGNETS / ELECTRO MAGNETIC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0016MA000001--OEM / MAGNETS / ELECTRO MAGNETIC</label>
+            </value>
+            <value>
+                <fullName>Z0001S0016MA000002</fullName>
+                <default>false</default>
+                <label>Z0001S0016MA000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0016MA000002--OEM / MAGNETS / PERMANENT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0016MA000002--OEM / MAGNETS / PERMANENT</label>
+            </value>
+            <value>
+                <fullName>Z0001S0017</fullName>
+                <default>false</default>
+                <label>Z0001S0017</label>
+            </value>
+            <value>
+                <fullName>Z0001S0017CO000001--OEM / CONVEYERS / CONVEYERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0017CO000001--OEM / CONVEYERS / CONVEYERS</label>
+            </value>
+            <value>
+                <fullName>Z0001S0017CO000002--OEM / CONVEYERS / CONVEYER ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0017CO000002--OEM / CONVEYERS / CONVEYER ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0001S0017CO000003</fullName>
+                <default>false</default>
+                <label>Z0001S0017CO000003</label>
+            </value>
+            <value>
+                <fullName>Z0001S0018</fullName>
+                <default>false</default>
+                <label>Z0001S0018</label>
+            </value>
+            <value>
+                <fullName>Z0001S0018AC000001</fullName>
+                <default>false</default>
+                <label>Z0001S0018AC000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0018AC000001--OEM / AIR CLASIFIERS / AIR CLASSIFIER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0001S0018AC000001--OEM / AIR CLASIFIERS / AIR CLASSIFIER</label>
+            </value>
+            <value>
+                <fullName>Z0001S0019</fullName>
+                <default>false</default>
+                <label>Z0001S0019</label>
+            </value>
+            <value>
+                <fullName>Z0001S0019FI000001</fullName>
+                <default>false</default>
+                <label>Z0001S0019FI000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0019FI000002</fullName>
+                <default>false</default>
+                <label>Z0001S0019FI000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0019FI000003</fullName>
+                <default>false</default>
+                <label>Z0001S0019FI000003</label>
+            </value>
+            <value>
+                <fullName>Z0001S0020</fullName>
+                <default>false</default>
+                <label>Z0001S0020</label>
+            </value>
+            <value>
+                <fullName>Z0001S0020TH000001</fullName>
+                <default>false</default>
+                <label>Z0001S0020TH000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0020TH000002</fullName>
+                <default>false</default>
+                <label>Z0001S0020TH000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021</fullName>
+                <default>false</default>
+                <label>Z0001S0021</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021PD000001</fullName>
+                <default>false</default>
+                <label>Z0001S0021PD000001</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021PD000002</fullName>
+                <default>false</default>
+                <label>Z0001S0021PD000002</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021PD000003</fullName>
+                <default>false</default>
+                <label>Z0001S0021PD000003</label>
+            </value>
+            <value>
+                <fullName>Z0001S0021PD000004</fullName>
+                <default>false</default>
+                <label>Z0001S0021PD000004</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026</fullName>
+                <default>false</default>
+                <label>Z0001S0026</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000004</fullName>
+                <default>false</default>
+                <label>Z0001S0026ES000004</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000005</fullName>
+                <default>false</default>
+                <label>Z0001S0026ES000005</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000006</fullName>
+                <default>false</default>
+                <label>Z0001S0026ES000006</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000007</fullName>
+                <default>false</default>
+                <label>Z0001S0026ES000007</label>
+            </value>
+            <value>
+                <fullName>Z0001S0026ES000008</fullName>
+                <default>false</default>
+                <label>Z0001S0026ES000008</label>
+            </value>
+            <value>
+                <fullName>Z0001S0027</fullName>
+                <default>false</default>
+                <label>Z0001S0027</label>
+            </value>
+            <value>
+                <fullName>Z0001S0027ES000020</fullName>
+                <default>false</default>
+                <label>Z0001S0027ES000020</label>
+            </value>
+            <value>
+                <fullName>Z0001S0027ES000025</fullName>
+                <default>false</default>
+                <label>Z0001S0027ES000025</label>
+            </value>
+            <value>
+                <fullName>Z0002</fullName>
+                <default>false</default>
+                <label>Z0002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001</fullName>
+                <default>false</default>
+                <label>Z0002S0001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000002</fullName>
+                <default>false</default>
+                <label>Z0002S0001CP000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000004</fullName>
+                <default>false</default>
+                <label>Z0002S0001CP000004</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000007</fullName>
+                <default>false</default>
+                <label>Z0002S0001CP000007</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000008</fullName>
+                <default>false</default>
+                <label>Z0002S0001CP000008</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000009</fullName>
+                <default>false</default>
+                <label>Z0002S0001CP000009</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000010</fullName>
+                <default>false</default>
+                <label>Z0002S0001CP000010</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001CP000011</fullName>
+                <default>false</default>
+                <label>Z0002S0001CP000011</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001PU000001--SPARES / SLURRY PUMPS / PD PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0001PU000001--SPARES / SLURRY PUMPS / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001PU000002--SPARES / SLURRY PUMPS / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0001PU000002--SPARES / SLURRY PUMPS / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001PU000003--SPARES / SLURRY / VERTICLE TURBINE PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0001PU000003--SPARES / SLURRY / VERTICLE TURBINE PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001PU000004--SPARES / SLURRY PUMPS / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0001PU000004--SPARES / SLURRY PUMPS / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001PU000005--SPARES / SLURRY PUMP / SUBMERSIBLE PUMP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0001PU000005--SPARES / SLURRY PUMP / SUBMERSIBLE PUMP</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001PU000006--SPARES / SLURRY PUMP / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0001PU000006--SPARES / SLURRY PUMP / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0001PU000007--SPARES / SLURRY PUMPS / OTHER PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0001PU000007--SPARES / SLURRY PUMPS / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002</fullName>
+                <default>false</default>
+                <label>Z0002S0002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000001</fullName>
+                <default>false</default>
+                <label>Z0002S0002VA000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000001--SPARES / VALVES / PINCH VALVES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0002VA000001--SPARES / VALVES / PINCH VALVES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000002--SPARES / VALVES / KNIFEGATE VALVES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0002VA000002--SPARES / VALVES / KNIFEGATE VALVES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000003--SPARES / VALVES / VALVE ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0002VA000003--SPARES / VALVES / VALVE ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000004</fullName>
+                <default>false</default>
+                <label>Z0002S0002VA000004</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000004--SPARES / VALVES / OTHER VALVES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0002VA000004--SPARES / VALVES / OTHER VALVES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000005</fullName>
+                <default>false</default>
+                <label>Z0002S0002VA000005</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000006</fullName>
+                <default>false</default>
+                <label>Z0002S0002VA000006</label>
+            </value>
+            <value>
+                <fullName>Z0002S0002VA000007</fullName>
+                <default>false</default>
+                <label>Z0002S0002VA000007</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003</fullName>
+                <default>false</default>
+                <label>Z0002S0003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000005</fullName>
+                <default>false</default>
+                <label>Z0002S0003OT000005</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000006</fullName>
+                <default>false</default>
+                <label>Z0002S0003OT000006</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000007</fullName>
+                <default>false</default>
+                <label>Z0002S0003OT000007</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000008</fullName>
+                <default>false</default>
+                <label>Z0002S0003OT000008</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000009</fullName>
+                <default>false</default>
+                <label>Z0002S0003OT000009</label>
+            </value>
+            <value>
+                <fullName>Z0002S0003OT000010</fullName>
+                <default>false</default>
+                <label>Z0002S0003OT000010</label>
+            </value>
+            <value>
+                <fullName>Z0002S0004</fullName>
+                <default>false</default>
+                <label>Z0002S0004</label>
+            </value>
+            <value>
+                <fullName>Z0002S0004CY000001</fullName>
+                <default>false</default>
+                <label>Z0002S0004CY000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0004CY000001--SPARES / CYCLONES / CYCLONE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0004CY000001--SPARES / CYCLONES / CYCLONE</label>
+            </value>
+            <value>
+                <fullName>Z0002S0004CY000002--SPARES / CYCLONES / CYCLONE ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0004CY000002--SPARES / CYCLONES / CYCLONE ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005</fullName>
+                <default>false</default>
+                <label>Z0002S0005</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005EP000002</fullName>
+                <default>false</default>
+                <label>Z0002S0005EP000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005EP000004</fullName>
+                <default>false</default>
+                <label>Z0002S0005EP000004</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005EP000006</fullName>
+                <default>false</default>
+                <label>Z0002S0005EP000006</label>
+            </value>
+            <value>
+                <fullName>Z0002S0005EP000010</fullName>
+                <default>false</default>
+                <label>Z0002S0005EP000010</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006</fullName>
+                <default>false</default>
+                <label>Z0002S0006</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000002</fullName>
+                <default>false</default>
+                <label>Z0002S0006DW000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000007</fullName>
+                <default>false</default>
+                <label>Z0002S0006DW000007</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000009</fullName>
+                <default>false</default>
+                <label>Z0002S0006DW000009</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000010</fullName>
+                <default>false</default>
+                <label>Z0002S0006DW000010</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000011</fullName>
+                <default>false</default>
+                <label>Z0002S0006DW000011</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006DW000012</fullName>
+                <default>false</default>
+                <label>Z0002S0006DW000012</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006MW000001--SPARES / MINE WATER / PD PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0006MW000001--SPARES / MINE WATER / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006MW000002--SPARES / MINE WATER / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0006MW000002--SPARES / MINE WATER / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006MW000003--SPARES/MINE WATER/VERTICLE TURBINE PUMP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0006MW000003--SPARES/MINE WATER/VERTICLE TURBINE PUMP</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006MW000004--SPARES / MINE WATER / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0006MW000004--SPARES / MINE WATER / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006MW000005--SPARES / MINE WATER / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0006MW000005--SPARES / MINE WATER / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006MW000006--SPARES / MINE WATER / PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0006MW000006--SPARES / MINE WATER / PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006MW000007--SPARES / MINE WATER / OTHER PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0006MW000007--SPARES / MINE WATER / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006MW000008--SPARES / MINE WATER / SELF PRIME</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0006MW000008--SPARES / MINE WATER / SELF PRIME</label>
+            </value>
+            <value>
+                <fullName>Z0002S0006MW000009--SPARES / MINE WATER / BARGE SYSTEMS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0006MW000009--SPARES / MINE WATER / BARGE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007</fullName>
+                <default>false</default>
+                <label>Z0002S0007</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007SC000001</fullName>
+                <default>false</default>
+                <label>Z0002S0007SC000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007SC000001--SPARES / SCREENS FEEDERS / SCREEN MACHIN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0007SC000001--SPARES / SCREENS FEEDERS / SCREEN MACHIN</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007SC000002</fullName>
+                <default>false</default>
+                <label>Z0002S0007SC000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007SC000002--SPARES / SCREENS FEEDERS / SCREEN MEDIA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0007SC000002--SPARES / SCREENS FEEDERS / SCREEN MEDIA</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007SC000003</fullName>
+                <default>false</default>
+                <label>Z0002S0007SC000003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0007SC000003--SPARES / SCREENS FEEDERS / FEEDERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0007SC000003--SPARES / SCREENS FEEDERS / FEEDERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0009</fullName>
+                <default>false</default>
+                <label>Z0002S0009</label>
+            </value>
+            <value>
+                <fullName>Z0002S0009HP000001</fullName>
+                <default>false</default>
+                <label>Z0002S0009HP000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0009HP000001--SPARES / HPGR / HPGR MACHINES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0009HP000001--SPARES / HPGR / HPGR MACHINES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0009HP000002--SPARES / HPGR / HPGR ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0009HP000002--SPARES / HPGR / HPGR ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0010SE000001--SPARES / MECHANICAL SEALS / WEIR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0010SE000001--SPARES / MECHANICAL SEALS / WEIR</label>
+            </value>
+            <value>
+                <fullName>Z0002S0010SE000002--SPARES / MECHANICAL SEALS / OTHER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0010SE000002--SPARES / MECHANICAL SEALS / OTHER</label>
+            </value>
+            <value>
+                <fullName>Z0002S0011</fullName>
+                <default>false</default>
+                <label>Z0002S0011</label>
+            </value>
+            <value>
+                <fullName>Z0002S0011CE000001</fullName>
+                <default>false</default>
+                <label>Z0002S0011CE000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0011CE000001--SPARES / CENTRIFUGES / CENTRIFUGE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0011CE000001--SPARES / CENTRIFUGES / CENTRIFUGE</label>
+            </value>
+            <value>
+                <fullName>Z0002S0011CE000002</fullName>
+                <default>false</default>
+                <label>Z0002S0011CE000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0011CE000002--SPARES / CENTRIFUGES / OTHER CENTRIFUGE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0011CE000002--SPARES / CENTRIFUGES / OTHER CENTRIFUGE</label>
+            </value>
+            <value>
+                <fullName>Z0002S0013SP000001--SPARES / SPECIALTY PUMPS / PD PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0013SP000001--SPARES / SPECIALTY PUMPS / PD PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0013SP000002--SPARES / SPECIALTY / HORIZONTAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0013SP000002--SPARES / SPECIALTY / HORIZONTAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0013SP000003--SPARES/SPECIALTY/VERTICLE TURBINE PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0013SP000003--SPARES/SPECIALTY/VERTICLE TURBINE PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0013SP000004--SPARES / SPECIALTY PUMP / VERTICAL PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0013SP000004--SPARES / SPECIALTY PUMP / VERTICAL PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0013SP000005--SPARES / SPECIALTY / SUBMERSIBLE PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0013SP000005--SPARES / SPECIALTY / SUBMERSIBLE PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0013SP000006--SPARES/SPECIALTY PUMP/PUMP ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0013SP000006--SPARES/SPECIALTY PUMP/PUMP ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0013SP000007--SPARES / SPECIALTY PUMPS / OTHER PUMPS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0013SP000007--SPARES / SPECIALTY PUMPS / OTHER PUMPS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0013SP000008--SPARES / SPECIALTY PUMPS / SELF PRIME</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0013SP000008--SPARES / SPECIALTY PUMPS / SELF PRIME</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014</fullName>
+                <default>false</default>
+                <label>Z0002S0014</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000001</fullName>
+                <default>false</default>
+                <label>Z0002S0014CR000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000001--SPARES / CRUSHERS / CONE CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0014CR000001--SPARES / CRUSHERS / CONE CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000002--SPARES / CRUSHERS / CRUSHER ANCILLIARIES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0014CR000002--SPARES / CRUSHERS / CRUSHER ANCILLIARIES</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000003</fullName>
+                <default>false</default>
+                <label>Z0002S0014CR000003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000003--SPARES / CRUSHERS / JAW CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0014CR000003--SPARES / CRUSHERS / JAW CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000004</fullName>
+                <default>false</default>
+                <label>Z0002S0014CR000004</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000004--SPARES / CRUSHERS / HORIZONTAL CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0014CR000004--SPARES / CRUSHERS / HORIZONTAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000005</fullName>
+                <default>false</default>
+                <label>Z0002S0014CR000005</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000005--SPARES / CRUSHERS / VERTICAL CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0014CR000005--SPARES / CRUSHERS / VERTICAL CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000006</fullName>
+                <default>false</default>
+                <label>Z0002S0014CR000006</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000006--SPARES / CRUSHERS / GYRATORY CRUSHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0014CR000006--SPARES / CRUSHERS / GYRATORY CRUSHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0014CR000007</fullName>
+                <default>false</default>
+                <label>Z0002S0014CR000007</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015</fullName>
+                <default>false</default>
+                <label>Z0002S0015</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015WA000001</fullName>
+                <default>false</default>
+                <label>Z0002S0015WA000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015WA000001--SPARES / WASHERS / FINE WASHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0015WA000001--SPARES / WASHERS / FINE WASHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015WA000002</fullName>
+                <default>false</default>
+                <label>Z0002S0015WA000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015WA000002--SPARES / WASHERS / COARSE WASHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0015WA000002--SPARES / WASHERS / COARSE WASHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015WA000003</fullName>
+                <default>false</default>
+                <label>Z0002S0015WA000003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0015WA000003--SPARES / WASHERS / LOG WASHERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0015WA000003--SPARES / WASHERS / LOG WASHERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0016</fullName>
+                <default>false</default>
+                <label>Z0002S0016</label>
+            </value>
+            <value>
+                <fullName>Z0002S0016MA000001</fullName>
+                <default>false</default>
+                <label>Z0002S0016MA000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0016MA000001--SPARES / MAGNETS / ELECTRO MAGNETIC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0016MA000001--SPARES / MAGNETS / ELECTRO MAGNETIC</label>
+            </value>
+            <value>
+                <fullName>Z0002S0016MA000002</fullName>
+                <default>false</default>
+                <label>Z0002S0016MA000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0016MA000002--SPARES / MAGNETS / PERMANENT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0016MA000002--SPARES / MAGNETS / PERMANENT</label>
+            </value>
+            <value>
+                <fullName>Z0002S0017</fullName>
+                <default>false</default>
+                <label>Z0002S0017</label>
+            </value>
+            <value>
+                <fullName>Z0002S0017CO000001--SPARES / CONVEYERS / CONVEYERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0017CO000001--SPARES / CONVEYERS / CONVEYERS</label>
+            </value>
+            <value>
+                <fullName>Z0002S0017CO000003</fullName>
+                <default>false</default>
+                <label>Z0002S0017CO000003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0018</fullName>
+                <default>false</default>
+                <label>Z0002S0018</label>
+            </value>
+            <value>
+                <fullName>Z0002S0018AC000001</fullName>
+                <default>false</default>
+                <label>Z0002S0018AC000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0018AC000001--SPARES / AIR CLASIFIERS / AIR CLASSIFIER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0002S0018AC000001--SPARES / AIR CLASIFIERS / AIR CLASSIFIER</label>
+            </value>
+            <value>
+                <fullName>Z0002S0019</fullName>
+                <default>false</default>
+                <label>Z0002S0019</label>
+            </value>
+            <value>
+                <fullName>Z0002S0019FI000001</fullName>
+                <default>false</default>
+                <label>Z0002S0019FI000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0019FI000002</fullName>
+                <default>false</default>
+                <label>Z0002S0019FI000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0019FI000003</fullName>
+                <default>false</default>
+                <label>Z0002S0019FI000003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0020</fullName>
+                <default>false</default>
+                <label>Z0002S0020</label>
+            </value>
+            <value>
+                <fullName>Z0002S0020TH000001</fullName>
+                <default>false</default>
+                <label>Z0002S0020TH000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0020TH000002</fullName>
+                <default>false</default>
+                <label>Z0002S0020TH000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021</fullName>
+                <default>false</default>
+                <label>Z0002S0021</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021PD000001</fullName>
+                <default>false</default>
+                <label>Z0002S0021PD000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021PD000002</fullName>
+                <default>false</default>
+                <label>Z0002S0021PD000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021PD000003</fullName>
+                <default>false</default>
+                <label>Z0002S0021PD000003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0021PD000004</fullName>
+                <default>false</default>
+                <label>Z0002S0021PD000004</label>
+            </value>
+            <value>
+                <fullName>Z0002S0022</fullName>
+                <default>false</default>
+                <label>Z0002S0022</label>
+            </value>
+            <value>
+                <fullName>Z0002S0022SP000001</fullName>
+                <default>false</default>
+                <label>Z0002S0022SP000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0023</fullName>
+                <default>false</default>
+                <label>Z0002S0023</label>
+            </value>
+            <value>
+                <fullName>Z0002S0023HO000003</fullName>
+                <default>false</default>
+                <label>Z0002S0023HO000003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0024</fullName>
+                <default>false</default>
+                <label>Z0002S0024</label>
+            </value>
+            <value>
+                <fullName>Z0002S0024ML000001</fullName>
+                <default>false</default>
+                <label>Z0002S0024ML000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0024ML000002</fullName>
+                <default>false</default>
+                <label>Z0002S0024ML000002</label>
+            </value>
+            <value>
+                <fullName>Z0002S0024ML000003</fullName>
+                <default>false</default>
+                <label>Z0002S0024ML000003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0025</fullName>
+                <default>false</default>
+                <label>Z0002S0025</label>
+            </value>
+            <value>
+                <fullName>Z0002S0025EP000001</fullName>
+                <default>false</default>
+                <label>Z0002S0025EP000001</label>
+            </value>
+            <value>
+                <fullName>Z0002S0025EP000003</fullName>
+                <default>false</default>
+                <label>Z0002S0025EP000003</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026</fullName>
+                <default>false</default>
+                <label>Z0002S0026</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000004</fullName>
+                <default>false</default>
+                <label>Z0002S0026ES000004</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000005</fullName>
+                <default>false</default>
+                <label>Z0002S0026ES000005</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000006</fullName>
+                <default>false</default>
+                <label>Z0002S0026ES000006</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000007</fullName>
+                <default>false</default>
+                <label>Z0002S0026ES000007</label>
+            </value>
+            <value>
+                <fullName>Z0002S0026ES000008</fullName>
+                <default>false</default>
+                <label>Z0002S0026ES000008</label>
+            </value>
+            <value>
+                <fullName>Z0002S0027</fullName>
+                <default>false</default>
+                <label>Z0002S0027</label>
+            </value>
+            <value>
+                <fullName>Z0002S0027ES000020</fullName>
+                <default>false</default>
+                <label>Z0002S0027ES000020</label>
+            </value>
+            <value>
+                <fullName>Z0002S0027ES000025</fullName>
+                <default>false</default>
+                <label>Z0002S0027ES000025</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001EP000001--ELASTOMER&amp;OTHER LININGS/DRY RUB COMPOUND</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003E0001EP000001--ELASTOMER&amp;OTHER LININGS/DRY RUB COMPOUND</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001EP000002--ELASTOMER&amp;OTHER LININGS / HANDLAY RUBBER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003E0001EP000002--ELASTOMER&amp;OTHER LININGS / HANDLAY RUBBER</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001EP000003--ELASTOMER&amp;OTHER LININGS / SHEET RUBBER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003E0001EP000003--ELASTOMER&amp;OTHER LININGS / SHEET RUBBER</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001EP000004--ELASTOMER&amp;OTHER LININGS / OTHER LINERS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003E0001EP000004--ELASTOMER&amp;OTHER LININGS / OTHER LINERS</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001EP000005--ELASTOMER&amp;OTHER LINING/OTHER ELASTOMER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003E0001EP000005--ELASTOMER&amp;OTHER LINING/OTHER ELASTOMER</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001EP000006--ELASTOMER&amp;OTHER/TANK&amp;EQP.INT.LINING</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003E0001EP000006--ELASTOMER&amp;OTHER/TANK&amp;EQP.INT.LINING</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001EP000007--ELASTOMER&amp;OTHER/O&amp;G OTHER ELASTOMER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003E0001EP000007--ELASTOMER&amp;OTHER/O&amp;G OTHER ELASTOMER</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001EP000008--ELASTOMER&amp;OTHER LININGS/SWELLABLE PACKER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003E0001EP000008--ELASTOMER&amp;OTHER LININGS/SWELLABLE PACKER</label>
+            </value>
+            <value>
+                <fullName>Z0003E0001EP000009--ELASTOMER&amp;OTHER LININGS/MOULDED PRODUCTS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003E0001EP000009--ELASTOMER&amp;OTHER LININGS/MOULDED PRODUCTS</label>
+            </value>
+            <value>
+                <fullName>Z0003HO001HO000001--HOSES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003HO001HO000001--HOSES</label>
+            </value>
+            <value>
+                <fullName>Z0003HO001HO000002--HOSES O&amp;G</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003HO001HO000002--HOSES O&amp;G</label>
+            </value>
+            <value>
+                <fullName>Z0003M0001ML000001--MILL LINERS / RUBBER</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003M0001ML000001--MILL LINERS / RUBBER</label>
+            </value>
+            <value>
+                <fullName>Z0003M0001ML000002--MILL LINERS / COMPOSITE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003M0001ML000002--MILL LINERS / COMPOSITE</label>
+            </value>
+            <value>
+                <fullName>Z0003M0001ML000003--MILL LINERS / METAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003M0001ML000003--MILL LINERS / METAL</label>
+            </value>
+            <value>
+                <fullName>Z0003S0003OT000001--GENERAL ENGINEERING</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0003OT000001--GENERAL ENGINEERING</label>
+            </value>
+            <value>
+                <fullName>Z0003S0003OT000002--JOBBING</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0003OT000002--JOBBING</label>
+            </value>
+            <value>
+                <fullName>Z0003S0003OT000003--OTHER PRODUCTS EQUIPMENT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0003OT000003--OTHER PRODUCTS EQUIPMENT</label>
+            </value>
+            <value>
+                <fullName>Z0003S0003OT000004--ENGINEERING SERVICES</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0003OT000004--ENGINEERING SERVICES</label>
+            </value>
+            <value>
+                <fullName>Z0003S0003OT000005--SOLD LABOUR (SITE CONTRACT,ETC)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0003OT000005--SOLD LABOUR (SITE CONTRACT,ETC)</label>
+            </value>
+            <value>
+                <fullName>Z0003S0003OT000006--HYDRAU-FLO FUEL VALVE SYSTEM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0003OT000006--HYDRAU-FLO FUEL VALVE SYSTEM</label>
+            </value>
+            <value>
+                <fullName>Z0003S0008S0001--OTHER/ ENG. SOL/ SAND AND AGGREGATE PLAN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0008S0001--OTHER/ ENG. SOL/ SAND AND AGGREGATE PLAN</label>
+            </value>
+            <value>
+                <fullName>Z0003S0008S0002--OTHER/ ENG. SOL/ MINING PLANT SOL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0008S0002--OTHER/ ENG. SOL/ MINING PLANT SOL</label>
+            </value>
+            <value>
+                <fullName>Z0003S0008S0003--OTHER/ ENG. SOL/TAILINGS AND PIPELINE SO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0008S0003--OTHER/ ENG. SOL/TAILINGS AND PIPELINE SO</label>
+            </value>
+            <value>
+                <fullName>Z0003S0008S0004--OTHER/ ENG. SOL/ MOBILE COMMUNITION SOL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0008S0004--OTHER/ ENG. SOL/ MOBILE COMMUNITION SOL</label>
+            </value>
+            <value>
+                <fullName>Z0003S0012CC000001--COMPOSITE CERAMIC MATERIAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0012CC000001--COMPOSITE CERAMIC MATERIAL</label>
+            </value>
+            <value>
+                <fullName>Z0003S0012CC000002--COMPOSITE CERAMIC PUMP PARTS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0012CC000002--COMPOSITE CERAMIC PUMP PARTS</label>
+            </value>
+            <value>
+                <fullName>Z0003S0012CC000003--COMPOSITE CERAMIC OTHER COMPONENTS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003S0012CC000003--COMPOSITE CERAMIC OTHER COMPONENTS</label>
+            </value>
+            <value>
+                <fullName>Z0003SP001SP001--OTHER/ SPOOL/ SPOOL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Z0003SP001SP001--OTHER/ SPOOL/ SPOOL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

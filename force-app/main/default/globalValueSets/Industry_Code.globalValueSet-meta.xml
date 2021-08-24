@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1MIN001</fullName>
+        <default>false</default>
+        <label>Copper</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN002</fullName>
+        <default>false</default>
+        <label>Gold</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN003</fullName>
+        <default>false</default>
+        <label>Iron</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN004</fullName>
+        <default>false</default>
+        <label>Coal</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN005</fullName>
+        <default>false</default>
+        <label>Alumina/Bauxite</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN006</fullName>
+        <default>false</default>
+        <label>Chromite</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN007</fullName>
+        <default>false</default>
+        <label>Cobalt</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN008</fullName>
+        <default>false</default>
+        <label>Diamond</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN009</fullName>
+        <default>false</default>
+        <label>Lead</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN010</fullName>
+        <default>false</default>
+        <label>Lithium</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN011</fullName>
+        <default>false</default>
+        <label>Nickel</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN012</fullName>
+        <default>false</default>
+        <label>Phosphate</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN013</fullName>
+        <default>false</default>
+        <label>Platinum</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN014</fullName>
+        <default>false</default>
+        <label>Potash</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN015</fullName>
+        <default>false</default>
+        <label>Silver</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN016</fullName>
+        <default>false</default>
+        <label>Uranium</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN017</fullName>
+        <default>false</default>
+        <label>Zinc</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN018</fullName>
+        <default>false</default>
+        <label>Rare Earth</label>
+    </customValue>
+    <customValue>
+        <fullName>1MIN019</fullName>
+        <default>false</default>
+        <label>Other Minerals</label>
+    </customValue>
+    <customValue>
+        <fullName>2GEN001</fullName>
+        <default>false</default>
+        <label>Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>2GEN002</fullName>
+        <default>false</default>
+        <label>Smelt&amp;Refine(Steel)</label>
+    </customValue>
+    <customValue>
+        <fullName>2GEN003</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </customValue>
+    <customValue>
+        <fullName>2GEN004</fullName>
+        <default>false</default>
+        <label>Dredging</label>
+    </customValue>
+    <customValue>
+        <fullName>2GEN005</fullName>
+        <default>false</default>
+        <label>Pulp &amp; Paper</label>
+    </customValue>
+    <customValue>
+        <fullName>2GEN006</fullName>
+        <default>false</default>
+        <label>Food &amp; Drink</label>
+    </customValue>
+    <customValue>
+        <fullName>2GEN007</fullName>
+        <default>false</default>
+        <label>Smelt&amp;Refine(Other)</label>
+    </customValue>
+    <customValue>
+        <fullName>2GEN008</fullName>
+        <default>false</default>
+        <label>Other Gen Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>3OIL001</fullName>
+        <default>false</default>
+        <label>Oil Sands</label>
+    </customValue>
+    <customValue>
+        <fullName>3OIL002</fullName>
+        <default>false</default>
+        <label>O&amp;G (Non Oil Sands)</label>
+    </customValue>
+    <customValue>
+        <fullName>4NAV001</fullName>
+        <default>false</default>
+        <label>Naval</label>
+    </customValue>
+    <customValue>
+        <fullName>4NAV002</fullName>
+        <default>false</default>
+        <label>Other Marine</label>
+    </customValue>
+    <customValue>
+        <fullName>5POW001</fullName>
+        <default>false</default>
+        <label>Biomass</label>
+    </customValue>
+    <customValue>
+        <fullName>5POW002</fullName>
+        <default>false</default>
+        <label>Nuclear</label>
+    </customValue>
+    <customValue>
+        <fullName>5POW003</fullName>
+        <default>false</default>
+        <label>Hydro</label>
+    </customValue>
+    <customValue>
+        <fullName>5POW004</fullName>
+        <default>false</default>
+        <label>Solar</label>
+    </customValue>
+    <customValue>
+        <fullName>5POW005</fullName>
+        <default>false</default>
+        <label>Other Power Gen.</label>
+    </customValue>
+    <customValue>
+        <fullName>6WAT001</fullName>
+        <default>false</default>
+        <label>Water</label>
+    </customValue>
+    <customValue>
+        <fullName>6WAT002</fullName>
+        <default>false</default>
+        <label>Wastewater</label>
+    </customValue>
+    <customValue>
+        <fullName>7INT001</fullName>
+        <default>false</default>
+        <label>Intercompany (Weir)</label>
+    </customValue>
+    <customValue>
+        <fullName>8SAN001</fullName>
+        <default>false</default>
+        <label>Sand and Aggregate</label>
+    </customValue>
+    <customValue>
+        <fullName>8SAN002</fullName>
+        <default>false</default>
+        <label>Other Infrastructure</label>
+    </customValue>
+    <customValue>
+        <fullName>IRON ORES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>IRON ORES</label>
+    </customValue>
+    <customValue>
+        <fullName>COPPER ORES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>COPPER ORES</label>
+    </customValue>
+    <customValue>
+        <fullName>LEAD &amp; ZINC ORES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LEAD &amp; ZINC ORES</label>
+    </customValue>
+    <customValue>
+        <fullName>GOLD ORES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GOLD ORES</label>
+    </customValue>
+    <customValue>
+        <fullName>SILVER ORES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SILVER ORES</label>
+    </customValue>
+    <customValue>
+        <fullName>FE-ALLOY ORES EX.VAN</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FE-ALLOY ORES EX.VAN</label>
+    </customValue>
+    <customValue>
+        <fullName>METAL MINING SERVICE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>METAL MINING SERVICE</label>
+    </customValue>
+    <customValue>
+        <fullName>URA-RAD-VANADIUM ORE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>URA-RAD-VANADIUM ORE</label>
+    </customValue>
+    <customValue>
+        <fullName>MISC METAL ORES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MISC METAL ORES</label>
+    </customValue>
+    <customValue>
+        <fullName>NICKEL MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NICKEL MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>DIAMOND MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DIAMOND MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>ALUMINA REFINERY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ALUMINA REFINERY</label>
+    </customValue>
+    <customValue>
+        <fullName>ANTIMONY ORE MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ANTIMONY ORE MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>BAUXITE MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BAUXITE MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>ILMENITE MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ILMENITE MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>PALLADIUM ORE MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PALLADIUM ORE MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>PLATINUM ORE MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PLATINUM ORE MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>RARE EARTH ORE MININ</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>RARE EARTH ORE MININ</label>
+    </customValue>
+    <customValue>
+        <fullName>TIN ORE MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TIN ORE MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>TITANIUM ORE MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TITANIUM ORE MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>BIT COAL&amp;LIGNIT SURF</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BIT COAL&amp;LIGNIT SURF</label>
+    </customValue>
+    <customValue>
+        <fullName>BIT COAL UNDER MININ</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BIT COAL UNDER MININ</label>
+    </customValue>
+    <customValue>
+        <fullName>ANTHRACITE MINING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ANTHRACITE MINING</label>
+    </customValue>
+    <customValue>
+        <fullName>COAL MINING SERVICES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>COAL MINING SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>CRUD PETROL&amp; NAT GAS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CRUD PETROL&amp; NAT GAS</label>
+    </customValue>
+    <customValue>
+        <fullName>NATURAL GAS LIQUIDS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NATURAL GAS LIQUIDS</label>
+    </customValue>
+    <customValue>
+        <fullName>DRILLING O&amp;G WELLS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DRILLING O&amp;G WELLS</label>
+    </customValue>
+    <customValue>
+        <fullName>O&amp;G FIELD EXPLOR SVC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>O&amp;G FIELD EXPLOR SVC</label>
+    </customValue>
+    <customValue>
+        <fullName>CRUSHED&amp;BROKEN LIMES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CRUSHED&amp;BROKEN LIMES</label>
+    </customValue>
+    <customValue>
+        <fullName>CRUSHED&amp;BROKEN GRANI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CRUSHED&amp;BROKEN GRANI</label>
+    </customValue>
+    <customValue>
+        <fullName>C&amp;B STONES, NOT CLAS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>C&amp;B STONES, NOT CLAS</label>
+    </customValue>
+    <customValue>
+        <fullName>CONSTRUCT SAND&amp;GRAVE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CONSTRUCT SAND&amp;GRAVE</label>
+    </customValue>
+    <customValue>
+        <fullName>INDUSTRIAL SAND</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>INDUSTRIAL SAND</label>
+    </customValue>
+    <customValue>
+        <fullName>KAOLIN &amp; BALL CLAY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>KAOLIN &amp; BALL CLAY</label>
+    </customValue>
+    <customValue>
+        <fullName>POTASH</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>POTASH</label>
+    </customValue>
+    <customValue>
+        <fullName>PHOSPHATE ROCK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PHOSPHATE ROCK</label>
+    </customValue>
+    <customValue>
+        <fullName>CHEM&amp;FERT MINERAL MI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CHEM&amp;FERT MINERAL MI</label>
+    </customValue>
+    <customValue>
+        <fullName>NONMETAL MINERAL SVC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NONMETAL MINERAL SVC</label>
+    </customValue>
+    <customValue>
+        <fullName>SUGAR REFINERY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SUGAR REFINERY</label>
+    </customValue>
+    <customValue>
+        <fullName>TEXTILE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TEXTILE</label>
+    </customValue>
+    <customValue>
+        <fullName>PULP MILLS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PULP MILLS</label>
+    </customValue>
+    <customValue>
+        <fullName>PAPER MILLS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PAPER MILLS</label>
+    </customValue>
+    <customValue>
+        <fullName>FABRICATED RUBBER</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FABRICATED RUBBER</label>
+    </customValue>
+    <customValue>
+        <fullName>CEMENT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CEMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>CONCRETE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CONCRETE</label>
+    </customValue>
+    <customValue>
+        <fullName>STEEL WORKS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>STEEL WORKS</label>
+    </customValue>
+    <customValue>
+        <fullName>PRIMARY SMELTING&amp;REF</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PRIMARY SMELTING&amp;REF</label>
+    </customValue>
+    <customValue>
+        <fullName>2NDARY SMELTING&amp;REFI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>2NDARY SMELTING&amp;REFI</label>
+    </customValue>
+    <customValue>
+        <fullName>CONSTRUCTION</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CONSTRUCTION</label>
+    </customValue>
+    <customValue>
+        <fullName>PIPELINES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PIPELINES</label>
+    </customValue>
+    <customValue>
+        <fullName>COMBINA. ELECTRI&amp;GAS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>COMBINA. ELECTRI&amp;GAS</label>
+    </customValue>
+    <customValue>
+        <fullName>WATER SUPPLY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WATER SUPPLY</label>
+    </customValue>
+    <customValue>
+        <fullName>WASTE WATER</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WASTE WATER</label>
+    </customValue>
+    <customValue>
+        <fullName>CHEMICALS&amp;ALLIED PRO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CHEMICALS&amp;ALLIED PRO</label>
+    </customValue>
+    <customValue>
+        <fullName>HARDWARE STORES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HARDWARE STORES</label>
+    </customValue>
+    <customValue>
+        <fullName>GENERAL GOVERNMENT,</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GENERAL GOVERNMENT,</label>
+    </customValue>
+    <customValue>
+        <fullName>TUNNELLING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TUNNELLING</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OTHER</label>
+    </customValue>
+    <masterLabel>Industry Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

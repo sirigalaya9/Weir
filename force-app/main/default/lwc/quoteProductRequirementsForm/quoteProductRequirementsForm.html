@@ -1,0 +1,388 @@
+<template>
+    <!--
+    <div class="slds-page-header slds-page-header_record-home">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="standard:form" alternative-text="Event" title="Event" size="medium">
+                        </lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span>Product Requirements Form</span>
+                                    <span class="slds-page-header__title slds-truncate"
+                                        title="Hydroclone">Hydrocyclone</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <div class="slds-card">
+
+        <div class="slds-p-horizontal_small slds-m-top_small">
+
+            <lightning-record-edit-form object-api-name="Product_Requirements_Form__c">
+                <div class="slds-form" role="list">
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input type="text" variant="label-inline" data-field="Quantity__c">
+                            </lightning-input>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input type="text" variant="label-inline" data-field="Originator__c">
+                            </lightning-input>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input type="date" variant="label-inline" data-field="Date__c">
+                            </lightning-input>
+                        </div>
+                    </div>
+
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input-field variant="label-inline" field-name="Location__c"
+                                data-field="Location__c" onchange={handleChange}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input type="text" variant="label-inline" data-field="Quote_No__c">
+                            </lightning-input>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input type="text" variant="label-inline" data-field="Order_No__c">
+                            </lightning-input>
+                        </div>
+                    </div>
+
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input-field variant="label-inline" field-name="Model_Name__c"
+                                data-field="Model_Name__c" onchange={handleChange}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input type="text" variant="label-inline" data-field="Revision__c">
+                            </lightning-input>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <div style="width:100%">
+                                <lightning-input type="text" variant="label-inline" data-field="Serial_Number__c">
+                                </lightning-input>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input-field variant="label-inline" field-name="Model_Size__c"
+                                data-field="Model_Size__c" onchange={handleChange}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <div style="width:100%">
+                                <lightning-record-edit-form object-api-name="Product_Requirements_Form__c">
+                                    <lightning-input-field variant="label-inline" field-name="Customer__c"
+                                        data-field="Customer__c">
+                                    </lightning-input-field>
+                                </lightning-record-edit-form>
+                            </div>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <div style="width:100%">
+                                <lightning-record-edit-form object-api-name="Product_Requirements_Form__c">
+                                    <lightning-input-field variant="label-inline" field-name="Project__c"
+                                        data-field="Project__c">
+                                    </lightning-input-field>
+                                </lightning-record-edit-form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input-field variant="label-inline" field-name="Cone_Angle__c"
+                                data-field="Cone_Angle__c" onchange={handleChange}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input-field variant="label-inline" field-name="Inlet__c"
+                                data-field="Inlet__c" onchange={handleChange}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input type="text" variant="label-inline" data-field="TAG_Nr__c">
+                            </lightning-input>
+                        </div>
+                    </div>
+
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input type="text" label="Model" value={model} variant="label-inline" read-only="true"></lightning-input>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input-field variant="label-inline" field-name="Vortex_Finder2__c"
+                                data-field="Vortex_Finder2__c" onchange={handleChange}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            
+                        </div>
+                    </div>      
+                    
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <lightning-input-field variant="label-inline" field-name="Spigot_Liner_Size2__c"
+                                data-field="Spigot_Liner_Size2__c" onchange={handleChange}>
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            
+                        </div>
+                    </div>                      
+
+                </div>
+            </lightning-record-edit-form>
+
+
+            <div class="slds-section slds-is-open" data-section="materials">
+                <h3 class="slds-section__title slds-theme_shade">
+                    <button class="slds-button slds-section__title-action" onclick={toggleSection} data-targetsection="materials">
+                        <span>
+                            <lightning-icon icon-name="utility:switch"
+                                            size="x-small"
+                                            class="slds-section__title-action-icon slds-button__icon_left"
+                                            alternative-text="button icon" 
+                                            >
+                            </lightning-icon>
+                        </span>
+                        <span class="slds-truncate" title="Materials">Materials</span>
+                    </button>                    
+                </h3>
+                <div aria-hidden="false" class="slds-section__content">
+
+                    <lightning-record-edit-form object-api-name="Product_Requirements_Form__c">
+
+                        <template for:each={materialFields} for:item="row">
+
+                            <lightning-layout key={row.index}>
+
+                                <template for:each={row.items} for:item="item">
+
+                                    <lightning-layout-item key={item.fieldApiName} size="6">
+
+                                        <div class="slds-form__row">
+                                            <div class="slds-form__item" role="listitem">
+
+                                                <lightning-input-field variant="label-inline"
+                                                    field-name={item.fieldApiName} data-field={item.fieldApiName}
+                                                    onchange={handleChange}>
+                                                </lightning-input-field>
+
+                                            </div>
+
+                                            <div class="slds-form__item" role="listitem">
+                                                <div class="slds-hide" data-default={item.fieldApiName}>
+                                                    <lightning-icon icon-name="action:approval"
+                                                        alternative-text="Default" title="Default" size="x-small">
+                                                    </lightning-icon>
+                                                </div>
+                                                <div class="slds-hide" data-changed={item.fieldApiName}>
+                                                    <lightning-icon icon-name="action:close" alternative-text="Changed"
+                                                        title="Changed" size="x-small">
+                                                    </lightning-icon>
+                                                </div>
+                                                <div style="margin-left: 10px;width: 150px;">
+                                                    <!--
+                                                    <span class="slds-badge">
+                                                        <lightning-formatted-number data-amount={item.fieldApiName}
+                                                            format-style="currency" currency-code="GBP"
+                                                            currency-display-as="code">
+                                                        </lightning-formatted-number>
+                                                    </span>
+                                                    -->
+                                                    <!--
+                                                    <lightning-input type="number" variant="label-hidden" formatter="currency" step="0.01" placeholder="Price"
+                                                    data-amount={item.fieldApiName} data-field={item.priceApiName} onchange={handleAmountChange}>                                                    
+                                                    </lightning-input>
+                                                    -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </lightning-layout-item>
+
+                                </template>
+
+                            </lightning-layout>
+
+
+                            <div class="slds-form__row" key={row.index}>
+                                <template for:each={row.items} for:item="item">
+
+                                    <div class="slds-form__item" role="listitem" key={item.fieldApiName}>
+
+                                        <div data-parent={item.fieldApiName} style="width: 100%" class="slds-hide">
+                                            <lightning-input type="text" variant="label-inline"
+                                                data-field={item.otherApiName}>
+                                            </lightning-input>
+                                        </div>
+
+                                    </div>
+                                    <div class="slds-form__item" role="listitem" key={item.fieldApiName}>
+
+                                    </div>
+
+                                </template>
+                            </div>
+
+                        </template>
+
+                    </lightning-record-edit-form>
+                </div>
+            </div>
+
+            <div class="slds-section slds-is-open" data-section="ancilaries">
+                <h3 class="slds-section__title slds-theme_shade">
+                    <button class="slds-button slds-section__title-action" onclick={toggleSection} data-targetsection="ancilaries">
+                        <span>
+                            <lightning-icon icon-name="utility:switch"
+                                            size="x-small"
+                                            class="slds-section__title-action-icon slds-button__icon_left"
+                                            alternative-text="button icon" 
+                                            >
+                            </lightning-icon>
+                        </span>
+                        <span class="slds-truncate" title="Ancilaries">Ancilaries</span>
+                    </button>                    
+                </h3>            
+                <div aria-hidden="false" class="slds-section__content">
+
+                    <lightning-record-edit-form object-api-name="Product_Requirements_Form__c">
+
+                        <template for:each={ancilariesFields} for:item="row">
+
+                            <lightning-layout key={row.index}>
+
+                                <template for:each={row.items} for:item="item">
+
+                                    <lightning-layout-item key={item.fieldApiName} size="6">
+
+                                        <div class="slds-form__row">
+                                            <div class="slds-form__item" role="listitem">
+
+                                                <lightning-input-field variant="label-inline"
+                                                    field-name={item.fieldApiName} data-field={item.fieldApiName}
+                                                    onchange={handleChange}>
+                                                </lightning-input-field>
+
+                                            </div>
+
+                                            <div class="slds-form__item" role="listitem">
+                                                <div class="slds-hide" data-default={item.fieldApiName}>
+                                                    <lightning-icon icon-name="action:approval"
+                                                        alternative-text="Default" title="Default" size="x-small">
+                                                    </lightning-icon>
+                                                </div>
+                                                <div class="slds-hide" data-changed={item.fieldApiName}>
+                                                    <lightning-icon icon-name="action:close" alternative-text="Changed"
+                                                        title="Changed" size="x-small">
+                                                    </lightning-icon>
+                                                </div>
+                                                <div style="margin-left: 10px;width: 150px;">
+                                                    <!--
+                                                    <span class="slds-badge">
+                                                        <lightning-formatted-number data-amount={item.fieldApiName}
+                                                            format-style="currency" currency-code="GBP"
+                                                            currency-display-as="code">
+                                                        </lightning-formatted-number>
+                                                    </span>
+                                                    -->
+                                                    <!--
+                                                    <lightning-input type="number" variant="label-hidden" formatter="currency" step="0.01" placeholder="Price"
+                                                    data-amount={item.fieldApiName} data-field={item.priceApiName} onchange={handleAmountChange}>
+                                                    </lightning-input>                                                    
+                                                    -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </lightning-layout-item>
+
+                                </template>
+
+                            </lightning-layout>
+
+
+                            <div class="slds-form__row" key={row.index}>
+                                <template for:each={row.items} for:item="item">
+
+                                    <div class="slds-form__item" role="listitem" key={item.fieldApiName}>
+
+                                        <div data-parent={item.fieldApiName} style="width: 100%" class="slds-hide">
+                                            <lightning-input type="text" variant="label-inline"
+                                                data-field={item.otherApiName}>
+                                            </lightning-input>
+                                        </div>
+
+                                    </div>
+                                    <div class="slds-form__item" role="listitem" key={item.fieldApiName}>
+
+                                    </div>
+
+                                </template>
+                            </div>
+
+                        </template>
+
+                    </lightning-record-edit-form>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="slds-card__footer" style="position: sticky;bottom: 40px;background-color: white;z-index: 10;">
+            <!--
+            <div class="slds-align_absolute-center slds-m-bottom_small">
+                <span class="slds-badge">
+                    Total:&nbsp;
+                    <lightning-formatted-number value={totalAmount} format-style="currency" currency-code="GBP"
+                        currency-display-as="code">
+                    </lightning-formatted-number>
+                </span>
+            </div>
+            -->
+            <div>
+                <lightning-button variant="neutral" label="Cancel" onclick={cancelForm}>
+                </lightning-button>
+                &nbsp;
+                <lightning-button variant="neutral" label="Save & Close" onclick={saveAndCloseForm}>
+                </lightning-button>
+                &nbsp;
+                <lightning-button variant="brand" label="Save" onclick={saveForm}>
+                </lightning-button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!--
+    <div class="slds-docked-form-footer">
+
+    </div>
+    -->
+
+    <template if:true={showSpinner}>
+        <lightning-spinner variant="brand" size="large">
+        </lightning-spinner>
+    </template>
+
+</template>

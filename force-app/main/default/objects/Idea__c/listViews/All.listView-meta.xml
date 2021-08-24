@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Subject__c</columns>
+    <columns>Object__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Category__c</columns>
+    <columns>Man_Days__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Requester__c</columns>
+    <columns>Progress_Update__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Created,Review,Committee,Scheduled,Building,Testing,Approved</value>
+    </filters>
+    <label>All Open Ideas</label>
+</ListView>

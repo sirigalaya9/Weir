@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>0001</fullName>
+        <default>false</default>
+        <label>0001 - Pay immediately w/o deduction</label>
+    </customValue>
+    <customValue>
+        <fullName>0002</fullName>
+        <default>false</default>
+        <label>0002 - 14 days 2%, 30 net</label>
+    </customValue>
+    <customValue>
+        <fullName>0003</fullName>
+        <default>false</default>
+        <label>0003 - 14 days 3%, 20/2%, 30 net</label>
+    </customValue>
+    <customValue>
+        <fullName>0004</fullName>
+        <default>false</default>
+        <label>0004 - as of end of month</label>
+    </customValue>
+    <customValue>
+        <fullName>0005</fullName>
+        <default>false</default>
+        <label>0005 - from the 10th of subs. month</label>
+    </customValue>
+    <customValue>
+        <fullName>0006</fullName>
+        <default>false</default>
+        <label>0006 - End of month 4%, Mid-month 2%</label>
+    </customValue>
+    <customValue>
+        <fullName>0007</fullName>
+        <default>false</default>
+        <label>0007 - 15th/31st subs. month 2%, ...</label>
+    </customValue>
+    <customValue>
+        <fullName>0008</fullName>
+        <default>false</default>
+        <label>0008 - 14 days 2%, 30/1,5%, 45 net</label>
+    </customValue>
+    <customValue>
+        <fullName>0009</fullName>
+        <default>false</default>
+        <label>0009 - Payable in 3 installments</label>
+    </customValue>
+    <customValue>
+        <fullName>100I</fullName>
+        <default>false</default>
+        <label>100I - R.D. 30 GG DF</label>
+    </customValue>
+    <customValue>
+        <fullName>105I</fullName>
+        <default>false</default>
+        <label>105I - R.D. 30 GG DRF</label>
+    </customValue>
+    <customValue>
+        <fullName>110I</fullName>
+        <default>false</default>
+        <label>110I - R.D. 30 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>115I</fullName>
+        <default>false</default>
+        <label>115I - R.D. 30 GG DRF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>120I</fullName>
+        <default>false</default>
+        <label>120I - R.D. 60 GG DF</label>
+    </customValue>
+    <customValue>
+        <fullName>125I</fullName>
+        <default>false</default>
+        <label>125I - R.D. 60 GG DRF</label>
+    </customValue>
+    <customValue>
+        <fullName>130I</fullName>
+        <default>false</default>
+        <label>130I - R.D. 60 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>135I</fullName>
+        <default>false</default>
+        <label>135I - R.D. 60 GG DRF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>140I</fullName>
+        <default>false</default>
+        <label>140I - R.D. 90 GG DF</label>
+    </customValue>
+    <customValue>
+        <fullName>145I</fullName>
+        <default>false</default>
+        <label>145I - R.D. 90 GG DRF</label>
+    </customValue>
+    <customValue>
+        <fullName>150I</fullName>
+        <default>false</default>
+        <label>150I - R.D. 90 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>155I</fullName>
+        <default>false</default>
+        <label>155I - R.D. 90 GG DRF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>160I</fullName>
+        <default>false</default>
+        <label>160I - R.D. 100% Avviso Merce Pronta</label>
+    </customValue>
+    <customValue>
+        <fullName>161I</fullName>
+        <default>false</default>
+        <label>161I - R.D. 50% Avviso Merce Pronta</label>
+    </customValue>
+    <customValue>
+        <fullName>165I</fullName>
+        <default>false</default>
+        <label>165I - R.D. 100% all&apos;Ordine</label>
+    </customValue>
+    <customValue>
+        <fullName>170I</fullName>
+        <default>false</default>
+        <label>170I - R.D. 100% alla Consegna</label>
+    </customValue>
+    <customValue>
+        <fullName>180I</fullName>
+        <default>false</default>
+        <label>180I - R.D.100% a ricevimento fattura</label>
+    </customValue>
+    <customValue>
+        <fullName>190I</fullName>
+        <default>false</default>
+        <label>190I - R.D. 50% 30GGDFFM 50% 60GGDFFM</label>
+    </customValue>
+    <customValue>
+        <fullName>200I</fullName>
+        <default>false</default>
+        <label>200I - B.B. 30 GG DF</label>
+    </customValue>
+    <customValue>
+        <fullName>205I</fullName>
+        <default>false</default>
+        <label>205I - B.B. 30 GG DRF</label>
+    </customValue>
+    <customValue>
+        <fullName>210I</fullName>
+        <default>false</default>
+        <label>210I - B.B. 30 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>211I</fullName>
+        <default>false</default>
+        <label>211I - B.B. 30 GG DF FM + 5 GG</label>
+    </customValue>
+    <customValue>
+        <fullName>212I</fullName>
+        <default>false</default>
+        <label>212I - B.B. 30 GG DF FM + 10 GG</label>
+    </customValue>
+    <customValue>
+        <fullName>213I</fullName>
+        <default>false</default>
+        <label>213I - B.B. 30 GG DF FM + 15 GG</label>
+    </customValue>
+    <customValue>
+        <fullName>215I</fullName>
+        <default>false</default>
+        <label>215I - B.B. 30 GG DRF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>220I</fullName>
+        <default>false</default>
+        <label>220I - B.B. 60 GG DF</label>
+    </customValue>
+    <customValue>
+        <fullName>225I</fullName>
+        <default>false</default>
+        <label>225I - B.B. 60 GG DRF</label>
+    </customValue>
+    <customValue>
+        <fullName>230I</fullName>
+        <default>false</default>
+        <label>230I - B.B. 60 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>231I</fullName>
+        <default>false</default>
+        <label>231I - B.B. 60 GG DF FM + 10 GG</label>
+    </customValue>
+    <customValue>
+        <fullName>232I</fullName>
+        <default>false</default>
+        <label>232I - B.B. 60 GG DF FM + 15 GG</label>
+    </customValue>
+    <customValue>
+        <fullName>235I</fullName>
+        <default>false</default>
+        <label>235I - B.B. 60 GG DRF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>240I</fullName>
+        <default>false</default>
+        <label>240I - B.B. 90 GG DF</label>
+    </customValue>
+    <customValue>
+        <fullName>245I</fullName>
+        <default>false</default>
+        <label>245I - B.B. 90 GG DRF</label>
+    </customValue>
+    <customValue>
+        <fullName>250I</fullName>
+        <default>false</default>
+        <label>250I - B.B. 90 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>252I</fullName>
+        <default>false</default>
+        <label>252I - B.B. 90 GG DF FM + 15 GG</label>
+    </customValue>
+    <customValue>
+        <fullName>255I</fullName>
+        <default>false</default>
+        <label>255I - B.B. 90 GG DRF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>260I</fullName>
+        <default>false</default>
+        <label>260I - B.B. 100% Avviso Merce Pronta</label>
+    </customValue>
+    <customValue>
+        <fullName>280I</fullName>
+        <default>false</default>
+        <label>280I - B.B.100% a ricevimento fattura</label>
+    </customValue>
+    <customValue>
+        <fullName>290I</fullName>
+        <default>false</default>
+        <label>290I - B.B. 50% 30GGDFFM 50% 60GGDFFM</label>
+    </customValue>
+    <customValue>
+        <fullName>295I</fullName>
+        <default>false</default>
+        <label>295I - B.B. 50% 60GGDFFM 50% 90GGDFFM</label>
+    </customValue>
+    <customValue>
+        <fullName>300I</fullName>
+        <default>false</default>
+        <label>300I - RI.BA. 30 GG DF</label>
+    </customValue>
+    <customValue>
+        <fullName>305I</fullName>
+        <default>false</default>
+        <label>305I - RI.BA. 30 GG DRF</label>
+    </customValue>
+    <customValue>
+        <fullName>310I</fullName>
+        <default>false</default>
+        <label>310I - Ri.BA. 30 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>312I</fullName>
+        <default>false</default>
+        <label>312I - Ri.BA. 30 GG DF FM + 10 GG</label>
+    </customValue>
+    <customValue>
+        <fullName>315I</fullName>
+        <default>false</default>
+        <label>315I - RI.BA. 30 GG DRF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>320I</fullName>
+        <default>false</default>
+        <label>320I - RI.BA. 60 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>325I</fullName>
+        <default>false</default>
+        <label>325I - RI.BA. 60 GG DRF</label>
+    </customValue>
+    <customValue>
+        <fullName>330I</fullName>
+        <default>false</default>
+        <label>330I - RI.BA. 60 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>332I</fullName>
+        <default>false</default>
+        <label>332I - RI.BA. 60 GG DF FM + 10GG</label>
+    </customValue>
+    <customValue>
+        <fullName>335I</fullName>
+        <default>false</default>
+        <label>335I - RI.BA. 60 GG DRF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>340I</fullName>
+        <default>false</default>
+        <label>340I - RI.BA. 120 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>345I</fullName>
+        <default>false</default>
+        <label>345I - RI.BA. 90 GG DRF</label>
+    </customValue>
+    <customValue>
+        <fullName>350I</fullName>
+        <default>false</default>
+        <label>350I - RI.BA. 90 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>352I</fullName>
+        <default>false</default>
+        <label>352I - RI.BA. 90 GG DF FM + 10GG</label>
+    </customValue>
+    <customValue>
+        <fullName>355I</fullName>
+        <default>false</default>
+        <label>355I - RI.BA. 90 GG DRF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>360I</fullName>
+        <default>false</default>
+        <label>360I - RI.BA. 120 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>370I</fullName>
+        <default>false</default>
+        <label>370I - RI.BA. 120 GG DF FM</label>
+    </customValue>
+    <customValue>
+        <fullName>380I</fullName>
+        <default>false</default>
+        <label>380I - RI.BA. 30% GGDFFM +15</label>
+    </customValue>
+    <customValue>
+        <fullName>390I</fullName>
+        <default>false</default>
+        <label>390I - RI.BA. 50%30, 50%60 GGDFFM</label>
+    </customValue>
+    <customValue>
+        <fullName>392I</fullName>
+        <default>false</default>
+        <label>392I - RI.BA. 50%30, 50%60 GGDFFM</label>
+    </customValue>
+    <customValue>
+        <fullName>395I</fullName>
+        <default>false</default>
+        <label>395I - RI.BA. 50/50 60/90 GG DFFM</label>
+    </customValue>
+    <customValue>
+        <fullName>396I</fullName>
+        <default>false</default>
+        <label>396I - RI.BA. 50/50 90/120 GG DFFM</label>
+    </customValue>
+    <customValue>
+        <fullName>400I</fullName>
+        <default>false</default>
+        <label>400I - RI.BA. 45 GG. DF S/S</label>
+    </customValue>
+    <customValue>
+        <fullName>D003</fullName>
+        <default>false</default>
+        <label>D003 - 3%-Cash, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D030</fullName>
+        <default>false</default>
+        <label>D030 - 2%-30 days InvD, &gt;60 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D102</fullName>
+        <default>false</default>
+        <label>D102 - 2%-10 days InvD, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D103</fullName>
+        <default>false</default>
+        <label>D103 - 3%-10 days InvD, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D104</fullName>
+        <default>false</default>
+        <label>D104 - 2%-14 days InvD, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D105</fullName>
+        <default>false</default>
+        <label>D105 - 3%-8 days InvD, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D130</fullName>
+        <default>false</default>
+        <label>D130 - 2.5% days 60 days</label>
+    </customValue>
+    <customValue>
+        <fullName>D141</fullName>
+        <default>false</default>
+        <label>D141 - 14 days 2% discnt, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D142</fullName>
+        <default>false</default>
+        <label>D142 - 2.5%-14 days InvD,&gt;15 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D143</fullName>
+        <default>false</default>
+        <label>D143 - 14 days 3% discnt, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D144</fullName>
+        <default>false</default>
+        <label>D144 - 14d 3%;30d 2%;30d month end 0%</label>
+    </customValue>
+    <customValue>
+        <fullName>D145</fullName>
+        <default>false</default>
+        <label>D145 - 14 days 2% discnt, 45 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D147</fullName>
+        <default>false</default>
+        <label>D147 - 14 days 3% discnt, 45 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D149</fullName>
+        <default>false</default>
+        <label>D149 - 30 days 2% discount</label>
+    </customValue>
+    <customValue>
+        <fullName>D14A</fullName>
+        <default>false</default>
+        <label>D14A - 14d 3%; 30d 2%; 60 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D14S</fullName>
+        <default>false</default>
+        <label>D14S - Due 14 days from invoice date</label>
+    </customValue>
+    <customValue>
+        <fullName>D203</fullName>
+        <default>false</default>
+        <label>D203 - 3%-20 days InvD, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D212</fullName>
+        <default>false</default>
+        <label>D212 - 2%-21 days InvD, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D214</fullName>
+        <default>false</default>
+        <label>D214 - 2%-14 days InvD, 60 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D315</fullName>
+        <default>false</default>
+        <label>D315 - 3.5/15 net 120</label>
+    </customValue>
+    <customValue>
+        <fullName>D443</fullName>
+        <default>false</default>
+        <label>D443 - 3%-44 days InvD, 60 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>D450</fullName>
+        <default>false</default>
+        <label>D450 - 3%-45 days InvDe</label>
+    </customValue>
+    <customValue>
+        <fullName>D453</fullName>
+        <default>false</default>
+        <label>D453 - 3%-45 days InvD, 60 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>IK00</fullName>
+        <default>false</default>
+        <label>IK00 - Within 5 days 3% cash discount</label>
+    </customValue>
+    <customValue>
+        <fullName>IM08</fullName>
+        <default>false</default>
+        <label>IM08 - Due on 8th of month after next</label>
+    </customValue>
+    <customValue>
+        <fullName>IM10</fullName>
+        <default>false</default>
+        <label>IM10 - Due on 10th of month after nex</label>
+    </customValue>
+    <customValue>
+        <fullName>IN01</fullName>
+        <default>false</default>
+        <label>IN01 - Retainage 360 days</label>
+    </customValue>
+    <customValue>
+        <fullName>IN02</fullName>
+        <default>false</default>
+        <label>IN02 - 3 part installment</label>
+    </customValue>
+    <customValue>
+        <fullName>IN03</fullName>
+        <default>false</default>
+        <label>IN03 - Retainage 540 days</label>
+    </customValue>
+    <customValue>
+        <fullName>IN04</fullName>
+        <default>false</default>
+        <label>IN04 - 50% 30 days, 50% 60 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>IN05</fullName>
+        <default>false</default>
+        <label>IN05 - 2 subsequent payments</label>
+    </customValue>
+    <customValue>
+        <fullName>IN06</fullName>
+        <default>false</default>
+        <label>IN06 - 2 Subsequent Payments</label>
+    </customValue>
+    <customValue>
+        <fullName>IN07</fullName>
+        <default>false</default>
+        <label>IN07 - 2 Subsequent Payments</label>
+    </customValue>
+    <customValue>
+        <fullName>IN08</fullName>
+        <default>false</default>
+        <label>IN08 - 50% Immed, 50% 15 Days</label>
+    </customValue>
+    <customValue>
+        <fullName>IN09</fullName>
+        <default>false</default>
+        <label>IN09 - 20% Immed, 80% 15 Days</label>
+    </customValue>
+    <customValue>
+        <fullName>IN10</fullName>
+        <default>false</default>
+        <label>IN10 - 80% Immed, 20% 15 Days</label>
+    </customValue>
+    <customValue>
+        <fullName>IN11</fullName>
+        <default>false</default>
+        <label>IN11 - 90% Immed, 10% 360 Days</label>
+    </customValue>
+    <customValue>
+        <fullName>IN12</fullName>
+        <default>false</default>
+        <label>IN12 - 12 part installment</label>
+    </customValue>
+    <customValue>
+        <fullName>IN21</fullName>
+        <default>false</default>
+        <label>IN21 - 90% M30, 10% Due M90 from Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>IN22</fullName>
+        <default>false</default>
+        <label>IN22 - 90% M30, 10% Due M120 from Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>IN23</fullName>
+        <default>false</default>
+        <label>IN23 - 90% M30, 10% Due M180 from Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>IN24</fullName>
+        <default>false</default>
+        <label>IN24 - 90% M30, 10% Due M240 from Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>IN25</fullName>
+        <default>false</default>
+        <label>IN25 - 90% M30, 10% Due M360 from Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>IN26</fullName>
+        <default>false</default>
+        <label>IN26 - 90% M60, 10% Due M36Months</label>
+    </customValue>
+    <customValue>
+        <fullName>IN31</fullName>
+        <default>false</default>
+        <label>IN31 - 95% M30, 5% Due M90 from Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>IN32</fullName>
+        <default>false</default>
+        <label>IN32 - 95% M30, 5% Due M120 from Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>IN33</fullName>
+        <default>false</default>
+        <label>IN33 - 95% M30, 5% Due M180 from Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>IN34</fullName>
+        <default>false</default>
+        <label>IN34 - 95% M30, 5% Due M240 from Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>IN41</fullName>
+        <default>false</default>
+        <label>IN41 - 80% M30, 10% M180, 10% M360</label>
+    </customValue>
+    <customValue>
+        <fullName>IN42</fullName>
+        <default>false</default>
+        <label>IN42 - 85% M120, 15% After 28 Months</label>
+    </customValue>
+    <customValue>
+        <fullName>IN43</fullName>
+        <default>false</default>
+        <label>IN43 - 75% on Delivery, 25% M60</label>
+    </customValue>
+    <customValue>
+        <fullName>IN44</fullName>
+        <default>false</default>
+        <label>IN44 - 50% I045, 50% after 13 months</label>
+    </customValue>
+    <customValue>
+        <fullName>IN45</fullName>
+        <default>false</default>
+        <label>IN45 - 80% M060, 10% M180, 10% M36M</label>
+    </customValue>
+    <customValue>
+        <fullName>IN46</fullName>
+        <default>false</default>
+        <label>IN46 - 60% I030, 30% I180, 10% I360</label>
+    </customValue>
+    <customValue>
+        <fullName>IN47</fullName>
+        <default>false</default>
+        <label>IN47 - 60% I030, 30% I270, 10% I450</label>
+    </customValue>
+    <customValue>
+        <fullName>IN48</fullName>
+        <default>false</default>
+        <label>IN48 - 57.5% M060, 42.5% M090</label>
+    </customValue>
+    <customValue>
+        <fullName>IN49</fullName>
+        <default>false</default>
+        <label>IN49 - 40% I0,50% I30, 8% I70, 2%I180</label>
+    </customValue>
+    <customValue>
+        <fullName>IN50</fullName>
+        <default>false</default>
+        <label>IN50 - 90% I030, 8% I035, 2% I145</label>
+    </customValue>
+    <customValue>
+        <fullName>IN51</fullName>
+        <default>false</default>
+        <label>IN51 - 40% I0,50% I30, 8% I35, 2%I145</label>
+    </customValue>
+    <customValue>
+        <fullName>IN52</fullName>
+        <default>false</default>
+        <label>IN52 - 85% I040, 15% M40M</label>
+    </customValue>
+    <customValue>
+        <fullName>IN53</fullName>
+        <default>false</default>
+        <label>IN53 - 67.4% I030, 32.6% M360</label>
+    </customValue>
+    <customValue>
+        <fullName>IN54</fullName>
+        <default>false</default>
+        <label>IN54 - 90% M030, 10% M280</label>
+    </customValue>
+    <customValue>
+        <fullName>IN55</fullName>
+        <default>false</default>
+        <label>IN55 - 70% I035, 20% I180, 10% I270</label>
+    </customValue>
+    <customValue>
+        <fullName>IN56</fullName>
+        <default>false</default>
+        <label>IN56 - 90% I060, 10% I535</label>
+    </customValue>
+    <customValue>
+        <fullName>LVT0</fullName>
+        <default>false</default>
+        <label>LVT0 - 16 days 2%, 31 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>M005</fullName>
+        <default>false</default>
+        <label>M005 - Payable 5 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M015</fullName>
+        <default>false</default>
+        <label>M015 - Payable 15 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M020</fullName>
+        <default>false</default>
+        <label>M020 - Payable 20 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M030</fullName>
+        <default>false</default>
+        <label>M030 - Payable 30 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M035</fullName>
+        <default>false</default>
+        <label>M035 - Payable 35 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M045</fullName>
+        <default>false</default>
+        <label>M045 - Payable 45 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M060</fullName>
+        <default>false</default>
+        <label>M060 - Payable 60 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M070</fullName>
+        <default>false</default>
+        <label>M070 - Payable 70 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M075</fullName>
+        <default>false</default>
+        <label>M075 - Payable 75 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M090</fullName>
+        <default>false</default>
+        <label>M090 - Payable 90 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M096</fullName>
+        <default>false</default>
+        <label>M096 - Payable 96 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M120</fullName>
+        <default>false</default>
+        <label>M120 - Payable 120 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M150</fullName>
+        <default>false</default>
+        <label>M150 - Payable 150 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M180</fullName>
+        <default>false</default>
+        <label>M180 - Payable 180 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M210</fullName>
+        <default>false</default>
+        <label>M210 - Payable 210 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M240</fullName>
+        <default>false</default>
+        <label>M240 - Payable 240 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M270</fullName>
+        <default>false</default>
+        <label>M270 - Payable 270 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M280</fullName>
+        <default>false</default>
+        <label>M280 - Payable 280 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M300</fullName>
+        <default>false</default>
+        <label>M300 - Payable 300 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M330</fullName>
+        <default>false</default>
+        <label>M330 - Payable 330 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M360</fullName>
+        <default>false</default>
+        <label>M360 - Payable 360 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M36M</fullName>
+        <default>false</default>
+        <label>M36M - Payable 40 Months</label>
+    </customValue>
+    <customValue>
+        <fullName>M390</fullName>
+        <default>false</default>
+        <label>M390 - Payable 390 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>M40M</fullName>
+        <default>false</default>
+        <label>M40M - Payable 40 Months</label>
+    </customValue>
+    <customValue>
+        <fullName>M540</fullName>
+        <default>false</default>
+        <label>M540 - Payable 540 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>MVT0</fullName>
+        <default>false</default>
+        <label>MVT0 - 10 days 3%, 16 2%, 31 net</label>
+    </customValue>
+    <customValue>
+        <fullName>NT00</fullName>
+        <default>false</default>
+        <label>NT00 - Payable upon receipt</label>
+    </customValue>
+    <customValue>
+        <fullName>NT30</fullName>
+        <default>false</default>
+        <label>NT30 - Net due in 30 days</label>
+    </customValue>
+    <customValue>
+        <fullName>NT45</fullName>
+        <default>false</default>
+        <label>NT45 - Net due in 45 days</label>
+    </customValue>
+    <customValue>
+        <fullName>NT60</fullName>
+        <default>false</default>
+        <label>NT60 - Net due in 60 days</label>
+    </customValue>
+    <customValue>
+        <fullName>WALL</fullName>
+        <default>false</default>
+        <label>WALL - 99% forever</label>
+    </customValue>
+    <customValue>
+        <fullName>WL01</fullName>
+        <default>false</default>
+        <label>WL01 - 12 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>Y030</fullName>
+        <default>false</default>
+        <label>Y030 - Due 30 days at calen month end</label>
+    </customValue>
+    <customValue>
+        <fullName>Y060</fullName>
+        <default>false</default>
+        <label>Y060 - Due 60 days at calen month end</label>
+    </customValue>
+    <customValue>
+        <fullName>Z001</fullName>
+        <default>false</default>
+        <label>Z001 - Cash In Advance</label>
+    </customValue>
+    <customValue>
+        <fullName>Z002</fullName>
+        <default>false</default>
+        <label>Z002 - Cash on Delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>Z003</fullName>
+        <default>false</default>
+        <label>Z003 - Net 07 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z004</fullName>
+        <default>false</default>
+        <label>Z004 - Net 14 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z005</fullName>
+        <default>false</default>
+        <label>Z005 - Net 15 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z006</fullName>
+        <default>false</default>
+        <label>Z006 - Net 21 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z007</fullName>
+        <default>false</default>
+        <label>Z007 - Net 28 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z008</fullName>
+        <default>false</default>
+        <label>Z008 - Net 30 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z009</fullName>
+        <default>false</default>
+        <label>Z009 - Net 45 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z010</fullName>
+        <default>false</default>
+        <label>Z010 - Net 60 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z011</fullName>
+        <default>false</default>
+        <label>Z011 - Net 90 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z012</fullName>
+        <default>false</default>
+        <label>Z012 - 30 Days End of Month</label>
+    </customValue>
+    <customValue>
+        <fullName>Z013</fullName>
+        <default>false</default>
+        <label>Z013 - 60 Days End of Month</label>
+    </customValue>
+    <customValue>
+        <fullName>Z014</fullName>
+        <default>false</default>
+        <label>Z014 - L/C 60 days from B/L</label>
+    </customValue>
+    <customValue>
+        <fullName>Z015</fullName>
+        <default>false</default>
+        <label>Z015 - L/C 30 days from B/L</label>
+    </customValue>
+    <customValue>
+        <fullName>Z016</fullName>
+        <default>false</default>
+        <label>Z016 - Due immediately</label>
+    </customValue>
+    <customValue>
+        <fullName>Z017</fullName>
+        <default>false</default>
+        <label>Z017 - Net 10 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z018</fullName>
+        <default>false</default>
+        <label>Z018 - Net 11 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z019</fullName>
+        <default>false</default>
+        <label>Z019 - Net 12 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z020</fullName>
+        <default>false</default>
+        <label>Z020 - Net 13 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z021</fullName>
+        <default>false</default>
+        <label>Z021 - Payable 25 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z022</fullName>
+        <default>false</default>
+        <label>Z022 - 35 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>Z023</fullName>
+        <default>false</default>
+        <label>Z023 - Payable 40 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z024</fullName>
+        <default>false</default>
+        <label>Z024 - Payable 42 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z025</fullName>
+        <default>false</default>
+        <label>Z025 - Payable 85 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z026</fullName>
+        <default>false</default>
+        <label>Z026 - Payment per contract agreement</label>
+    </customValue>
+    <customValue>
+        <fullName>Z027</fullName>
+        <default>false</default>
+        <label>Z027 - Cash against documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Z028</fullName>
+        <default>false</default>
+        <label>Z028 - Confirmed Letter of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>Z029</fullName>
+        <default>false</default>
+        <label>Z029 - Irrevocable Letter of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>Z030</fullName>
+        <default>false</default>
+        <label>Z030 - 30 days from invoice and FCR</label>
+    </customValue>
+    <customValue>
+        <fullName>Z031</fullName>
+        <default>false</default>
+        <label>Z031 - Payable 30 days month end-RCTI</label>
+    </customValue>
+    <customValue>
+        <fullName>Z032</fullName>
+        <default>false</default>
+        <label>Z032 - 2.5% days 30 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z033</fullName>
+        <default>false</default>
+        <label>Z033 - Payment in advance</label>
+    </customValue>
+    <customValue>
+        <fullName>Z034</fullName>
+        <default>false</default>
+        <label>Z034 - Card Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>Z035</fullName>
+        <default>false</default>
+        <label>Z035 - Payment with order</label>
+    </customValue>
+    <customValue>
+        <fullName>Z036</fullName>
+        <default>false</default>
+        <label>Z036 - 30 days Cash against documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Z037</fullName>
+        <default>false</default>
+        <label>Z037 - 60 days Cash against documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Z038</fullName>
+        <default>false</default>
+        <label>Z038 - Due 30 days net from DAP date</label>
+    </customValue>
+    <customValue>
+        <fullName>Z039</fullName>
+        <default>false</default>
+        <label>Z039 - Payable 145 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z040</fullName>
+        <default>false</default>
+        <label>Z040 - Irrevocable Confirmed LOC</label>
+    </customValue>
+    <customValue>
+        <fullName>Z041</fullName>
+        <default>false</default>
+        <label>Z041 - Unconfirmed Letter of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>Z042</fullName>
+        <default>false</default>
+        <label>Z042 - 70 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>Z043</fullName>
+        <default>false</default>
+        <label>Z043 - Net 120 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z044</fullName>
+        <default>false</default>
+        <label>Z044 - Net 180 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z045</fullName>
+        <default>false</default>
+        <label>Z045 - Net 10 Days from Shipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Z046</fullName>
+        <default>false</default>
+        <label>Z046 - Net 30 Days from Shipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Z047</fullName>
+        <default>false</default>
+        <label>Z047 - Net 90 Days from Shipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Z048</fullName>
+        <default>false</default>
+        <label>Z048 - Net 100 Days from Shipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Z049</fullName>
+        <default>false</default>
+        <label>Z049 - 75 Days from B/L</label>
+    </customValue>
+    <customValue>
+        <fullName>Z050</fullName>
+        <default>false</default>
+        <label>Z050 - 70 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>Z051</fullName>
+        <default>false</default>
+        <label>Z051 - Payable 180 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z052</fullName>
+        <default>false</default>
+        <label>Z052 - Payable 270 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z053</fullName>
+        <default>false</default>
+        <label>Z053 - Payable 360 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z054</fullName>
+        <default>false</default>
+        <label>Z054 - Payable 450 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z055</fullName>
+        <default>false</default>
+        <label>Z055 - Payable 535 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z056</fullName>
+        <default>false</default>
+        <label>Z056 - Payable 5 days</label>
+    </customValue>
+    <customValue>
+        <fullName>Z057</fullName>
+        <default>false</default>
+        <label>Z057 - Net 50 Days Inv</label>
+    </customValue>
+    <customValue>
+        <fullName>Z058</fullName>
+        <default>false</default>
+        <label>Z058 - 1%10 NET45</label>
+    </customValue>
+    <customValue>
+        <fullName>Z059</fullName>
+        <default>false</default>
+        <label>Z059 - 1%15 NET30</label>
+    </customValue>
+    <customValue>
+        <fullName>Z060</fullName>
+        <default>false</default>
+        <label>Z060 - 1%NET15 NET45</label>
+    </customValue>
+    <customValue>
+        <fullName>Z061</fullName>
+        <default>false</default>
+        <label>Z061 - 1%15 NET75 DAYS</label>
+    </customValue>
+    <customValue>
+        <fullName>Z062</fullName>
+        <default>false</default>
+        <label>Z062 - 1%20 NET40</label>
+    </customValue>
+    <customValue>
+        <fullName>Z063</fullName>
+        <default>false</default>
+        <label>Z063 - 1.5%10 NET30</label>
+    </customValue>
+    <customValue>
+        <fullName>Z064</fullName>
+        <default>false</default>
+        <label>Z064 - 1.5%10 NET45</label>
+    </customValue>
+    <customValue>
+        <fullName>Z065</fullName>
+        <default>false</default>
+        <label>Z065 - 1.5%15 NET45</label>
+    </customValue>
+    <customValue>
+        <fullName>Z066</fullName>
+        <default>false</default>
+        <label>Z066 - 2% Net 15</label>
+    </customValue>
+    <customValue>
+        <fullName>Z067</fullName>
+        <default>false</default>
+        <label>Z067 - 2% Net 60</label>
+    </customValue>
+    <customValue>
+        <fullName>Z068</fullName>
+        <default>false</default>
+        <label>Z068 - 2%10 NET45</label>
+    </customValue>
+    <customValue>
+        <fullName>Z069</fullName>
+        <default>false</default>
+        <label>Z069 - 2%15 NET30</label>
+    </customValue>
+    <customValue>
+        <fullName>Z070</fullName>
+        <default>false</default>
+        <label>Z070 - 2%15 NET 90</label>
+    </customValue>
+    <customValue>
+        <fullName>Z071</fullName>
+        <default>false</default>
+        <label>Z071 - 25%W/ORDER 75%NET30</label>
+    </customValue>
+    <customValue>
+        <fullName>Z072</fullName>
+        <default>false</default>
+        <label>Z072 - 50% CIA 50% NET30</label>
+    </customValue>
+    <customValue>
+        <fullName>Z073</fullName>
+        <default>false</default>
+        <label>Z073 - 50%WITHORDER/50%CIA</label>
+    </customValue>
+    <customValue>
+        <fullName>Z074</fullName>
+        <default>false</default>
+        <label>Z074 - NET 20 DAYS</label>
+    </customValue>
+    <customValue>
+        <fullName>Z075</fullName>
+        <default>false</default>
+        <label>Z075 - NET 55 DAYS</label>
+    </customValue>
+    <customValue>
+        <fullName>Z076</fullName>
+        <default>false</default>
+        <label>Z076 - NET 63 DAYS</label>
+    </customValue>
+    <customValue>
+        <fullName>Z077</fullName>
+        <default>false</default>
+        <label>Z077 - LOAD TO LOAD</label>
+    </customValue>
+    <customValue>
+        <fullName>Z078</fullName>
+        <default>false</default>
+        <label>Z078 - 1%10 NET 30</label>
+    </customValue>
+    <customValue>
+        <fullName>Z079</fullName>
+        <default>false</default>
+        <label>Z079 - 2%10 NET 120</label>
+    </customValue>
+    <customValue>
+        <fullName>ZB00</fullName>
+        <default>false</default>
+        <label>ZB00 - Pay immediately w/o deduction</label>
+    </customValue>
+    <customValue>
+        <fullName>ZB01</fullName>
+        <default>false</default>
+        <label>ZB01 - 14 Days 3%, 30/2%, 45 net</label>
+    </customValue>
+    <customValue>
+        <fullName>ZB02</fullName>
+        <default>false</default>
+        <label>ZB02 - 8 days 5%, 14/2%, 21 net</label>
+    </customValue>
+    <customValue>
+        <fullName>ZB03</fullName>
+        <default>false</default>
+        <label>ZB03 - 20 days 2%, 30 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>ZB04</fullName>
+        <default>false</default>
+        <label>ZB04 - 10 days 4%, 20/2%, 30 net</label>
+    </customValue>
+    <customValue>
+        <fullName>ZB05</fullName>
+        <default>false</default>
+        <label>ZB05 - 5 days 2%, 10 days net</label>
+    </customValue>
+    <customValue>
+        <fullName>ZC01</fullName>
+        <default>false</default>
+        <label>ZC01 - Payment per contract agreement</label>
+    </customValue>
+    <customValue>
+        <fullName>ZC02</fullName>
+        <default>false</default>
+        <label>ZC02 - Cash against documents</label>
+    </customValue>
+    <customValue>
+        <fullName>ZC03</fullName>
+        <default>false</default>
+        <label>ZC03 - Confirmed Letter of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>ZC04</fullName>
+        <default>false</default>
+        <label>ZC04 - Irrevocable Letter of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>ZC05</fullName>
+        <default>false</default>
+        <label>ZC05 - Payment in advance</label>
+    </customValue>
+    <customValue>
+        <fullName>ZC06</fullName>
+        <default>false</default>
+        <label>ZC06 - Card Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>ZC07</fullName>
+        <default>false</default>
+        <label>ZC07 - Letter of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>Z083</fullName>
+        <default>false</default>
+        <label>Z083 - Payable 100 days month end</label>
+    </customValue>
+    <customValue>
+        <fullName>Z080</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Z080</label>
+    </customValue>
+    <customValue>
+        <fullName>Z081</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Z081</label>
+    </customValue>
+    <customValue>
+        <fullName>Z082</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Z082</label>
+    </customValue>
+    <masterLabel>Payment Term</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

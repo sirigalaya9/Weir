@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Notify_Opportunity_Owner</name>
+        <label>Notify Opportunity Owner</label>
+        <locationX>264</locationX>
+        <locationY>638</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Loop_All_Open_Child_Opportunities</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>NotifyOwner</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <name>Assign_Opportunity_Owner</name>
+        <label>Assign Opportunity Owner</label>
+        <locationX>264</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>ProjectName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_All_Open_Child_Opportunities.Project__r.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>OppName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_All_Open_Child_Opportunities.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_All_Open_Child_Opportunities.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Notify_Opportunity_Owner</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Does_Project_Owner_equal_Opp_Owner</name>
+        <label>Does Project Owner equal Opp Owner?</label>
+        <locationX>396</locationX>
+        <locationY>398</locationY>
+        <defaultConnector>
+            <targetReference>Loop_All_Open_Child_Opportunities</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_All_Open_Child_Opportunities.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>Loop_All_Open_Child_Opportunities.Project__r.OwnerId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Opportunity_Owner</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Opportunity - Notify Opportunity Owner of Stopped Project2 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - Notify Opportunity Owner of Stopped Project2</label>
+    <loops>
+        <name>Loop_All_Open_Child_Opportunities</name>
+        <label>Loop All Open Child Opportunities</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <collectionReference>Get_Open_Child_Opportunities</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Does_Project_Owner_equal_Opp_Owner</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Open_Child_Opportunities</name>
+        <label>Get Open Child Opportunities</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_All_Open_Child_Opportunities</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsClosed</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Project__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Open_Child_Opportunities</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>NotifyOwner</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello @[{!Loop_All_Open_Child_Opportunities.OwnerId}],
+
+The following Project has been requested to be Stopped.
+
+Project Name: {!Loop_All_Open_Child_Opportunities.Project__r.Name}
+
+{!Loop_All_Open_Child_Opportunities.Name} will be moved to Stopped after the request is approved. If you do not want your Opportunity to be moved to Stopped please unlink it from the Project.</text>
+    </textTemplates>
+    <variables>
+        <name>OppName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProjectName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>RecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Notify_Opportunity_Owner_On_Hold_0</name>
+        <label>Notify Opportunity Owner On Hold</label>
+        <locationX>264</locationX>
+        <locationY>758</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Loop_Through_Child_Opportunities</targetReference>
+        </connector>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>NotifyOwnerOnHoldOpp</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <name>Assign_On_Hold_Child_Opportunities</name>
+        <label>Assign On Hold Child Opportunities</label>
+        <locationX>396</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>RecordId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_Through_Child_Opportunities.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Does_Project_Owner_equal_Opp_Owner1</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Project_Stage</name>
+        <label>Check Project Stage</label>
+        <locationX>550</locationX>
+        <locationY>398</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Child_Opportunities</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>On_Hold</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ProjectStage</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>On Hold</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_On_Hold_Child_Opportunities</targetReference>
+            </connector>
+            <label>On Hold</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Project_Owner_equal_Opp_Owner1</name>
+        <label>Does Project Owner equal Opp Owner?</label>
+        <locationX>396</locationX>
+        <locationY>638</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Through_Child_Opportunities</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes</defaultConnectorLabel>
+        <rules>
+            <name>No1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Through_Child_Opportunities.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>Loop_Through_Child_Opportunities.Project__r.OwnerId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Opportunity_Owner_On_Hold_0</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Projects - Update Child Opportunities {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Projects - Update Child Opportunities</label>
+    <loops>
+        <name>Loop_Through_Child_Opportunities</name>
+        <label>Loop Through Child Opportunities</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <collectionReference>Get_Project_Child_Opportunities</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_Project_Stage</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_All_Child_Opportunities</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Project_Child_Opportunities</name>
+        <label>Get Project Child Opportunities</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Through_Child_Opportunities</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Project__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>IsClosed</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_All_Child_Opportunities</name>
+        <label>Update All Child Opportunities</label>
+        <locationX>176</locationX>
+        <locationY>1166</locationY>
+        <inputReference>NewCollectionChildOpportunities</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Project_Child_Opportunities</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>NotifyOwnerOnHoldOpp</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello @[{!Loop_Through_Child_Opportunities.OwnerId}],
+
+{!Loop_Through_Child_Opportunities.Project__r.Name} has been placed On Hold. If you have any questions please contact me. Thank you!</text>
+    </textTemplates>
+    <textTemplates>
+        <name>NotifyOwnerStoppedOpp</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello @[{!Loop_Through_Child_Opportunities.OwnerId}],
+
+{!Loop_Through_Child_Opportunities.Name} has been Stopped because {!Loop_Through_Child_Opportunities.Project__r.Name} was approved to be Stopped. If you have any questions please contact me.
+Thanks you!</text>
+    </textTemplates>
+    <variables>
+        <name>NewCollectionChildOpportunities</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>ProjectStage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>RecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

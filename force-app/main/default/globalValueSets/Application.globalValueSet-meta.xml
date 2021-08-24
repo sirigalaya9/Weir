@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Z07</fullName>
+        <default>false</default>
+        <label>Ash Handling</label>
+    </customValue>
+    <customValue>
+        <fullName>Z20</fullName>
+        <default>false</default>
+        <label>Autoclave Feeding</label>
+    </customValue>
+    <customValue>
+        <fullName>Z21</fullName>
+        <default>false</default>
+        <label>Biomass Pumping</label>
+    </customValue>
+    <customValue>
+        <fullName>Z22</fullName>
+        <default>false</default>
+        <label>Brine Recirculation</label>
+    </customValue>
+    <customValue>
+        <fullName>Z23</fullName>
+        <default>false</default>
+        <label>Carbon in Pulp</label>
+    </customValue>
+    <customValue>
+        <fullName>Z24</fullName>
+        <default>false</default>
+        <label>Cement Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Z25</fullName>
+        <default>false</default>
+        <label>Classification</label>
+    </customValue>
+    <customValue>
+        <fullName>Z26</fullName>
+        <default>false</default>
+        <label>Comminution</label>
+    </customValue>
+    <customValue>
+        <fullName>Z27</fullName>
+        <default>false</default>
+        <label>Cyclone Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>Z28</fullName>
+        <default>false</default>
+        <label>Desliming</label>
+    </customValue>
+    <customValue>
+        <fullName>Z29</fullName>
+        <default>false</default>
+        <label>Dewatering</label>
+    </customValue>
+    <customValue>
+        <fullName>Z30</fullName>
+        <default>false</default>
+        <label>Digester Feeding</label>
+    </customValue>
+    <customValue>
+        <fullName>Z31</fullName>
+        <default>false</default>
+        <label>Drain and Rinse</label>
+    </customValue>
+    <customValue>
+        <fullName>Z32</fullName>
+        <default>false</default>
+        <label>Dredge</label>
+    </customValue>
+    <customValue>
+        <fullName>Z33</fullName>
+        <default>false</default>
+        <label>Feed Prep</label>
+    </customValue>
+    <customValue>
+        <fullName>Z34</fullName>
+        <default>false</default>
+        <label>FGD</label>
+    </customValue>
+    <customValue>
+        <fullName>Z35</fullName>
+        <default>false</default>
+        <label>Fiterpress Feeding</label>
+    </customValue>
+    <customValue>
+        <fullName>Z36</fullName>
+        <default>false</default>
+        <label>Flotation</label>
+    </customValue>
+    <customValue>
+        <fullName>Z37</fullName>
+        <default>false</default>
+        <label>Food Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Z38</fullName>
+        <default>false</default>
+        <label>Gasifier Feeding</label>
+    </customValue>
+    <customValue>
+        <fullName>Z39</fullName>
+        <default>false</default>
+        <label>Gravity Circuit</label>
+    </customValue>
+    <customValue>
+        <fullName>Z40</fullName>
+        <default>false</default>
+        <label>Heavy Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Z41</fullName>
+        <default>false</default>
+        <label>Hydraulic Ore Hoisting</label>
+    </customValue>
+    <customValue>
+        <fullName>Z01</fullName>
+        <default>false</default>
+        <label>Mill Circuit</label>
+    </customValue>
+    <customValue>
+        <fullName>Z42</fullName>
+        <default>false</default>
+        <label>Mine Backfilling</label>
+    </customValue>
+    <customValue>
+        <fullName>Z18</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Z43</fullName>
+        <default>false</default>
+        <label>Pellet Production/Pellet Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>Z44</fullName>
+        <default>false</default>
+        <label>Pipeline, pipeline booster</label>
+    </customValue>
+    <customValue>
+        <fullName>Z45</fullName>
+        <default>false</default>
+        <label>Pulp Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Z46</fullName>
+        <default>false</default>
+        <label>Reactor Feeding</label>
+    </customValue>
+    <customValue>
+        <fullName>Z47</fullName>
+        <default>false</default>
+        <label>Sand Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Z48</fullName>
+        <default>false</default>
+        <label>Sand Slurries</label>
+    </customValue>
+    <customValue>
+        <fullName>Z49</fullName>
+        <default>false</default>
+        <label>Scale/Slag</label>
+    </customValue>
+    <customValue>
+        <fullName>Z50</fullName>
+        <default>false</default>
+        <label>Sludge Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Z51</fullName>
+        <default>false</default>
+        <label>Slurry Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Z52</fullName>
+        <default>false</default>
+        <label>Sulphuric Acid</label>
+    </customValue>
+    <customValue>
+        <fullName>Z53</fullName>
+        <default>false</default>
+        <label>Tailings</label>
+    </customValue>
+    <customValue>
+        <fullName>Z54</fullName>
+        <default>false</default>
+        <label>Tunnelling</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Z55</fullName>
+        <default>false</default>
+        <label>Water Transfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Sugar Beet</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sugar Beet</label>
+    </customValue>
+    <customValue>
+        <fullName>Tank Lining</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tank Lining</label>
+    </customValue>
+    <customValue>
+        <fullName>Solar Power (Hot Salt Pumps)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Solar Power (Hot Salt Pumps)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sludge Disposal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sludge Disposal</label>
+    </customValue>
+    <customValue>
+        <fullName>Screening</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Screening</label>
+    </customValue>
+    <customValue>
+        <fullName>Plant Process Water</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Plant Process Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil Well Drilling Fluids</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Oil Well Drilling Fluids</label>
+    </customValue>
+    <customValue>
+        <fullName>Mine Desludging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mine Desludging</label>
+    </customValue>
+    <customValue>
+        <fullName>Incinerator Feeding</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Incinerator Feeding</label>
+    </customValue>
+    <customValue>
+        <fullName>High Temperature/Thermal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High Temperature/Thermal</label>
+    </customValue>
+    <customValue>
+        <fullName>Crushing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Crushing</label>
+    </customValue>
+    <customValue>
+        <fullName>Co-Disposal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Co-Disposal</label>
+    </customValue>
+    <customValue>
+        <fullName>Z19</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Aggregates</label>
+    </customValue>
+    <customValue>
+        <fullName>Z17</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Transfer for Stock</label>
+    </customValue>
+    <customValue>
+        <fullName>Z16</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Service Item</label>
+    </customValue>
+    <customValue>
+        <fullName>Z15</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Replacement Part</label>
+    </customValue>
+    <customValue>
+        <fullName>Z14</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sample Provided</label>
+    </customValue>
+    <customValue>
+        <fullName>Z13</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OEM Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Z12</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nuclear Industry</label>
+    </customValue>
+    <customValue>
+        <fullName>Z11</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Military Usage</label>
+    </customValue>
+    <customValue>
+        <fullName>Z10</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Oil &amp; Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Z09</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Waste Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Z08</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Z06</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sand &amp; Gravel</label>
+    </customValue>
+    <customValue>
+        <fullName>Z05</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chemical</label>
+    </customValue>
+    <customValue>
+        <fullName>Z04</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Coal Washing</label>
+    </customValue>
+    <customValue>
+        <fullName>Z03</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mine Dewatering</label>
+    </customValue>
+    <customValue>
+        <fullName>Z00</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mineral Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Z02</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Power Generation FGD</label>
+    </customValue>
+    <masterLabel>Application</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

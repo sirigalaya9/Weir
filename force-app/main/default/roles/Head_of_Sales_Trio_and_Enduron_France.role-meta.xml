@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Head of Sales Trio and Enduron France</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Head of Sales Trio and Enduron France</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Field_Sales_Manager</parentRole>
+</Role>

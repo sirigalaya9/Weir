@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>ENDURON HPGR Regional Sales Manager MEAE</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>ENDURON HPGR Regional Sales Manager MEAE</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>ENDURON_HPGR_Head_of_Global_Sales</parentRole>
+</Role>

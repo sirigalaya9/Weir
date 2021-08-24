@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>National Sales &amp; Marketing Manager - Indonesia</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>National Sales &amp; Marketing Manager - Indonesia</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Director_Dewatering_APAC</parentRole>
+</Role>

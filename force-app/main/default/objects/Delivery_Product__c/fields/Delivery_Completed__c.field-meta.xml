@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Completed__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(TEXT( Item_Status__c ) = &quot;Billing&quot;, TEXT( Item_Status__c ) = &quot;Proof of Delivery&quot;, TEXT( Item_Status__c ) = &quot;Goods Issued&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Delivery Completed</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

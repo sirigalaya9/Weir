@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Russia Managing Director</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Russia Managing Director</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Regional_Managing_Director_Europe_North_Africa_Central_Asia_Russia</parentRole>
+</Role>

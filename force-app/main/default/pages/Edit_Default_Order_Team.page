@@ -1,0 +1,53 @@
+<apex:page standardController="Default_Order_Team__c" extensions="EditDefaultOrderTeamController">
+    <head>
+        <style>
+        .sectionHeader
+        {
+            margin-top: 10px;
+        }
+        .pageTitle
+        {
+            font-size: 10px;  
+        }
+        .pageSubTitle
+        {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="sectionHeader">
+            <h1 class="pageTitle">Default Order Team</h1>
+            <br/>
+            <h2 class="pageSubTitle">Edit Member</h2>
+        </div>
+     
+        <p>
+        Update this member of your default Order team.
+        </p>
+        <apex:form >                    
+            <apex:pageBlock mode="edit" >
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton action="{!save}" value="Save"/>                    
+                    <apex:commandButton action="{!cancel}" value="Cancel"/>
+                </apex:pageBlockButtons>
+                <br/>
+                <apex:inputCheckbox value="{!userSetting.Enable_Default_Order_Team__c}" id="enableDefaultOrderTeam"/>                
+                <apex:outputLabel value="Automatically add my default Order team to Orders that I create or that are transferred to me" for="enableDefaultOrderTeam"/>                
+                <br/><br/>
+                <apex:pageBlockSection title="Team Member Information" collapsible="false" columns="1">             
+                    <apex:outputField value="{!defaultOrderTeam.Team_Member__c}"/>
+                    <apex:inputField value="{!defaultOrderTeam.Order_Access__c}" required="{!IF(!ISBLANK(defaultOrderTeam.Team_Member__c),'true','false')}"/>
+                    <apex:inputField value="{!defaultOrderTeam.Team_Role__c}" required="{!IF(!ISBLANK(defaultOrderTeam.Team_Member__c),'true','false')}"/>                         
+                </apex:pageBlockSection>
+                <br/>
+                <apex:inputCheckbox value="{!updateOrderTeam}" id="updateOrderTeam"/>
+                <apex:outputLabel value="Update Order teams of my existing Orders" for="updateOrderTeam"/>                       
+            </apex:pageBlock>
+        </apex:form>
+        
+    </body>
+</apex:page>

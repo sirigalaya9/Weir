@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Material_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Material Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Semifinished Product</fullName>
+                <default>false</default>
+                <label>Semifinished Product</label>
+            </value>
+            <value>
+                <fullName>Trading Goods</fullName>
+                <default>false</default>
+                <label>Trading Goods</label>
+            </value>
+            <value>
+                <fullName>Non-stock materials</fullName>
+                <default>false</default>
+                <label>Non-stock materials</label>
+            </value>
+            <value>
+                <fullName>Weir Manufactured Product</fullName>
+                <default>false</default>
+                <label>Weir Manufactured Product</label>
+            </value>
+            <value>
+                <fullName>Weir Configurable Product</fullName>
+                <default>false</default>
+                <label>Weir Configurable Product</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+            <value>
+                <fullName>HALB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HALB</label>
+            </value>
+            <value>
+                <fullName>HAWA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HAWA</label>
+            </value>
+            <value>
+                <fullName>NLAG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NLAG</label>
+            </value>
+            <value>
+                <fullName>ZCON</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ZCON</label>
+            </value>
+            <value>
+                <fullName>ZWMP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ZWMP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

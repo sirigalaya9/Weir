@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Contract Manager East and Strategy BU</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Contract Manager East and Strategy BU</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Director_East_and_Strategy</parentRole>
+</Role>

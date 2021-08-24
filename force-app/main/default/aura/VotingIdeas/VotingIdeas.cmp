@@ -1,0 +1,54 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:hasSObjectName" access="global">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="record" type="Object"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="Upvoted" type="Boolean" default= "false"/>
+    <aura:attribute name="Downvoted" type="Boolean" default= "false"/>
+
+    <div class="slds-box slds-theme_default" style="padding:0px">
+        
+        <div class="slds-card__header">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-account" title="Voting">
+                        <lightning:icon iconName="custom:custom45" size="small" alternativeText="Voting"/>
+                        <span class="slds-assistive-text">Voting</span>
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Ideas">
+                            <span>Vote For This Idea</span>
+                        </a>
+                    </h2>
+                </div>
+            </header>
+        </div>
+        
+        <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Idea__c">
+            
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col" style="text-align: center;">
+                    <lightning:outputField fieldName="Upvotes__c" class="red" />
+                </div>
+                <div class="slds-col">
+                    <lightning:buttonIconStateful  onclick="{!c.handleUpvote}" alternativeText="Like" variant="border" iconName="utility:like" size="large" selected ="{!v.Upvoted}"></lightning:buttonIconStateful> 
+                </div>	
+                
+                <div class="slds-col" style="text-align: center;">
+                    <lightning:outputField fieldName="Downvotes__c" />
+                </div>
+                <div class="slds-col">
+                    <lightning:buttonIconStateful  onclick="{!c.handleDownvote}" alternativeText="Dislike" variant="border" iconName="utility:dislike" size="large" selected ="{!v.Downvoted}"></lightning:buttonIconStateful>
+                </div>	
+                
+            </div>
+            
+            <div style="padding-bottom:10px"></div>
+            
+        </lightning:recordViewForm>
+        
+    </div>   
+    <lightning:flow aura:id="flowData" class="slds-hidden" onstatuschange="{!c.statusChange}"/>
+    
+</aura:component>

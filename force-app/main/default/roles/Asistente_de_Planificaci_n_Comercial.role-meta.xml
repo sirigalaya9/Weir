@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Asistente de Planificación Comercial</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Asistente de Planificación Comercial</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Head_of_Sales_Administration_Peru</parentRole>
+</Role>

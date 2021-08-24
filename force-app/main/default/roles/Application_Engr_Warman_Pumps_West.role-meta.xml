@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Application Engr Warman Pumps West</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Application Engr Warman Pumps West</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>General_Manager_Products_West</parentRole>
+</Role>

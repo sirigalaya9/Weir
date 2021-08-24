@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Service Sales Specialist South West (Service Centre)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Service Sales Specialist South West (Service Centre)</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Service_Sales_Specialist_Aftermarket_Sales_and_Support</parentRole>
+</Role>

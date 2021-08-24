@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>General Manager Comminution Business ENAR</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>General Manager Comminution Business ENAR</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Regional_Managing_Director_Europe_North_Africa_Central_Asia_Russia</parentRole>
+</Role>

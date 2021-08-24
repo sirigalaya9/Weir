@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Angola</fullName>
+        <default>false</default>
+        <label>Angola</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0010</fullName>
+        <default>false</default>
+        <label>AU0010 - Darwin</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0020</fullName>
+        <default>false</default>
+        <label>AU0020 - Townsville</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0030</fullName>
+        <default>false</default>
+        <label>AU0030 - Mount Isa 1</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0035</fullName>
+        <default>false</default>
+        <label>AU0035 - Mount Isa 2</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0040</fullName>
+        <default>false</default>
+        <label>AU0040 - Mackay 2</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0050</fullName>
+        <default>false</default>
+        <label>AU0050 - Rockhampton</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0052</fullName>
+        <default>false</default>
+        <label>AU0052 - Mackay 1</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0055</fullName>
+        <default>false</default>
+        <label>AU0055 - Gladstone</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0060</fullName>
+        <default>false</default>
+        <label>AU0060 - Moreton</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0070</fullName>
+        <default>false</default>
+        <label>AU0070 - Bundaberg</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0075</fullName>
+        <default>false</default>
+        <label>AU0075 - Burnett</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0080</fullName>
+        <default>false</default>
+        <label>AU0080 - Brisbane Metro</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0090</fullName>
+        <default>false</default>
+        <label>AU0090 - Projects - North</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0100</fullName>
+        <default>false</default>
+        <label>AU0100 - Newcastle North</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0105</fullName>
+        <default>false</default>
+        <label>AU0105 - Newcastle South</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0110</fullName>
+        <default>false</default>
+        <label>AU0110 - NSW - North</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0115</fullName>
+        <default>false</default>
+        <label>AU0115 - NSW - Mudgee</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0120</fullName>
+        <default>false</default>
+        <label>AU0120 - NSW - South East</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0125</fullName>
+        <default>false</default>
+        <label>AU0125 - NSW - Central</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0130</fullName>
+        <default>false</default>
+        <label>AU0130 - NSW - West</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0135</fullName>
+        <default>false</default>
+        <label>AU0135 - NSW - North West</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0140</fullName>
+        <default>false</default>
+        <label>AU0140 - NSW - Metro/Sydney</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0150</fullName>
+        <default>false</default>
+        <label>AU0150 - NSW - South West</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0155</fullName>
+        <default>false</default>
+        <label>AU0155 - Projects - East</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0160</fullName>
+        <default>false</default>
+        <label>AU0160 - Victoria</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0170</fullName>
+        <default>false</default>
+        <label>AU0170 - Tasmania</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0180</fullName>
+        <default>false</default>
+        <label>AU0180 - South Australia-1</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0181</fullName>
+        <default>false</default>
+        <label>AU0181 - South Australia-2</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0182</fullName>
+        <default>false</default>
+        <label>AU0182 - South Australia-3</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0183</fullName>
+        <default>false</default>
+        <label>AU0183 - South Australia-4</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0190</fullName>
+        <default>false</default>
+        <label>AU0190 - Projects - South</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0200</fullName>
+        <default>false</default>
+        <label>AU0200 - Alcoa Kwinana</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0205</fullName>
+        <default>false</default>
+        <label>AU0205 - Alcoa Pinjarra</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0210</fullName>
+        <default>false</default>
+        <label>AU0210 - Alcoa Wagerup</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0215</fullName>
+        <default>false</default>
+        <label>AU0215 - Perth</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0220</fullName>
+        <default>false</default>
+        <label>AU0220 - Pilbara East</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0225</fullName>
+        <default>false</default>
+        <label>AU0225 - Pilbara North</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0230</fullName>
+        <default>false</default>
+        <label>AU0230 - Perth Nth</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0235</fullName>
+        <default>false</default>
+        <label>AU0235 - Pilbara West</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0240</fullName>
+        <default>false</default>
+        <label>AU0240 - Kimberly</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0242</fullName>
+        <default>false</default>
+        <label>AU0242 - Karratha</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0245</fullName>
+        <default>false</default>
+        <label>AU0245 - Port Hedland</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0250</fullName>
+        <default>false</default>
+        <label>AU0250 - Murchinson</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0260</fullName>
+        <default>false</default>
+        <label>AU0260 - WA -SW-SouthEast</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0262</fullName>
+        <default>false</default>
+        <label>AU0262 - WA -Iluka</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0264</fullName>
+        <default>false</default>
+        <label>AU0264 - WA -SW-North</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0266</fullName>
+        <default>false</default>
+        <label>AU0266 - WA -SW-South</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0268</fullName>
+        <default>false</default>
+        <label>AU0268 - WA -SW-Henderson</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0270</fullName>
+        <default>false</default>
+        <label>AU0270 - Goldfields NorthEast</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0275</fullName>
+        <default>false</default>
+        <label>AU0275 - Goldfields NorthWest</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0280</fullName>
+        <default>false</default>
+        <label>AU0280 - Projects West</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0285</fullName>
+        <default>false</default>
+        <label>AU0285 - Goldfields WouthWest</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0290</fullName>
+        <default>false</default>
+        <label>AU0290 - Goldfields Central</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0295</fullName>
+        <default>false</default>
+        <label>AU0295 - Goldfields SouthEast</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0300</fullName>
+        <default>false</default>
+        <label>AU0300 - New Zealand</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0305</fullName>
+        <default>false</default>
+        <label>AU0305 - Fiji</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0310</fullName>
+        <default>false</default>
+        <label>AU0310 - PNG -1</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0311</fullName>
+        <default>false</default>
+        <label>AU0311 - PNG -2</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0315</fullName>
+        <default>false</default>
+        <label>AU0315 - New Caledonia</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0320</fullName>
+        <default>false</default>
+        <label>AU0320 - Indonesia</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0330</fullName>
+        <default>false</default>
+        <label>AU0330 - Malaysia</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0340</fullName>
+        <default>false</default>
+        <label>AU0340 - Singapore</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0350</fullName>
+        <default>false</default>
+        <label>AU0350 - Philippines- Manilla</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0351</fullName>
+        <default>false</default>
+        <label>AU0351 - Philippines- Luzon</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0352</fullName>
+        <default>false</default>
+        <label>AU0352 - Philippines- Visayas</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0353</fullName>
+        <default>false</default>
+        <label>AU0353 - Philippines- Mananao</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0375</fullName>
+        <default>false</default>
+        <label>AU0375 - Laos</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0380</fullName>
+        <default>false</default>
+        <label>AU0380 - South Korea</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0390</fullName>
+        <default>false</default>
+        <label>AU0390 - Taiwan</label>
+    </customValue>
+    <customValue>
+        <fullName>Au0395</fullName>
+        <default>false</default>
+        <label>Au0395 - Hong Kong</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0450</fullName>
+        <default>false</default>
+        <label>AU0450 - Mongolia</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0475</fullName>
+        <default>false</default>
+        <label>AU0475 - Japan</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0551</fullName>
+        <default>false</default>
+        <label>AU0551  - China</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0576</fullName>
+        <default>false</default>
+        <label>AU0576 - Solomon Islands</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0579</fullName>
+        <default>false</default>
+        <label>AU0579 - Thailand</label>
+    </customValue>
+    <customValue>
+        <fullName>AU0592</fullName>
+        <default>false</default>
+        <label>AU0592 - Vietnam</label>
+    </customValue>
+    <customValue>
+        <fullName>Botswana</fullName>
+        <default>false</default>
+        <label>Botswana</label>
+    </customValue>
+    <customValue>
+        <fullName>Burkina Faso</fullName>
+        <default>false</default>
+        <label>Burkina Faso</label>
+    </customValue>
+    <customValue>
+        <fullName>Cape Town</fullName>
+        <default>false</default>
+        <label>Cape Town</label>
+    </customValue>
+    <customValue>
+        <fullName>DRC</fullName>
+        <default>false</default>
+        <label>DRC</label>
+    </customValue>
+    <customValue>
+        <fullName>Dubai</fullName>
+        <default>false</default>
+        <label>Dubai</label>
+    </customValue>
+    <customValue>
+        <fullName>Gauteng</fullName>
+        <default>false</default>
+        <label>Gauteng</label>
+    </customValue>
+    <customValue>
+        <fullName>Ghana</fullName>
+        <default>false</default>
+        <label>Ghana</label>
+    </customValue>
+    <customValue>
+        <fullName>ID0001</fullName>
+        <default>false</default>
+        <label>ID0001 - North Indonesia</label>
+    </customValue>
+    <customValue>
+        <fullName>ID0002</fullName>
+        <default>false</default>
+        <label>ID0002 - West Indonesia</label>
+    </customValue>
+    <customValue>
+        <fullName>ID0003</fullName>
+        <default>false</default>
+        <label>ID0003 - East Indonesia</label>
+    </customValue>
+    <customValue>
+        <fullName>Ivory Coast</fullName>
+        <default>false</default>
+        <label>Ivory Coast</label>
+    </customValue>
+    <customValue>
+        <fullName>Kathu</fullName>
+        <default>false</default>
+        <label>Kathu</label>
+    </customValue>
+    <customValue>
+        <fullName>Kenya</fullName>
+        <default>false</default>
+        <label>Kenya</label>
+    </customValue>
+    <customValue>
+        <fullName>Madagascar</fullName>
+        <default>false</default>
+        <label>Madagascar</label>
+    </customValue>
+    <customValue>
+        <fullName>Middelburg</fullName>
+        <default>false</default>
+        <label>Middelburg</label>
+    </customValue>
+    <customValue>
+        <fullName>Mokopane</fullName>
+        <default>false</default>
+        <label>Mokopane</label>
+    </customValue>
+    <customValue>
+        <fullName>Mozambique</fullName>
+        <default>false</default>
+        <label>Mozambique</label>
+    </customValue>
+    <customValue>
+        <fullName>Namibia</fullName>
+        <default>false</default>
+        <label>Namibia</label>
+    </customValue>
+    <customValue>
+        <fullName>Oman</fullName>
+        <default>false</default>
+        <label>Oman</label>
+    </customValue>
+    <customValue>
+        <fullName>Phalaborwa</fullName>
+        <default>false</default>
+        <label>Phalaborwa</label>
+    </customValue>
+    <customValue>
+        <fullName>Qatar</fullName>
+        <default>false</default>
+        <label>Qatar</label>
+    </customValue>
+    <customValue>
+        <fullName>Richards Bay</fullName>
+        <default>false</default>
+        <label>Richards Bay</label>
+    </customValue>
+    <customValue>
+        <fullName>Rustenburg</fullName>
+        <default>false</default>
+        <label>Rustenburg</label>
+    </customValue>
+    <customValue>
+        <fullName>Saudi Arabia</fullName>
+        <default>false</default>
+        <label>Saudi Arabia</label>
+    </customValue>
+    <customValue>
+        <fullName>Senegal</fullName>
+        <default>false</default>
+        <label>Senegal</label>
+    </customValue>
+    <customValue>
+        <fullName>Steelpoort</fullName>
+        <default>false</default>
+        <label>Steelpoort</label>
+    </customValue>
+    <customValue>
+        <fullName>Tanzania</fullName>
+        <default>false</default>
+        <label>Tanzania</label>
+    </customValue>
+    <customValue>
+        <fullName>Uganda</fullName>
+        <default>false</default>
+        <label>Uganda</label>
+    </customValue>
+    <customValue>
+        <fullName>Zambia</fullName>
+        <default>false</default>
+        <label>Zambia</label>
+    </customValue>
+    <customValue>
+        <fullName>Zimbabwe</fullName>
+        <default>false</default>
+        <label>Zimbabwe</label>
+    </customValue>
+    <customValue>
+        <fullName>UAE</fullName>
+        <default>false</default>
+        <label>UAE</label>
+    </customValue>
+    <customValue>
+        <fullName>Saudi Arabia (South)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Saudi Arabia (South)</label>
+    </customValue>
+    <masterLabel>Sales District</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

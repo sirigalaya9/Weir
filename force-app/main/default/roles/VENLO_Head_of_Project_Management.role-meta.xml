@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>VENLO Head of Project Management</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>VENLO Head of Project Management</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>VENLO_Commercial_Manager</parentRole>
+</Role>

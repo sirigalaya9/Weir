@@ -1,0 +1,413 @@
+<aura:component controller= "QuoteProductHandler" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,lightning:actionOverride,lightning:isUrlAddressable">
+    
+    <aura:attribute name="opportunityProducts" type="QuoteLineItem[]" />
+    <aura:attribute name="newQuoteProducts" type="QuoteLineItem[]" />
+    <aura:attribute name="backupOpportunityProducts" type="QuoteLineItem[]" />
+    <aura:attribute name="QuoteProductToDelete" type="QuoteLineItem[]" />
+    <aura:attribute name="allVcRecordTypes" type="RecordType[]" />
+    <aura:attribute name="isValid" type="Boolean" default="false" />
+    <aura:attribute name="spinner" type="Boolean" default="false" />
+    <aura:attribute name="currentNewProductIndex" type="Integer" default="null" />
+    <aura:attribute name="newProductsQueue" type="Integer" default="null" />
+    <aura:attribute name="newProductsQueueIndex" type="Integer" default="null" />
+    <aura:attribute name="createProductsOnly" type="Boolean" default="false" />
+    <aura:attribute name="enableQuoteCreation" type="Boolean" default="true" />
+    <aura:attribute name="showDrawing" type="Boolean" default="false" />
+    <aura:attribute name="drawingType" type="String"/>
+    <aura:attribute name="ClickVc" type="Boolean" default="false" />
+    <aura:attribute name="viewData" type="Boolean" default="false" />
+    <aura:attribute name="SendToSAPSuccess" type="Boolean" default="false" />
+    <aura:attribute name="quoteCurrency" type="String"/>
+    <aura:attribute name="accountId" type="String"/>
+    <aura:attribute name="sourceId" type="String"/>
+    <aura:attribute name="vcName" type="String"/>
+    <aura:attribute name="vcRecordTypeId" type="String"/>
+    <aura:attribute name="vcTypes" type="String"/>
+    <aura:attribute name="componentState" type="String"/>
+    <aura:attribute name="quoteRecord" type="Object"/>
+    <aura:attribute name="opportunityRecord" type="Object"/>
+    <aura:attribute name="vcId" type="Id"/>
+    <aura:attribute name="recordError" type="String"/>
+    <aura:attribute name="vcOppItemsWrap" type="OpportunityProductHandler.vcOppItemsWrapper[]"/>
+    <aura:attribute name="showVC" type="Boolean" default="false" />
+    <aura:attribute name="showProductForm" type="Boolean" default="false" />
+    <aura:attribute name="quoteLineId" type="Id" default="null" />
+    <aura:attribute name="productFormId" type="Id" default="null" />
+
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <!-- Implement the navigation service. -->
+    <lightning:navigation aura:id="navService"/>
+
+    <!-- pageReferenceUtil component -->
+    <lightning:pageReferenceUtils aura:id="pageRefUtils"/>
+
+      <aura:attribute name="url" type="String"/>
+    
+    <!-- Specify the pageReference type. Only object is supported. -->
+    <aura:attribute name="pageReference" type="Object"/>
+    
+    <aura:handler event="aura:locationChange" action="{!c.update}"/>
+    <!--<aura:handler event="force:showToast" action="{!c.toastInfo}" />-->
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.reInit}" />
+
+    <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        overflow-y: scroll !important;
+        }
+    </aura:html> 
+    
+    <div class="slds-col modal-header slds-modal__header">
+        <h2 class="title slds-text-heading--medium">Edit Products</h2>
+    </div>
+    <div class="slds-col modal-footer slds-modal__footer">
+        <lightning:button variant="neutral" label="Go back to Record" onclick="{! c.cancelClick }"/>
+        <lightning:button variant="brand" label="Save" title="Save Product(s)" onclick="{! c.createProducts }" />
+    </div> 	    
+    <div class="slds-col modal-body scrollable slds-p-around--medium slds-is-relative" style="height: 800px; max-height: 800px; overflow-y: auto !important; background-color: white;">
+        <aura:if isTrue="{!v.spinner}">
+            <div aura:id="spinnerId" class="slds-spinner_container">
+                <div class="slds-spinner--brand  slds-spinner slds-spinner--medium slds-is-relative" role="alert">
+                    <span class="slds-assistive-text">Loading...</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+        </aura:if>
+        
+            <div aura:id="opportunityProductsForm">
+                <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-table_fixed-layout">
+                    <thead>
+                        <tr class="slds-text-title--caps" style="height:2rem">
+                            <th class="" scope="col" style="width:5%">
+                                <div class="slds-truncate" title="Product">No.</div>
+                            </th>
+                            <th class="" scope="col" style="width:30%">
+                                <div class="slds-truncate" title="Product"><span style="color:red">* </span>Product</div>
+                            </th>
+                            <th class="" scope="col" style="width:20%">
+                                <div class="slds-truncate" title="Material Number">Material Number</div>
+                            </th>
+                            <th class="" scope="col" style="width:10%">
+                                <div class="slds-truncate" title="Quantity"><span style="color:red">* </span>Quantity</div>
+                            </th> 
+                            <th class="" scope="col" style="width:10%">
+                                <div class="slds-truncate" title="Sales Price"><span style="color:red">* </span> Sales Price</div>
+                            </th>                   
+                            <th class="" scope="col" style="width:10%">
+                                <div class="slds-truncate" title="Description">Line Item Text</div>
+                            </th>
+                            
+                            <!--<th class="" scope="col" style="width:10%">
+                                <div class="slds-truncate" title="Description">Net Value</div>
+                            </th> 
+                            <th class="" scope="col" style="width:10%">
+                                <div class="slds-truncate" title="Description">Discount%</div>
+                            </th>-->
+                            <!--<th class="" scope="col" style="width:10%">
+                                <div class="slds-truncate" title="Description">Discount</div>
+                            </th> 
+                            <th class="" scope="col" style="width:10%">
+                                <div class="slds-truncate" title="Description">Cost</div>
+                            </th>--> 
+                            <!--<th class="" scope="col" style="width:7%">
+                                <div class="slds-truncate" title="Description">ATP</div>
+                            </th>-->
+                            <th class="" scope="col" style="width:7%">
+                                <div class="slds-truncate slds-text-align_center" title="Remove">Remove</div>
+                            </th> 
+                            <!--<th class="" scope="col" style="width:7%">
+                                <div class="slds-truncate slds-text-align_center" title="VC Status">Status</div>
+                            </th>-->
+                            <!--
+                            <th class="" scope="col" style="width:7%">
+                                <div class="slds-truncate slds-text-align_center" title="Draw_GA">Draw_GA</div>
+                            </th>
+                            <th class="" scope="col" style="width:7%">
+                                <div class="slds-truncate slds-text-align_center" title="Draw_CD">Draw_CD</div>
+                            </th>
+                            -->
+                            <th class="" scope="col" style="width:7%">
+                                <div class="slds-truncate slds-text-align_center" title="Form">Form</div>
+                            </th>                            
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <aura:iteration items="{!v.newQuoteProducts}" var="item" indexVar="index">
+                            <tr>
+                                <td>
+                                    {!index + 1}
+                                </td>
+                                <td data-label="Product Id">
+                                    <lightning:recordEditForm aura:id="recordEditFormProduct"
+                                                              objectApiName="QuoteLineItem">
+                                        <div class="slds-grid">
+                                            <div class="slds-col">
+                                                <lightning:inputField aura:id="newOpportunityProductFields" class="{!index}" fieldName="Product2Id" 
+                                                                      value="{!item.Product2Id}" variant="label-hidden" required="true" messageWhenValueMissing="Enter Product" 
+                                                                      onchange="{!c.productChanged}" disabled = "{!item.CreateQuoteSAP_Success__c}" />
+                                            </div>
+                                        </div>
+                                    </lightning:recordEditForm>
+                                </td>
+                                <td data-label="Material Number">
+                                    <lightning:recordEditForm aura:id="recordEditFormMaterial"
+                                                              objectApiName="QuoteLineItem">                         
+                                        <div class="slds-grid">
+                                            <div class="slds-col">
+                                                <lightning:inputField aura:id="newOpportunityProductFields" class="{!index}" fieldName="Material_Number__c" 
+                                                                      value="{!item.Material_Number__c}" variant="label-hidden" required="false" messageWhenValueMissing="Enter Material" 
+                                                                      onchange="{!c.materialChanged}" disabled = "{!item.CreateQuoteSAP_Success__c}" />
+                                            </div>
+                                        </div>
+                                    </lightning:recordEditForm>                                        
+                                </td>  
+                                <td data-label="Quantity" class="slds-text-align_center">
+                                    <lightning:input type="number" aura:id="newQuoteProductFields" name="quantity" value="{!item.Quantity}" 
+                                                     variant="label-hidden" onchange="" required="true" disabled = "{!item.CreateQuoteSAP_Success__c}" />                
+                                </td>
+                                <td data-label="Sales Price" class="slds-text-align_center">
+                                    <div class="slds-truncate" title="{!item.UnitPrice}">
+                                        <lightning:input type="number" aura:id="newQuoteProductFields" name="salesPrice" value="{!item.UnitPrice}" 
+                                                         variant="label-hidden" onchange="" required="true" step="0.01" disabled = "{!item.CreateQuoteSAP_Success__c}" />  
+                                    </div>
+                                </td>                
+                                <td data-label="Product Description">
+                                    <div class="slds-truncate" title="{!item.Line_Item_Text__c}">
+                                        <lightning:input type="text" aura:id="newQuoteProductFields" name="Line_Item_Text__c" value="{!item.Line_Item_Text__c}" 
+                                                         variant="label-hidden" onchange="" required="false"/>                     
+                                    </div>
+                                </td>
+                                 
+                                <!--<td data-label="Net Value – PR00">
+                                    <div class="slds-truncate" title="{!item.Net_Value_PR00__c}">
+                                        <lightning:input type="number" aura:id="newQuoteProductFields" name="Net_Value_PR00__c" value="{!item.Net_Value_PR00__c}" 
+                                                         variant="label-hidden" onchange="" required="false" step="0.0001" min = "0"/>                     
+                                    </div>
+                                </td> 
+                                <td data-label="Discount – K007(%)">
+                                    <div class="slds-truncate" title="{!item.Discount_K007__c}">
+                                        <lightning:input type="number" aura:id="newQuoteProductFields" name="Discount_K007__c" value="{!item.Discount_K007__c}" 
+                                                         variant="label-hidden" onchange="" formatter="percent-fixed" required="false" step="0.0001" min = "0"/>                     
+                                    </div>
+                                </td>-->
+                                <!--<td data-label="Discount – K008 (Value)">
+                                    <div class="slds-truncate" title="{!item.Discount_K008_Value__c}">
+                                        <lightning:input type="number" aura:id="newOpportunityProductFields" name="Discount_K008_Value__c" value="{!item.Discount_K008_Value__c}" 
+                                                         variant="label-hidden" onchange="" required="false" step="0.0001"/>                     
+                                    </div>
+                                </td> 
+                                <td data-label="Cost (for Generic Material)">
+                                    <div class="slds-truncate" title="{!item.Cost_for_Generic_Material__c}">
+                                        <lightning:input type="number" aura:id="newOpportunityProductFields" name="Cost_for_Generic_Material__c" value="{!item.Cost_for_Generic_Material__c}" 
+                                                         variant="label-hidden" onchange="" required="false" step="0.0001"/>                     
+                                    </div>
+                                </td>-->
+                                
+                               <!-- <td data-label="Availability-to-Promise (ATP)">
+                                    <div class="slds-truncate" title="{!item.Availability_to_Promise_ATP__c}">
+                                        <lightning:input type="date" aura:id="newOpportunityProductFields" name="Availability_to_Promise_ATP__c" value="{!item.Availability_to_Promise_ATP__c}" 
+                                                         variant="label-hidden" onchange="" required="false" disabled = 'true' />                     
+                                    </div>
+                                    {!item.Availability_to_Promise_ATP__c}
+                                </td>-->
+                                <td>
+                                    <div class="slds-text-align_center">
+                                        <!--<aura:if isTrue="{!item.CreateQuoteSAP_Success__c == false}"> 
+                                            <lightning:icon iconName="action:delete" size="xx-small" alternativeText="Remove" title="Remove" style="cursor:pointer" onclick="{!c.removeProduct}" class="{!index}"/>                    	
+                                        </aura:if>-->
+                                        <lightning:icon iconName="action:delete" size="xx-small" alternativeText="Remove" title="Remove" style="cursor:pointer" onclick="{!c.removeProduct}" class="{!index}"/>
+                                    </div>
+                                </td>
+                                <!--<td>                    
+                                    <div class="slds-text-align_center">
+                                        <aura:if isTrue="{!item.CreateQuoteSAP_Success__c == true}"> 
+                                            <aura:if isTrue="{!item.Is_VC_Material__c == true}"> 
+                                                <lightning:icon iconName="action:update_status" size="xx-small" alternativeText="Sent to SAP" title="Sent to SAP" style="cursor:pointer" onclick="{!c.editVC}" class="{!index}"/>                    	               
+                                                <aura:set attribute="else">                                                     
+                                                    <lightning:icon iconName="action:update_status" size="xx-small" alternativeText="Sent to SAP" title="Sent to SAP" class="{!index}"/>                    	               
+                                                </aura:set>
+                                            </aura:if>
+                                            <aura:set attribute="else">
+                                                <aura:if isTrue="{!equals(item.Is_VC_Material__c,true)}">
+                                                    <aura:if isTrue="{!item.Variable_Configurator__c == null}">
+                                                        <lightning:icon iconName="action:new" size="xx-small" alternativeText="Add" title="Add" style="cursor:pointer" onclick="{!c.addVC}" class="{!index}"/>                    	                                         
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!and(item.Id == null , item.Variable_Configurator__c != null)}">
+                                                        <lightning:icon iconName="action:check" size="xx-small" alternativeText="VC Form is generated" title="VC Form is generated" style="cursor:pointer" onclick="{!c.addVC}" class="{!index}"/>                    	               
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!and(item.Id != null , item.Variable_Configurator__c != null)}">
+                                                        <lightning:icon iconName="action:approval" size="xx-small" alternativeText="Item has been created" title="Item has been created" style="cursor:pointer" onclick="{!c.addVC}" class="{!index}"/>                    	               
+                                                    </aura:if>
+                                                    <aura:set attribute="else">
+                                                        <aura:if isTrue="{!and(item.Id == null , item.Material_Number__c != null)}"> 
+                                                            <lightning:icon iconName="action:check" size="xx-small" class="{!index}"/>                    	               
+                                                        </aura:if>
+                                                        <aura:if isTrue="{!item.Id != null}"> 
+                                                            <lightning:icon iconName="action:approval" size="xx-small" alternativeText="Item has been created" title="Item has been created" class="{!index}"/>                    	               
+                                                        </aura:if>
+                                                    </aura:set>
+                                                </aura:if> 
+                                            </aura:set>
+                                        </aura:if>       
+                                    </div>
+                                </td>-->
+                                
+                                <!--DRAWING_GA-->
+                                <!--
+                                <td>
+                                    <div class="slds-text-align_center">
+                                        <aura:if isTrue="{!and(item.CreateQuoteSAP_Success__c == true , item.Variable_Configurator__c != null)}">
+                                            <lightning:icon iconName="doctype:pdf" size="small" alternativeText="Drawing_GA" title="Drawing_GA" style="cursor:pointer" 
+                                                            onclick="{!c.viewDrawing}" class="{!index}"/>                    	                                         
+                                        </aura:if>
+                                    </div>
+                                </td>
+                                -->
+                                <!--DRAWING_CD-->
+                                <!--
+                                <td>
+                                    <div class="slds-text-align_center">
+                                        <aura:if isTrue="{!and(item.CreateQuoteSAP_Success__c == true , item.Variable_Configurator__c != null)}">
+                                            <lightning:icon iconName="doctype:pdf" size="small" alternativeText="Drawing_CD" title="Drawing_CD" style="cursor:pointer" 
+                                                            onclick="{!c.viewDrawing}" class="{!index}"/>                    	                                         
+                                        </aura:if>
+                                    </div>
+                                </td>
+                                -->
+                                <!--DRAWING_CD-->                                
+                                <td>
+                                    <div class="slds-text-align_center">                                                                                     
+                                        <aura:if isTrue="{!item.Product_Form_Id__c == null}">
+                                            <lightning:buttonIcon iconName="utility:form" variant="border" 
+                                            title="Open Form" alternativeText="Open Form"                                         
+                                            onclick="{!c.openProductForm}" class="{!index}" iconClass="redIcon">
+                                            </lightning:buttonIcon>   
+                                        </aura:if>  
+                                        <aura:if isTrue="{!item.Product_Form_Id__c != null}">
+                                            <lightning:buttonIcon iconName="utility:form" variant="border" 
+                                            title="Open Form" alternativeText="Open Form"                                         
+                                            onclick="{!c.openProductForm}" class="{!index}" iconClass="greenIcon">
+                                            </lightning:buttonIcon>   
+                                        </aura:if>                                                                        	                                                                                 
+                                    </div>
+                                </td>                                                                
+                            </tr>
+                        </aura:iteration>
+                        <tr>
+                            <td colspan="15">
+                                <div class="slds-text-align_left">
+                                    <lightning:button variant="brand" label="Add " iconName="utility:add" iconPosition="right" 
+                                                      title="Add Product" onclick="{! c.addProduct }"/>
+                                </div>
+                            </td>
+                        </tr>          
+                    </tbody>
+                </table>
+                
+                <!--<div class="slds-text-align_center slds-m-top_small">                 	                                         
+                    <lightning:icon iconName="utility:refresh" iconPosition="right" onclick="{!c.init}" alternativeText="Refresh" title="Refresh"
+                                    style="padding-right:10px; cursor:pointer" size="small"/>
+                </div>-->
+            </div>
+            
+            <aura:if isTrue="{!v.showDrawing}">
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <header class="slds-modal__header">
+                            <lightning:buttonIcon iconName="utility:close"
+                                                  onclick="{! c.closeDrawing }"
+                                                  alternativeText="close"
+                                                  variant="bare-inverse"
+                                                  class="slds-modal__close"/>
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Drawing</h2>
+                        </header>
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                            <!--<c:DrawingViewer recordId ="{!v.vcId}" drawingType ="{!v.drawingType}"/>-->
+                        </div>
+                        <footer class="slds-modal__footer">
+                            <lightning:button variant="neutral" label="Close" title="Close" onclick="{! c.closeDrawing }"/>
+                        </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </aura:if>
+        
+         <aura:if isTrue="{!v.viewData}">
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <header class="slds-modal__header">
+                            <lightning:buttonIcon iconName="utility:close"
+                                                  onclick="{! c.closeViewData}"
+                                                  alternativeText="close"
+                                                  variant="bare-inverse"
+                                                  class="slds-modal__close"/>
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">View : {!v.vcName}</h2>
+                        </header>
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                            <lightning:recordForm
+                                                  recordId="{!v.vcId}"
+                                                  recordTypeId="{!v.vcRecordTypeId}"
+                                                  objectApiName="Variable_Configurator__c"
+                                                  layoutType="Full"
+                                                  columns="2"
+                                                  mode="readonly"/>
+                        </div>
+                        <footer class="slds-modal__footer">
+                            <lightning:button variant="neutral" label="Close" title="Close" onclick="{! c.closeViewData}"/>
+                        </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </aura:if>
+
+        
+    </div>
+    <!--
+    <div class="slds-col modal-footer slds-modal__footer">
+        <lightning:button variant="neutral" label="Go back to Record" onclick="{! c.cancelClick }"/>
+        <lightning:button variant="brand" label="Save" title="Save Product(s)" onclick="{! c.createProducts }" />
+    </div> 	
+    -->
+    <footer class="slds-col modal-footer slds-modal__footer" style="position: sticky;bottom: 40px;z-index: 10;">        
+        <lightning:button variant="neutral" label="Go back to Record" onclick="{! c.cancelClick }"/>
+        <lightning:button variant="brand" label="Save" title="Save Product(s)" onclick="{! c.createProducts }" />    
+    </footer>    
+
+    <aura:if isTrue="{!v.showVC}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close"
+                                          onclick="{! c.closeVC}"
+                                          alternativeText="close"
+                                          variant="bare-inverse"
+                                          class="slds-modal__close"/>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!v.vcName}</h2>
+                </header>    
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <!--<c:vc recordId="{!v.vcId}" aura:id="cmpVC" onclosevc="{!c.closeVC}" mode="popup" formConfigName="{!v.vcName}"/>-->
+                </div>       
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="brand" label="Save" title="Save" onclick="{! c.saveVC}"/>
+                    <lightning:button variant="neutral" label="Close" title="Close" onclick="{! c.closeVC}"/>
+                </footer>                     
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>    
+    
+    <aura:if isTrue="{!v.showProductForm}">        
+        <c:quoteProductWizard oncloseproductform="{!c.closeProductForm}" parentId="{!v.quoteLineId}" recordId="{!v.productFormId}"></c:quoteProductWizard>
+    </aura:if>
+</aura:component>

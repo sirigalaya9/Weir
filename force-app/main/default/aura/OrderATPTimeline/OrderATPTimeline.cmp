@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction" controller="OrderController">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:attribute name="showSpinner" type="Boolean" default="true"/>
+    <aura:attribute name="atpTimelines" type="Object"/>
+
+    <div class="slds-m-top_medium" style="min-height:400px;">
+
+        <ul class="slds-timeline">
+        <aura:iteration items="{!v.atpTimelines}" var="item">
+            
+            <c:activityTimeline item="{!item}"/>
+
+        </aura:iteration>
+        </ul>
+    </div>
+
+    <aura:if isTrue="{!v.showSpinner}">
+    	<lightning:spinner alternativeText="Loading" size="large" />
+    </aura:if>
+
+</aura:component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Pumps Product Specialist NATCA</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Pumps Product Specialist NATCA</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Sales_and_Marketing_Director_NATCA</parentRole>
+</Role>

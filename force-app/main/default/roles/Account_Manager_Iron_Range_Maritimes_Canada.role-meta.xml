@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Account Manager Iron Range &amp; Maritimes Canada</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Account Manager Iron Range &amp; Maritimes Canada</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Area_Manager_Iron_Range_Maritimes_Canada</parentRole>
+</Role>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Man_Days_Field</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(Man_Days__c),
+OR(
+    ISPICKVAL( Stage__c , &quot;Committee&quot;),
+    ISPICKVAL( Stage__c , &quot;Scheduled&quot;),
+    ISPICKVAL( Stage__c , &quot;Building&quot;),
+    ISPICKVAL( Stage__c , &quot;Testing&quot;),
+    ISPICKVAL( Stage__c , &quot;Approved&quot;),
+    ISPICKVAL( Stage__c , &quot;Deployed&quot;)))</errorConditionFormula>
+    <errorDisplayField>Man_Days__c</errorDisplayField>
+    <errorMessage>Man Days field must be populated.</errorMessage>
+</ValidationRule>

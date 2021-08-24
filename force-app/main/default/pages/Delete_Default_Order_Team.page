@@ -1,0 +1,43 @@
+<apex:page standardController="Default_Order_Team__c" extensions="DeleteDefaultOrderTeamController">
+    <head>
+        <style>
+        .sectionHeader
+        {
+            margin-top: 10px;
+        }
+        .pageTitle
+        {
+            font-size: 10px;  
+        }
+        .pageSubTitle
+        {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="sectionHeader">
+            <h1 class="pageTitle">Default Order Team</h1>
+            <br/>
+            <h2 class="pageSubTitle">Delete Member</h2>
+        </div>
+     
+        <p>
+        Delete this team member from your default Order team.
+        </p>
+        <apex:form >                    
+            <apex:pageBlock mode="edit" >
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton action="{!deleteRecord}" value="Delete"/>                    
+                    <apex:commandButton action="{!cancel}" value="Cancel"/>
+                </apex:pageBlockButtons>
+                <apex:inputCheckbox value="{!deleteOrderTeam}" id="deleteOrderTeam"/>
+                <apex:outputLabel value="Delete this member from Orders, too." for="deleteOrderTeam"/>                       
+            </apex:pageBlock>
+        </apex:form>
+        
+    </body>
+</apex:page>

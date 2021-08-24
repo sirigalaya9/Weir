@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>AME_Data_Administrator1</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>AME Data Administrator</label>
+        <sharedTo>
+            <group>AME_Data_Administrator</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Regional_Managing_Director_South_Africa</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>APAC_Data_Administrator1</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>APAC Data Administrator</label>
+        <sharedTo>
+            <group>APAC_Data_Administrator</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>APAC_Regional_Managing_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Australia_Project_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Australia Project Team</label>
+        <sharedTo>
+            <group>Australia_Project_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <territoryAndSubordinates>Weir_Minerals.X6101</territoryAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Australia_Project_Team1</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Australia Project Team</label>
+        <sharedTo>
+            <group>Australia_Project_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <territoryAndSubordinates>Weir_Minerals.X6300</territoryAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Australia_Project_Team2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Australia Project Team</label>
+        <sharedTo>
+            <group>Australia_Project_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <territoryAndSubordinates>Weir_Minerals.X9760</territoryAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Australia_Project_Team3</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Australia Project Team</label>
+        <sharedTo>
+            <group>Australia_Project_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <territoryAndSubordinates>Weir_Minerals.ID01_SO</territoryAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Brazil_Data_Administrator</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Brazil Data Administrator</label>
+        <sharedTo>
+            <group>Brazil_Data_Administrator</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>President_Brazil</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NAM_Data_Administrator1</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NAM Data Administrator</label>
+        <sharedTo>
+            <group>NAM_Data_Administrator</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Regional_Managing_Director_NA</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Russia_Data_Administrator</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Russia Data Administrator</label>
+        <sharedTo>
+            <group>Russia_Data_Administrator</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Russia_Managing_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>VENLO_Data_Administrator</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>VENLO Data Administrator</label>
+        <sharedTo>
+            <role>VENLO_Data_Administrator</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>VENLO_Managing_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

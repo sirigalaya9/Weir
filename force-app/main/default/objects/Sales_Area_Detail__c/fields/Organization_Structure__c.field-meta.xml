@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_Structure__c</fullName>
+    <externalId>false</externalId>
+    <label>Organization Structure</label>
+    <referenceTo>Organization_Structure__c</referenceTo>
+    <relationshipLabel>Sales Area Details</relationshipLabel>
+    <relationshipName>Sales_Area_Details</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

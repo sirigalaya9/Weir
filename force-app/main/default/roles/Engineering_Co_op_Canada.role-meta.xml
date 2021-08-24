@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Engineering Co.op Canada</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Engineering Co.op Canada</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Senior_Sales_and_Product_Manager_Canada</parentRole>
+</Role>

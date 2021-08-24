@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Mill Systems Manager</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Mill Systems Manager</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Integrated_Solutions_Manager_East</parentRole>
+</Role>

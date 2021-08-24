@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Delivery Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Order Created</fullName>
+                <default>true</default>
+                <label>Order Created</label>
+            </value>
+            <value>
+                <fullName>Delivery In Process</fullName>
+                <default>false</default>
+                <label>Delivery In Process</label>
+            </value>
+            <value>
+                <fullName>Partially Delivered</fullName>
+                <default>false</default>
+                <label>Partially Delivered</label>
+            </value>
+            <value>
+                <fullName>Fully Delivered</fullName>
+                <default>false</default>
+                <label>Fully Delivered</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

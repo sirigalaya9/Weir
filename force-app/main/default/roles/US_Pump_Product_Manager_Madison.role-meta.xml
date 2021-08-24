@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>US Pump Product Manager Madison</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>US Pump Product Manager Madison</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>US_Director_of_ITO_Inquiry_to_Order_Madison</parentRole>
+</Role>

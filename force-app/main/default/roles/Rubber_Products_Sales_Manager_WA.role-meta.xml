@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Rubber Products Sales Manager - WA</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Rubber Products Sales Manager - WA</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>General_Manager_Products_West</parentRole>
+</Role>

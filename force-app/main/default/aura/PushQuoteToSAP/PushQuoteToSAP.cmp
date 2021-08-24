@@ -1,0 +1,72 @@
+<aura:component controller="PushToSAPController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader,lightning:actionOverride" access="global" >
+    
+    <aura:attribute name="ErrorMessage" type="String"/>
+    <aura:attribute name="quoteCreated" type="Boolean" default="false"/>
+    <aura:attribute name="quoteSent" type="Boolean" default="false"/>
+    <aura:attribute name="spinner" type="Boolean" default="false"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="quoteRecord" type="Object" />
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>-->
+    
+    <force:recordData aura:id="recordEditor"
+                      fields="Number_of_Products__c,Integration_Status__c, Opportunity.StageName"
+                      recordId="{!v.recordId}"
+                      targetFields ="{!v.quoteRecord}"
+                      recordUpdated="{!c.doInit}"
+                      mode="VIEW" />
+    
+    <!--recordUpdated="{!c.doInit}"-->
+    <!-- PAGE HEADER-->
+    <lightning:layout horizontalAlign="space">
+        <lightning:layoutItem padding="around-small">
+            <div class="custom-box" style ="color:black; text-align: center;">
+                <h1 class="slds-text-heading--medium"><b>Creating Quote in SAP</b></h1>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <!-- / PAGE HEADER -->
+    
+    <!-- BODY -->
+    <div class="c-container">
+        <div class="slds-grid slds-grid_align-space">
+            <div class="slds-p-around_large slds-grid slds-wrap">
+                <div class="slds-grid slds-wrap">
+                    <aura:if isTrue="{!v.quoteSent}">
+                        <div class="slds-size_1-of-2 slds-text-align_left" style="width:90%; line-height:40px">
+                            <span style="vertical-align:middle;font-weight: 500;font-size: initial;">Information has been sent to SAP system. <br/>Kindly check on Inquiry Status in Opportunity.</span>
+                        </div>
+                        <aura:if isTrue="{!v.quoteCreated}">
+                            <div class="slds-size_1-of-3 slds-text-align_center slds-m-top_medium" style="width:10%;">
+                                <lightning:icon iconName="action:approval" size="x-middle"/>
+                            </div>
+                            <aura:set attribute="else">
+                                <div class="slds-size_1-of-3 slds-text-align_center slds-m-top_medium" style="width:10%;">
+                                    <lightning:icon iconName="action:close" size="x-middle"/>
+                                </div>
+                            </aura:set>
+                        </aura:if>
+                    </aura:if>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / BODY -->
+    
+    <!--<lightning:layout>
+        <lightning:layoutItem padding="around-small">
+            <div style ="color:Red; text-align: left; border: 1px;">
+               <p class="slds-text-heading-small">{!v.ErrorMessage}</p>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>-->
+    
+    <aura:if isTrue="{!v.spinner}">
+        <div class="demo-only" style="height: 6rem;">
+            <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>  
+</aura:component>

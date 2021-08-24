@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_Status_Only</fullName>
+    <active>true</active>
+    <description>When creating an Idea the only status that can be selected is &quot;Created&quot;.</description>
+    <errorConditionFormula>AND( ISNEW() ,  NOT(ISPICKVAL( Stage__c , &quot;Created&quot;)))</errorConditionFormula>
+    <errorDisplayField>Stage__c</errorDisplayField>
+    <errorMessage>Please select &quot;Created&quot; as the status to save the Idea.</errorMessage>
+</ValidationRule>

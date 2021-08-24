@@ -1,0 +1,59 @@
+<apex:page standardController="Project_Contact_Role__c" recordSetVar="roles">
+
+    <head>
+        <apex:includeLightning />
+        <apex:slds />
+    </head>  
+    
+    <div id="cmpContainer" />
+    
+    <script>
+    function showToast(type, title, message) 
+    {
+        sforce.one.showToast({         
+            "message": message,
+            "type": type
+        });
+    }
+    
+    var statusChange = function (event) 
+    {
+        if(event.getParam("status") === "FINISHED_SCREEN")
+        {                  
+            var outputVariables = event.getParam("outputVariables");
+            var key;
+            var isSuccess;
+            var result;
+            for(key in outputVariables) 
+            {
+                if(outputVariables[key].name === "Is_Success")
+                {
+                    isSuccess = outputVariables[key].value;
+                }
+                if(outputVariables[key].name === "Result")
+                {
+                    result = outputVariables[key].value;
+                }                
+            }
+            if (isSuccess)
+            {
+                showToast("success","Success!", result);
+            }
+            else
+            {
+                showToast("error","Error!", result);
+            }
+            sforce.one.navigateToSObject("{!$CurrentPage.parameters.id}", "related");
+        }
+    };
+    
+    var userContext = "{!$User.UITheme}";
+    $Lightning.use("c:LightningOutApp", function()
+    {
+        $Lightning.createComponent("c:AddContactRoles",{ "parentRecordId" : "{!$CurrentPage.parameters.id}", UserContext: userContext}, "cmpContainer", function (component) {
+        	console.log('callback');    
+        });
+    });
+    </script>
+    
+</apex:page>

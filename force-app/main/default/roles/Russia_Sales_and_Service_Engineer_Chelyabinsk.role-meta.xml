@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Russia Sales and Service Engineer Chelyabinsk</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Russia Sales and Service Engineer Chelyabinsk</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Russia_Territory_Manager_Chelyabinsk</parentRole>
+</Role>

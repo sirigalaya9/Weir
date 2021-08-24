@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Brazil_Data_Administrator</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Brazil Data Administrator</label>
+        <sharedTo>
+            <group>Brazil_Data_Administrator</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>President_Brazil</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Chile_Data_Administrator</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Chile Data Administrator</label>
+        <sharedTo>
+            <group>Chile_Data_Administrator</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales_Manager_Chile</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Mexico_Data_Administratror</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Mexico Data Administratror</label>
+        <sharedTo>
+            <group>Mexico_Data_Administrator</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Managing_Director_Mexico</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Peru_Data_Administrator</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Peru Data Administrator</label>
+        <sharedTo>
+            <group>Peru_Data_Administrator</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Managing_Director_Peru</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>VENLO_Data_Administrator</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>VENLO Data Administrator</label>
+        <sharedTo>
+            <role>VENLO_Data_Administrator</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>VENLO_Managing_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

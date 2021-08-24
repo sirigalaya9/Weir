@@ -1,0 +1,93 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader,lightning:actionOverride" access="global" >  
+    
+    <aura:attribute name="orderItem" type="Object"/>
+    <aura:attribute name="recordError" type="String"/>
+
+    <force:recordData aura:id="recordEdit"
+                      fields="Id, Product2Id,Product2.Name, Material_Number__c,Material_Number__r.Name,Material_Description__c,UnitPrice, Quantity, TotalPrice, 
+                              Remaining_Quantity__c, Delivered_Quantity__c, Status__c, CurrencyIsoCode"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetFields ="{!v.orderItem}"
+                      mode="VIEW" />
+    
+    <article class="slds-card">
+        <div class="slds-card__body slds-card__body_inner" style="width: 100%; overflow-x: auto; overflow-y: hidden; white-space: nowrap">
+            <div aura:id="orderProductsForm">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            
+                            <th class="" scope="col" style="width: 14%;">
+                                <div class="slds-truncate" title="Material Number">Material Number</div>
+                            </th>
+                            <th class="" scope="col" style="width: 30%;">
+                                <div class="slds-truncate" title="Material Description">Material Description</div>
+                            </th>
+                            <th class="" scope="col" style="width: 10%;">
+                                <div class="slds-truncate slds-cell-wrap" title="Unit Price">Unit Price</div>
+                            </th>
+                            <th class="" scope="col" style="width: 10%;">
+                                <div class="slds-truncate slds-cell-wrap" title="Order Quantity">Order Quantity</div>
+                            </th>
+                            <th class="" scope="col" style="width: 10%;">
+                                <div class="slds-truncate slds-cell-wrap" title="Total Price">Total Price</div>
+                            </th>
+                            <th class="" scope="col" style="width: 8%;">
+                                <div class="slds-truncate slds-cell-wrap" title="Delivered Quantity">Delivered Quantity</div>
+                            </th>
+                            <th class="" scope="col" style="width: 8%;">
+                                <div class="slds-truncate slds-cell-wrap" title="emaining Quantity">Remaining Quantity</div>
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                          
+
+                            <td data-label="Material Number">
+                                <a onclick="{!c.linkToMaterial}" data-index="{!index}" target="_blank">{!v.orderItem.Material_Number__r.Name}</a>
+                            </td>
+                             <td data-label="Material Description">
+                                <div class="slds-truncate" title="{!v.orderItem.Status__c}">{!v.orderItem.Material_Description__c}</div>               
+                            </td>
+
+                            <td data-label="Unit Price">
+                                <div class="slds-truncate" title="{!v.orderItem.UnitPrice}">         
+                                    <lightning:formattedNumber value="{!v.orderItem.UnitPrice}" style="currency" currencyCode="{!v.orderItem.CurrencyIsoCode}" currencyDisplayAs="code"/>
+                                </div>
+                            </td>
+                            <td data-label="Order Quantity">
+                                <div class="slds-truncate" title="{!v.orderItem.Quantity}">
+                                    <lightning:formattedNumber value="{!v.orderItem.Quantity}" maximumFractionDigits="2"/>
+                                </div>               
+                            </td>
+                            <td data-label="Total Price">
+                                <div class="slds-truncate" title="{!v.orderItem.TotalPrice}">         
+                                    <lightning:formattedNumber value="{!v.orderItem.TotalPrice}" style="currency" currencyCode="{!v.orderItem.CurrencyIsoCode}" currencyDisplayAs="code"/>
+                                </div>
+                            </td>
+                            
+                            <td data-label="Delivered Quantity">
+                                <div class="slds-truncate" title="{!v.orderItem.Delivered_Quantity__c}">
+                                    <lightning:formattedNumber value="{!v.orderItem.Delivered_Quantity__c}" maximumFractionDigits="2"/>
+                                </div>               
+                            </td>
+                            <td data-label="Remaining Quantity">
+                                <div class="slds-truncate" title="{!v.orderItem.Remaining_Quantity__c}">
+                                    <lightning:formattedNumber value="{!v.orderItem.Remaining_Quantity__c}" maximumFractionDigits="2"/>
+                                </div>               
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+            
+        </div>
+    </article>
+    
+    
+</aura:component>

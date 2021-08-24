@@ -1,0 +1,143 @@
+<aura:component implements="lightning:actionOverride,force:hasRecordId,force:lightningQuickAction,forceCommunity:searchInterface" access="global" controller="OrderContactRolesController">
+
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="orderContactRoles" type="Order_Contact_Role__c[]"/>
+    <aura:attribute name="parentRecordId" type="String"/>
+
+    <aura:attribute name="columns" type="List" default="[]"/>
+    <aura:attribute name="data" type="List" default="[]"/> 
+    <aura:attribute name="keyField" type="String" default="Id"/>
+	
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"/>
+    <aura:attribute name="isLoading" type="Boolean" default="false"/>
+    <aura:attribute name="isShowResults" type="Boolean" default="false"/>
+    <aura:attribute name="isBacktoResults" type="Boolean" default="false"/>
+    <aura:attribute name="searchKeyword" type="String" default=""/>
+    <aura:attribute name="rowsSelected" type="List" />
+    <aura:attribute name="selectedRows" type="List" />
+    <aura:attribute name="searchRecords" type="List"/>
+    <aura:attribute name="recordEditRecords" type="List"/>
+    <aura:attribute name="backupRowSelected" type="List" />
+    <aura:attribute name="selectRecordId" type="String"/>
+    <aura:attribute name="selectRecordName" type="String"/>
+    <aura:attribute name="PrimaryContactId" type="String"/>
+    <aura:attribute name="PrimaryContactName" type="String"/>
+    <aura:attribute name="recordIdtoUpdate" type="String"/>
+    <aura:attribute name="UserContext" type="String"/>
+    <aura:attribute name="iconName" type="String" default="action:new_contact"/>
+    <aura:attribute name="objectName" type="String" default="Contact"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div aura:id="editDialog" role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+ 				<lightning:buttonIcon iconName="utility:close"
+                                      onclick="{! c.cancel }"
+                                      alternativeText="Close this window"
+                                      variant="bare-inverse"
+                                      class="slds-modal__close"/> 
+                <div class="title forceMultiAddMultiEditHeader">
+                    <h2 class="slds-text-heading--medium">Edit Contact Roles</h2>
+                </div>                    
+            </div>
+            
+            <div class="slds-modal__content slds-grid slds-wrap ">
+                <div class="headerRegion" style="width:100%; background-color:rgb(243, 242, 242); padding: 10px;">
+                    <!--<lightning:recordEditForm aura:id="recordEditForm"                                              
+                                              objectApiName="Order_Contact_Role__c">
+                        <label for="inputContact">PRIMARY CONTACT (OPTIONAL)</label>
+                        <lightning:inputField aura:id="inputContact" fieldName="Contact__c" onchange="{!c.contactChanged}" variant="label-hidden"/>
+                    </lightning:recordEditForm>-->
+                    
+                    <div class="slds-form-element slds-lookup" data-select="single">
+                        <div class="slds-form-element__control">
+                            <div class="slds-combobox_container">
+                                <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aura:id="resultBox" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+                                        <lightning:input aura:id="userinput" type="search" value="{!v.PrimaryContactName}" onchange="{!c.searchField}" label = "PRIMARY CONTACT (OPTIONAL)" class="leftspace"/>
+                                    <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid" role="listbox">
+                                        <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                            <aura:iteration items="{!v.searchRecords}" var="serecord" indexVar="rowIndex">
+                                                <li role="presentation" class="slds-listbox__item">
+                                                    <div id="{!serecord.Id}" data-name="{!serecord.Name}" onclick="{!c.setSelectedRecord}" class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                                                        <span class="slds-media__figure">
+                                                            <span class="slds-icon_container slds-icon-standard-contact">
+                                                                <lightning:icon iconName="{!v.iconName}" class="slds-icon slds-icon slds-icon_small slds-icon-text-default" size="x-small"/>
+                                                            </span>
+                                                        </span>
+                                                        <span class="slds-media__body">
+                                                            <span class="slds-listbox__option-text slds-listbox__option-text_entity">{!serecord.ContactName__c}</span>
+                                                          
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </aura:iteration>
+                                            <aura:if isTrue="{!and(v.searchRecords.length == 0 , !v.isLoading)}">
+                                                No result found.
+                                            </aura:if>
+                                            <aura:if isTrue="{!v.isLoading}">
+                                                Loading...
+                                            </aura:if>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div style="height: 500px; width: 100%;">
+                    <div class="slds-grid slds-wrap" style="margin-top: 10px; margin-left: 20px; font-size: medium;">
+                        <div class="slds-col slds-size_1-of-2">
+                            <h3><span style="color:red">*</span> Contact<br/></h3>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <h3> Role</h3>
+                        </div>
+                    </div>
+                    <aura:iteration items="{!v.recordEditRecords}" var="serecord" indexVar="index">
+                        <lightning:recordEditForm aura:id="recordEditForm"
+                                                  objectApiName="Order_Contact_Role__c"
+                                                  onsubmit="{!c.handleSubmit}"
+                                                  >
+                            <div class="slds-grid slds-wrap" style= "margin: 10px;">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning:inputField aura:id="ContactField" fieldName="Contact__c" variant="label-hidden" required="true"/>  
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning:inputField aura:id="RoleField" fieldName="Role__c" variant="label-hidden" required="false"/>  
+                                </div>  
+                                <div style="display:none;">
+                                    <lightning:inputField fieldName="Order__c" value="{!v.parentRecordId}"/>
+                                </div>
+                                <div style="display:none;">
+                                    <lightning:inputField aura:id="isPrimaryField" fieldName="Is_Primary__c"/>
+                                </div>
+                                <div style="display:none;">
+                                    <lightning:inputField aura:id="ContactNameField" fieldName="Contact__r.Name"/>
+                                </div>
+                                <div style="display:none;">
+                                    <lightning:inputField aura:id="AccountNameField" fieldName="Contact__r.Account.Name"/>
+                                </div><div style="display:none;">
+                                    <lightning:inputField aura:id="IdField" fieldName="Id"/>
+                                </div>
+                                
+                            </div> 
+                        </lightning:recordEditForm>
+                    </aura:iteration>
+                    
+                </div>
+            </div>
+            
+            <footer class="slds-modal__footer slds-modal__footer_directional">
+                <button class="slds-button slds-button_neutral" onclick="{!c.doAdd}">Add Row</button> 
+            </footer>
+            <div class="slds-modal__footer">                
+                <lightning:button variant="neutral" label="Cancel" onclick="{!c.cancel}"/>
+                <lightning:button variant="brand" label="Save" onclick="{!c.saveRecord}"/>
+            </div> 
+        </div>
+    </div>
+    
+    <div aura:id="overlay" class="slds-backdrop slds-backdrop--open"></div>
+</aura:component>

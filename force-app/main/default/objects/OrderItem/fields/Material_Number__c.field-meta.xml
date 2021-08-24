@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Material_Number__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Material_Number__c</description>
+    <externalId>false</externalId>
+    <label>Material Number</label>
+    <referenceTo>Material_Number__c</referenceTo>
+    <relationshipLabel>Order Products</relationshipLabel>
+    <relationshipName>Order_Products</relationshipName>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

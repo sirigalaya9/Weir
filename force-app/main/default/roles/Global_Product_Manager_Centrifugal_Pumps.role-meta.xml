@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Global Product Manager - Centrifugal Pumps</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Global Product Manager - Centrifugal Pumps</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Vice_President_Strategy_Sales_and_Marketing</parentRole>
+</Role>

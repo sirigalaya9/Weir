@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Representation Product Manager Peru</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Representation Product Manager Peru</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>Business_Development_Manager_Peru_Regional_Comminution_Champion_LATAM</parentRole>
+</Role>

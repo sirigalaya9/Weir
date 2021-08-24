@@ -1,0 +1,270 @@
+<template>
+    <!-- Modal/Popup Box LWC starts here -->
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <!-- Modal/Popup Box LWC header here -->
+            <header class="slds-modal__header">
+                <lightning-button-icon class="slds-modal__close" title="Close" icon-name="utility:close"
+                    variant="bare-inverse" size="large" onclick={closeModal}></lightning-button-icon>
+                <span class="slds-assistive-text">Close</span>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Order Entry</h2>
+                <div class="slds-p-around_none slds-m-top_x-small slds-m-horizontal_none">
+
+                </div>
+            </header>
+            <!-- Modal/Popup Box LWC body starts here -->
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                <div class="Stages">
+                    <lightning-progress-indicator current-step={step} type="path" variant="base">
+                        <lightning-progress-step label="Step 1 - Product Selection" value="1">
+                        </lightning-progress-step>
+                        <lightning-progress-step label="Step 2 - Order Information" value="2">
+                        </lightning-progress-step>
+                        <lightning-progress-step label="Step 3 - Additional & Shipping" value="3">
+                        </lightning-progress-step>
+                    </lightning-progress-indicator>
+                </div>
+
+                <div class="slds-m-top_medium" if:true={showStep1}>
+
+                    <lightning-datatable key-field="Id" data={quoteLines} columns={columns} onrowselection={getSelectedRows}
+                        selected-rows={selectedRows} errors={errors} oncellchange={cellChanged} suppress-bottom-bar="true">
+                    </lightning-datatable>
+
+                </div>
+
+                <div class="slds-m-top_medium" if:true={showStep2}>
+
+                    <lightning-record-edit-form object-api-name="Order_Entry__c">
+
+                        <div class="slds-form__row">
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Account__c" field-name="Account__c"
+                                    value={orderEntry.Account__c} onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Customer_PO_Number__c"
+                                    field-name="Customer_PO_Number__c" value={orderEntry.Customer_PO_Number__c}
+                                    onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                        </div>
+
+                        <div class="slds-form__row">
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Contact__c" field-name="Contact__c"
+                                    value={orderEntry.Contact__c} onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Customer_PO_Date__c" field-name="Customer_PO_Date__c"
+                                    value={orderEntry.Customer_PO_Date__c} onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                        </div>
+
+                        <div class="slds-form__row">
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Opportunity__c" field-name="Opportunity__c"
+                                    value={orderEntry.Opportunity__c} onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Order_Entry_Date__c" field-name="Order_Entry_Date__c"
+                                    value={orderEntry.Order_Entry_Date__c} onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                        </div>
+
+                        <div class="slds-form__row">
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Quote__c" field-name="Quote__c"
+                                    value={orderEntry.Quote__c} onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Application_Engineer__c"
+                                    field-name="Application_Engineer__c" value={orderEntry.Application_Engineer__c}
+                                    onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                        </div>
+
+                        <div class="slds-form__row">
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Sales_Office__c" field-name="Sales_Office__c"
+                                    value={orderEntry.Sales_Office__c} onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="CurrencyIsoCode" field-name="CurrencyIsoCode"
+                                    value={orderEntry.CurrencyIsoCode} onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                        </div>
+
+                        <div class="slds-form__row">
+                            <div class="slds-form__item">
+                                <lightning-input-field data-name="Sales_Group__c" field-name="Sales_Group__c"
+                                    value={orderEntry.Sales_Group__c} onchange={handleChange}>
+                                </lightning-input-field>
+                            </div>
+                            <div class="slds-form__item">
+
+                            </div>
+                        </div>
+
+                    </lightning-record-edit-form>
+
+                </div>
+
+                <div class="slds-m-top_medium" if:true={showStep3}>
+
+                    <lightning-record-edit-form object-api-name="Order_Entry__c">
+
+                        <div class="slds-section slds-is-open" data-section="materials">
+                            <h3 class="slds-section__title slds-theme_shade">
+                                <button class="slds-button slds-section__title-action" onclick={toggleSection}
+                                    data-targetsection="materials">
+                                    <span class="slds-truncate" title="Materials">Additional Information</span>
+                                </button>
+                            </h3>
+                            <div aria-hidden="false" class="slds-section__content">
+
+                                <div class="slds-form__row">
+                                    <div class="slds-form__item">
+
+                                        <lightning-input-field data-name="Nameplate_Language__c"
+                                            field-name="Nameplate_Language__c" value={orderEntry.Nameplate_Language__c}
+                                            onchange={handleChange}>
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-form__item">
+                                        <lightning-input-field data-name="Duty_Known__c" field-name="Duty_Known__c"
+                                            value={orderEntry.Duty_Known__c} onchange={handleChange}>
+                                        </lightning-input-field>
+                                    </div>
+                                </div>
+
+                                <div class="slds-form__row">
+                                    <div class="slds-form__item">
+
+
+                                    </div>
+                                    <div class="slds-form__item">
+                                        <lightning-input-field data-name="Billing_Plan__c" field-name="Billing_Plan__c"
+                                            value={orderEntry.Billing_Plan__c} onchange={handleChange}>
+                                        </lightning-input-field>
+                                    </div>
+                                </div>
+
+                                <div class="slds-form__row">
+                                    <div class="slds-form__item">
+
+
+                                    </div>
+                                    <div class="slds-form__item">
+                                        <lightning-input-field data-name="Standard_Terms_Conditions__c"
+                                            field-name="Standard_Terms_Conditions__c"
+                                            value={orderEntry.Standard_Terms_Conditions__c} onchange={handleChange}>
+                                        </lightning-input-field>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="slds-section slds-is-open" data-section="materials">
+                            <h3 class="slds-section__title slds-theme_shade">
+                                <button class="slds-button slds-section__title-action" onclick={toggleSection}
+                                    data-targetsection="materials">
+                                    <span class="slds-truncate" title="Materials">Shipping Information</span>
+                                </button>
+                            </h3>
+                            <div aria-hidden="false" class="slds-section__content">
+                                <div class="slds-form__row">
+                                    <div class="slds-form__item">
+
+                                        <lightning-input-field data-name="Ship_To__c" field-name="Ship_To__c"
+                                            value={orderEntry.Ship_To__c} onchange={handleChange}>
+                                        </lightning-input-field>
+                                    </div>
+                                    <div class="slds-form__item">
+                                        <lightning-input-field data-name="Requested_INCO_Terms__c"
+                                            field-name="Requested_INCO_Terms__c"
+                                            value={orderEntry.Requested_INCO_Terms__c} onchange={handleChange}>
+                                        </lightning-input-field>
+                                    </div>
+                                </div>
+
+                                <div class="slds-form__row">
+                                    <div class="slds-form__item">
+
+
+                                    </div>
+                                    <div class="slds-form__item">
+                                        <lightning-input-field data-name="Requested_Delivery_Date__c"
+                                            field-name="Requested_Delivery_Date__c"
+                                            value={orderEntry.Requested_Delivery_Date__c} onchange={handleChange}>
+                                        </lightning-input-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </lightning-record-edit-form>
+
+                </div>
+
+            </div>
+            <!-- Modal/Popup Box LWC footer starts here -->
+            <footer class="slds-modal__footer">
+                <!--<button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>-->
+                <!--<button class="slds-button slds-button_brand" onclick={submitDetails} title="OK">OK</button>-->
+
+                <div class="slds-p-around_small slds-form__row slds-gutters_direct">
+                    <div class="slds-col slds-text-align_left">
+                        <!--<template if:false={firstPage}>-->
+                        <lightning-button icon-name="utility:chevronleft" class="slds-p-around_small" label="Previous"
+                            onclick={previous} disabled={preDisabled}></lightning-button>
+                    </div>
+                    <div class="slds-form__row">
+
+                        <div class="slds-col">
+                            <lightning-button icon-name="utility:save" class="slds-p-around_small" variant="brand"
+                                label="Save" data-close="false" title="Save" onclick={save} disabled={saveDisabled}>
+                            </lightning-button>
+                        </div>
+                        <!--
+                        <div class="slds-col">
+                            <lightning-button class="slds-p-around_small" variant="brand" label="Save and Close"
+                                data-close="true" title="Save and Close" onclick={save}></lightning-button>
+                        </div>
+                        -->
+                        <div class="slds-col">
+                            <lightning-button class="slds-p-around_small" variant="brand" label="Close"
+                                data-close="true" title="Close" onclick={closeModal}></lightning-button>
+                        </div>
+                    </div>
+
+                    <div class="slds-col slds-text-align_right">
+                        <!--<template if:false={lastPage}>-->
+                        <lightning-button icon-name="utility:chevronright" class="slds-p-around_small" label="Next"
+                            onclick={next} disabled={nextDisabled}></lightning-button>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <!--<div class="slds-backdrop slds-backdrop_open"></div>-->
+
+    <template if:true={showSpinner}>
+        <lightning-spinner variant="brand" size="large">
+        </lightning-spinner>
+    </template>
+
+</template>

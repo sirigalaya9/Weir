@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_Covered__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES( Visit__r.Products_Covered__c  ,&quot;Air classifiers&quot;), &quot;Air classifiers,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Centrifuges&quot;), &quot;Centrifuges,&quot;, NULL)  + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Conveyors&quot;), &quot;Conveyors,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Crushers&quot;), &quot;Crushers,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Cyclones&quot;), &quot;Cyclones,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Elastomers&quot;), &quot;Elastomers,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Hoses&quot;), &quot;Hoses,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;HPGR&quot;), &quot;HPGR,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Integrated solutions&quot;), &quot;Integrated solutions,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Magnets&quot;), &quot;Magnets,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Mechanical seals&quot;), &quot;Mechanical seals,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Mill liners&quot;), &quot;Mill liners,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Mine water&quot;), &quot;Mine water&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Screens &amp; feeders&quot;), &quot;Screens &amp; feeders,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Slurry pumps&quot;), &quot;Slurry pumps,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Speciality pumps&quot;), &quot;Speciality pumps,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Valves&quot;), &quot;Valves,&quot;, NULL) + 
+IF(INCLUDES( Visit__r.Products_Covered__c , &quot;Washers&quot;), &quot;Washers,&quot;, NULL)</formula>
+    <label>Products Covered</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

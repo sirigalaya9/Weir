@@ -1,0 +1,10 @@
+.slds-modal__content.step1 {
+    overflow: initial !important;
+    height: 200px !important;
+    z-index: 1000000;
+}
+.slds-modal__content.step2 {
+    overflow: initial;
+    height: unset !important;
+    z-index: 1000000;
+}

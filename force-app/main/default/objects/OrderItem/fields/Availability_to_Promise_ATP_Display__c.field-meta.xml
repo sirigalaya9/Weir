@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Availability_to_Promise_ATP_Display__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (Availability_to_Promise_ATP__c &gt; TODAY(), TEXT(Availability_to_Promise_ATP__c - TODAY()) &amp; &quot; days to go&quot;, TEXT(TODAY() - Availability_to_Promise_ATP__c) &amp; &quot; days ago&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Availability-to-Promise (ATP) Display</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

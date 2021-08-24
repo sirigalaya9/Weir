@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>00</fullName>
+        <default>false</default>
+        <label>00 - Assigned by the System (Internal)</label>
+    </customValue>
+    <customValue>
+        <fullName>01</fullName>
+        <default>false</default>
+        <label>01 - Delivery date too late</label>
+    </customValue>
+    <customValue>
+        <fullName>02</fullName>
+        <default>false</default>
+        <label>02 - Poor quality</label>
+    </customValue>
+    <customValue>
+        <fullName>03</fullName>
+        <default>false</default>
+        <label>03 - Too expensive</label>
+    </customValue>
+    <customValue>
+        <fullName>04 - Competitor better</fullName>
+        <default>false</default>
+        <label>04 - Competitor better</label>
+    </customValue>
+    <customValue>
+        <fullName>05 - Guarantee</fullName>
+        <default>false</default>
+        <label>05 - Guarantee</label>
+    </customValue>
+    <customValue>
+        <fullName>10 - Unreasonable request</fullName>
+        <default>false</default>
+        <label>10 - Unreasonable request</label>
+    </customValue>
+    <customValue>
+        <fullName>11 - Cust.to receive replacement</fullName>
+        <default>false</default>
+        <label>11 - Cust.to receive replacement</label>
+    </customValue>
+    <customValue>
+        <fullName>12 - Technical Change</fullName>
+        <default>false</default>
+        <label>12 - Technical Change</label>
+    </customValue>
+    <customValue>
+        <fullName>50 - Transaction is being checked</fullName>
+        <default>false</default>
+        <label>50 - Transaction is being checked</label>
+    </customValue>
+    <customValue>
+        <fullName>60 - Damaged return, no refund</fullName>
+        <default>false</default>
+        <label>60 - Damaged return, no refund</label>
+    </customValue>
+    <customValue>
+        <fullName>N1 - WF Inquiry - Pending Approval</fullName>
+        <default>false</default>
+        <label>N1 - WF Inquiry - Pending Approval</label>
+    </customValue>
+    <customValue>
+        <fullName>N2 - WF Quote - Pending Approval</fullName>
+        <default>false</default>
+        <label>N2 - WF Quote - Pending Approval</label>
+    </customValue>
+    <customValue>
+        <fullName>N3 - WF SO - Pending Approval</fullName>
+        <default>false</default>
+        <label>N3 - WF SO - Pending Approval</label>
+    </customValue>
+    <customValue>
+        <fullName>N4 - WF CM/DM/Rtn - Pending Approval</fullName>
+        <default>false</default>
+        <label>N4 - WF CM/DM/Rtn - Pending Approval</label>
+    </customValue>
+    <customValue>
+        <fullName>TR - To return trial/demo item - no billing</fullName>
+        <default>false</default>
+        <label>TR - To return trial/demo item - no billing</label>
+    </customValue>
+    <customValue>
+        <fullName>W0 - Quote: Lost on Price</fullName>
+        <default>false</default>
+        <label>W0 - Quote: Lost on Price</label>
+    </customValue>
+    <customValue>
+        <fullName>W1 - Quote: Lost on Delivery</fullName>
+        <default>false</default>
+        <label>W1 - Quote: Lost on Delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>W2 - Quote: Lost to Replicator / Competitor</fullName>
+        <default>false</default>
+        <label>W2 - Quote: Lost to Replicator / Competitor</label>
+    </customValue>
+    <customValue>
+        <fullName>W3 - Quote: Lost for Other Reason</fullName>
+        <default>false</default>
+        <label>W3 - Quote: Lost for Other Reason</label>
+    </customValue>
+    <customValue>
+        <fullName>W4 - Quote: Expired_New Offer Required</fullName>
+        <default>false</default>
+        <label>W4 - Quote: Expired_New Offer Required</label>
+    </customValue>
+    <customValue>
+        <fullName>W5 - Order: Manufacturing/Procurement on Hold</fullName>
+        <default>false</default>
+        <label>W5 - Order: Manufacturing/Procurement on Hold</label>
+    </customValue>
+    <customValue>
+        <fullName>W6 - Order: Correction</fullName>
+        <default>false</default>
+        <label>W6 - Order: Correction</label>
+    </customValue>
+    <customValue>
+        <fullName>W7 - Order: Customer Error</fullName>
+        <default>false</default>
+        <label>W7 - Order: Customer Error</label>
+    </customValue>
+    <customValue>
+        <fullName>W8 - Order: Input Error</fullName>
+        <default>false</default>
+        <label>W8 - Order: Input Error</label>
+    </customValue>
+    <customValue>
+        <fullName>W9 - Order: Credit Issue</fullName>
+        <default>false</default>
+        <label>W9 - Order: Credit Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>WA - Order: Obsolete Material</fullName>
+        <default>false</default>
+        <label>WA - Order: Obsolete Material</label>
+    </customValue>
+    <customValue>
+        <fullName>WB - Order: Unable to Supply</fullName>
+        <default>false</default>
+        <label>WB - Order: Unable to Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>WC - Order: Item Replaced</fullName>
+        <default>false</default>
+        <label>WC - Order: Item Replaced</label>
+    </customValue>
+    <customValue>
+        <fullName>WD - Order: Not Approved</fullName>
+        <default>false</default>
+        <label>WD - Order: Not Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>WE - Order: Cancelled_High Price</fullName>
+        <default>false</default>
+        <label>WE - Order: Cancelled_High Price</label>
+    </customValue>
+    <customValue>
+        <fullName>WF - Order: Cancelled_Long Delivery</fullName>
+        <default>false</default>
+        <label>WF - Order: Cancelled_Long Delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>WG - Order: Cancelled_Poor Quality</fullName>
+        <default>false</default>
+        <label>WG - Order: Cancelled_Poor Quality</label>
+    </customValue>
+    <customValue>
+        <fullName>WH - Order: Cancelled_Customer Request</fullName>
+        <default>false</default>
+        <label>WH - Order: Cancelled_Customer Request</label>
+    </customValue>
+    <customValue>
+        <fullName>WI - Order: EDI Amendment</fullName>
+        <default>false</default>
+        <label>WI - Order: EDI Amendment</label>
+    </customValue>
+    <customValue>
+        <fullName>WJ - Quote:Lost due to Commercial / T&amp;Cs</fullName>
+        <default>false</default>
+        <label>WJ - Quote:Lost due to Commercial / T&amp;Cs</label>
+    </customValue>
+    <customValue>
+        <fullName>WK - Quote:Lost due to Delivery times</fullName>
+        <default>false</default>
+        <label>WK - Quote:Lost due to Delivery times</label>
+    </customValue>
+    <customValue>
+        <fullName>WL - Quote:Lost due to Product Building</fullName>
+        <default>false</default>
+        <label>WL - Quote:Lost due to Product Building</label>
+    </customValue>
+    <customValue>
+        <fullName>WM - Quote:Lost de to P. Lifecycle Cost (TOC)</fullName>
+        <default>false</default>
+        <label>WM - Quote:Lost de to P. Lifecycle Cost (TOC)</label>
+    </customValue>
+    <customValue>
+        <fullName>WN - Quote:Lost due to Range of Services</fullName>
+        <default>false</default>
+        <label>WN - Quote:Lost due to Range of Services</label>
+    </customValue>
+    <customValue>
+        <fullName>WO - Quote:Lost due to Rebuild instead of OE</fullName>
+        <default>false</default>
+        <label>WO - Quote:Lost due to Rebuild instead of OE</label>
+    </customValue>
+    <customValue>
+        <fullName>WP - Quote:Lost due to a competitor</fullName>
+        <default>false</default>
+        <label>WP - Quote:Lost due to a competitor</label>
+    </customValue>
+    <customValue>
+        <fullName>WQ - Quote:Lost due to a high price</fullName>
+        <default>false</default>
+        <label>WQ - Quote:Lost due to a high price</label>
+    </customValue>
+    <customValue>
+        <fullName>WR - Quote:Lost due to a P. does not meet CS</fullName>
+        <default>false</default>
+        <label>WR - Quote:Lost due to a P. does not meet CS</label>
+    </customValue>
+    <customValue>
+        <fullName>WS - Quote:Lost due to Lack of tech. P. Suppo</fullName>
+        <default>false</default>
+        <label>WS - Quote:Lost due to Lack of tech. P. Suppo</label>
+    </customValue>
+    <customValue>
+        <fullName>WT - WTY:Order Delivered. Awaiting Approval</fullName>
+        <default>false</default>
+        <label>WT - WTY:Order Delivered. Awaiting Approval</label>
+    </customValue>
+    <customValue>
+        <fullName>YS - Set costs back for resource related bill</fullName>
+        <default>false</default>
+        <label>YS - Set costs back for resource related bill</label>
+    </customValue>
+    <customValue>
+        <fullName>Z0 - Others</fullName>
+        <default>false</default>
+        <label>Z0 - Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Z1 - Poor Warranty</fullName>
+        <default>false</default>
+        <label>Z1 - Poor Warranty</label>
+    </customValue>
+    <customValue>
+        <fullName>Z2 - Not Approved</fullName>
+        <default>false</default>
+        <label>Z2 - Not Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>Z3 - Cancelled Order</fullName>
+        <default>false</default>
+        <label>Z3 - Cancelled Order</label>
+    </customValue>
+    <customValue>
+        <fullName>Z4 - Order Correction</fullName>
+        <default>false</default>
+        <label>Z4 - Order Correction</label>
+    </customValue>
+    <customValue>
+        <fullName>Z5 - Poor After Sales Service</fullName>
+        <default>false</default>
+        <label>Z5 - Poor After Sales Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Z6 - Customer cancellation</fullName>
+        <default>false</default>
+        <label>Z6 - Customer cancellation</label>
+    </customValue>
+    <customValue>
+        <fullName>Z7 - Order too small (value)</fullName>
+        <default>false</default>
+        <label>Z7 - Order too small (value)</label>
+    </customValue>
+    <customValue>
+        <fullName>Z8 - Factory cannot supply</fullName>
+        <default>false</default>
+        <label>Z8 - Factory cannot supply</label>
+    </customValue>
+    <customValue>
+        <fullName>Z9 - Obsolete product</fullName>
+        <default>false</default>
+        <label>Z9 - Obsolete product</label>
+    </customValue>
+    <customValue>
+        <fullName>ZA - Credit problems</fullName>
+        <default>false</default>
+        <label>ZA - Credit problems</label>
+    </customValue>
+    <customValue>
+        <fullName>ZB - Order entry mistake</fullName>
+        <default>false</default>
+        <label>ZB - Order entry mistake</label>
+    </customValue>
+    <customValue>
+        <fullName>ZC - Customer’s mistake</fullName>
+        <default>false</default>
+        <label>ZC - Customer’s mistake</label>
+    </customValue>
+    <customValue>
+        <fullName>ZD - Incorrect product ordered</fullName>
+        <default>false</default>
+        <label>ZD - Incorrect product ordered</label>
+    </customValue>
+    <customValue>
+        <fullName>ZE - Order: Production on hold</fullName>
+        <default>false</default>
+        <label>ZE - Order: Production on hold</label>
+    </customValue>
+    <customValue>
+        <fullName>ZF - Order: No MRP.  Sales Input only</fullName>
+        <default>false</default>
+        <label>ZF - Order: No MRP.  Sales Input only</label>
+    </customValue>
+    <customValue>
+        <fullName>ZN - Non-Billable Rubber Inputs</fullName>
+        <default>false</default>
+        <label>ZN - Non-Billable Rubber Inputs</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS - Non-Billable Rubber Inputs</fullName>
+        <default>false</default>
+        <label>ZS - Non-Billable Rubber Inputs</label>
+    </customValue>
+    <customValue>
+        <fullName>ZZ - No MRP, with value</fullName>
+        <default>false</default>
+        <label>ZZ - No MRP, with value</label>
+    </customValue>
+    <masterLabel>Rejected Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

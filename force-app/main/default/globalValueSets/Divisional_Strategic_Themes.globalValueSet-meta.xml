@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Base Growth</fullName>
+        <default>false</default>
+        <label>Base Growth</label>
+    </customValue>
+    <customValue>
+        <fullName>OE Attack</fullName>
+        <default>false</default>
+        <label>OE Attack</label>
+    </customValue>
+    <customValue>
+        <fullName>Spares Win Back</fullName>
+        <default>false</default>
+        <label>Spares Win Back</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrated Solutions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Integrated Solutions</label>
+    </customValue>
+    <masterLabel>Divisional Strategic Themes</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

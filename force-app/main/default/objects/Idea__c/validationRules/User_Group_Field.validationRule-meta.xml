@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Group_Field</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(TEXT(User_Group__c)),
+
+OR(
+    ISPICKVAL( Stage__c , &quot;Committee&quot;),
+    ISPICKVAL( Stage__c , &quot;Scheduled&quot;),
+    ISPICKVAL( Stage__c , &quot;Building&quot;),
+    ISPICKVAL( Stage__c , &quot;Testing&quot;),
+    ISPICKVAL( Stage__c , &quot;Approved&quot;),
+    ISPICKVAL( Stage__c , &quot;Deployed&quot;)))</errorConditionFormula>
+    <errorDisplayField>User_Group__c</errorDisplayField>
+    <errorMessage>User Group field must be populated.</errorMessage>
+</ValidationRule>

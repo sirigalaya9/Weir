@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DChain__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The distribution-chain-specific material status restricts the usability of the material for the distribution chain concerned, that is, it defines whether a warning or error message is displayed if you include the material in a particular function.</inlineHelpText>
+    <label>DChain</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>03 - Technical Defect</fullName>
+                <default>false</default>
+                <label>03 - Technical Defect</label>
+            </value>
+            <value>
+                <fullName>14 - Invalid Number</fullName>
+                <default>false</default>
+                <label>14 - Invalid Number</label>
+            </value>
+            <value>
+                <fullName>25 - Sales Price Required</fullName>
+                <default>false</default>
+                <label>25 - Sales Price Required</label>
+            </value>
+            <value>
+                <fullName>27 - Pattern Expired</fullName>
+                <default>false</default>
+                <label>27 - Pattern Expired</label>
+            </value>
+            <value>
+                <fullName>99 - Comp. Sales Block</fullName>
+                <default>false</default>
+                <label>99 - Comp. Sales Block</label>
+            </value>
+            <value>
+                <fullName>G2 - Obsolete</fullName>
+                <default>false</default>
+                <label>G2 - Obsolete</label>
+            </value>
+            <value>
+                <fullName>G3 - Superseded</fullName>
+                <default>false</default>
+                <label>G3 - Superseded</label>
+            </value>
+            <value>
+                <fullName>--None--</fullName>
+                <default>false</default>
+                <label>--None--</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

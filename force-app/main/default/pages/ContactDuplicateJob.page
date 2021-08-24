@@ -1,0 +1,15 @@
+<apex:page standardController="Contact" extensions="ContactDuplicateJobController" recordSetVar="tests" action="{!runJob}">
+
+    <script>
+        function showToast() {
+            sforce.one.showToast({
+                "title": "Error!",
+                "message": "{!$Label.Duplicate_Job_Run_Error}",
+                "type": "error"
+            });
+        }
+        showToast();
+        sforce.one.navigateToURL("/lightning/o/Contact/home");
+    </script>   
+
+</apex:page>

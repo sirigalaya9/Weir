@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>ENDURON HPGR Process Engineer</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>ENDURON HPGR Process Engineer</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>ENDURON_Teamleader_Process_Team_HPGR</parentRole>
+</Role>

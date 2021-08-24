@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Func_Error_Message__c</fullName>
+    <description>Functional Error Message</description>
+    <externalId>false</externalId>
+    <label>Error Message</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No IDoc saved in target system (SOAP HTTP)</fullName>
+                <default>false</default>
+                <label>Backend at Backend</label>
+            </value>
+            <value>
+                <fullName>currently being processed</fullName>
+                <default>false</default>
+                <label>Sales Document is Currently Being Edited by SAP User, Please Kindly Contact Your Administrator for Further Information.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
